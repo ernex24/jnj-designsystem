@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import App from './App'
 import './index.css'
-import jnjTheme from './assets/tokens/jnj-tokens.js'
+import jnjTheme from './theme/jnj-theme.js'
 import { ThemeProvider} from '@mui/material/styles';
 
 

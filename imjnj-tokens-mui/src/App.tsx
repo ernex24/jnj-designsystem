@@ -1,29 +1,30 @@
-// import Button from '@mui/material/Button';
-// import ButtonGroup from '@mui/material/ButtonGroup';
-// import FormGroup from '@mui/material/FormGroup';
-// import FormControlLabel from '@mui/material/FormControlLabel';
-// import FormLabel from '@mui/material/FormLabel';
-// import FormControl from '@mui/material/FormControl';
-// import FormHelperText from '@mui/material/FormHelperText';
-// import Checkbox from '@mui/material/Checkbox';
-// import Typography from '@mui/material/Typography';
-// import jnjTheme from './assets/tokens/jnj-tokens';
-// import Grid from '@mui/material/Grid';
-// import Container from '@mui/material/Container';
-// import Radio from '@mui/material/Radio';
-// import RadioGroup from '@mui/material/RadioGroup';
-// import Slider from '@mui/material/Slider';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormLabel from '@mui/material/FormLabel';
+import FormControl from '@mui/material/FormControl';
+import FormHelperText from '@mui/material/FormHelperText';
+import Checkbox from '@mui/material/Checkbox';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import Slider from '@mui/material/Slider';
 
-// import InputLabel from '@mui/material/InputLabel';
-// import MenuItem from '@mui/material/MenuItem';
+
+import jnjTheme from '@imjnj/tokens/dist/jnj-theme';
+// import jnjTheme from './theme/jnj-theme';
+// import jnjTheme from '../dist/assets/index-DEVG9bsc.js';
 
 function App() {
 
-  // const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+  const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
   return (
     <>
-{/* 
+
       <Container>
         <Grid container spacing={2}>
 
@@ -433,32 +434,6 @@ function App() {
   </RadioGroup>
 </FormControl>
 
-
-      <FormControl >
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          label="Age"
-        >
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-      </FormControl>
-
-      <FormControl >
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          label="Age"
-        >
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-      </FormControl>
-
       <Slider
         size="small"
         defaultValue={70}
@@ -467,8 +442,7 @@ function App() {
       />
       <Slider defaultValue={50} aria-label="Default" valueLabelDisplay="auto" />
 
-
-      </Container> */}
+      </Container>
     </>
   )
 }
