@@ -1,0 +1,48 @@
+
+@font-face {
+    font-family: "Johnson Display Light";
+    font-style: normal;
+    src: url(./fonts/JohnsonDisplay-Light.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: "Johnson Display Regular";
+    font-style: normal;
+    src: url(./fonts/JohnsonDisplay-Regular.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: "Johnson Display Medium";
+    font-style: normal;
+    src: url(./fonts/JohnsonDisplay-Medium.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: "Johnson Display Bold";
+    font-style: normal;
+    src: url(./fonts/JohnsonDisplay-Bold.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: "Johnson Text Light";
+    font-style: normal;
+    src: url(./fonts/JohnsonText-Light.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: "Johnson Text Regular";
+    font-style: normal;
+    src: url(./fonts/JohnsonText-Regular.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: "Johnson Text Medium";
+    font-style: normal;
+    src: url(./fonts/JohnsonText-Medium.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: "Johnson Text Bold";
+    font-style: normal;
+    src: url(./fonts/JohnsonText-Bold.woff2) format('woff2')
+}

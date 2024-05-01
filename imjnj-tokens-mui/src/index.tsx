@@ -1,0 +1,1 @@
+export const assetsPath = (resource:any) => `./assets/${resource}`;
