@@ -22,7 +22,7 @@ const jnjTheme = createTheme({
         text: {
             disabled: '#c1bbb3',
             secondary: '#212121',
-            primary: '#212121',
+            primary: '#eb1700',
         },
         warning: {
             main: '#f5ac25',

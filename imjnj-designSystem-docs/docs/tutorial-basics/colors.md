@@ -7,6 +7,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import jnjTheme from '../../src/theme/theme';
 
 import { Box } from '@mui/material';
+import Typography from '@mui/material/Typography';
 
 # Colors
 
@@ -65,6 +66,42 @@ See MUI documentation for [Tokens Colors](https://mui.com/material-ui/customizat
     </Stack>
 
         </Stack>
+
+
+  
+## Text colors
+
+    <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
+
+      <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
+          
+           <Typography variant="bodyMbold" sx={{ color: 'text.primary' }} >bodyMbold. Lorem ipsum</Typography>
+
+          ```jsx
+          text.primary
+          ```
+      </Stack>
+
+      <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
+            
+             <Typography variant="bodyMbold" sx={{ color: 'text.secondary' }}>bodyMbold. Lorem ipsum</Typography>
+
+          ```jsx
+          text.secondary
+          ```
+      </Stack>
+
+      <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
+          
+           <Typography variant="bodyMbold" sx={{ color: 'text.disabled'}}>bodyMbold. Lorem ipsum</Typography>
+
+          ```jsx
+          text.disabled
+          ```
+      </Stack>
+
+    </Stack>
+
 
 
     ### Gray colors
