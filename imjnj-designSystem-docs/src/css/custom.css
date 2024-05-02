@@ -1,0 +1,124 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: var(--jnj-color-core-jnjred);
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter:  var(--jnj-color-gray-20);
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --jnj-color-gray-20: #F1EFED;
+  --ifm-footer-background-color: var(--jnj-color-gray-20);
+  --ifm-background-color: var(--jnj-color-core-white);
+  --ifm-heading-color: var(--jnj-color-core-black);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: var(--jnj-color-core-jnjred);
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: var(--jnj-color-core-black);
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-footer-background-color: var(--jnj-color-core-black);
+  --ifm-background-color: var(--jnj-color-core-black);
+  --ifm-heading-color: var(--jnj-color-core-white);
+}
+
+
+:root {
+  --ifm-font-family-base: 'Johnson Text Regular'; 
+  --ifm-color-black: #212121;
+}
+
+h1 {
+  font-family: Johnson Display Bold, sans-serif !important;
+  font-size: var(--jnj-text-desktop-h1)  !important;
+  line-height: var(--jnj-text-desktop-lineheigth-h1) !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+h2 {
+  font-family: Johnson Display Bold, sans-serif !important;
+  font-size: var(--jnj-text-desktop-h2) !important;
+  line-height: var(--jnj-text-desktop-lineheigth-h2) !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+h3 {
+  font-family: Johnson Display Bold, sans-serif !important;
+  font-size: var(--jnj-text-desktop-h5) !important;
+  line-height: var(--jnj-text-desktop-lineheigth-h3) !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+h4 {
+  font-family: Johnson Display Bold, sans-serif !important;
+  font-size: var(--jnj-text-desktop-h4) !important;
+  line-height: var(--jnj-text-desktop-lineheigth-h4) !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+h5 {
+  font-family: Johnson Display Bold, sans-serif !important;
+  font-size: var(--jnj-text-desktop-h5) !important;
+  line-height: var(--jnj-text-desktop-lineheigth-h5) !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+h6 {
+  font-family: Johnson Display Bold, sans-serif !important;
+  font-size: var(--jnj-text-desktop-h6) !important;
+  line-height: var(--jnj-text-desktop-lineheigth-h6) !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.hero--primary {
+  --ifm-hero-background-color: var(--ifm-color-primary-lighter);
+  --ifm-hero-text-color: var(--ifm-heading-color);
+}
+
+.hero--dark {
+  --ifm-hero-background-color:  var(--ifm-color-primary-lighter);
+  --ifm-hero-text-color: var(--ifm-heading-color);
+}
+
+.navbar {
+  background-color: var(--ifm-navbar-background-color);
+  box-shadow: var(--jnj-effect-shadow-elevation-l);
+  display: flex;
+  height: var(--ifm-navbar-height);
+  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal);
+  border-radius: 8px;
+}
+.navbar--fixed-top {
+  position: fixed;
+  width: -webkit-fill-available;
+  top: 8px;
+  z-index: var(--ifm-z-index-fixed);
+  margin: 0 8px;
+}
+
+.mainWrapper_node_modules-\@docusaurus-theme-classic-lib-theme-Layout-styles-module {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 78px;
+}
