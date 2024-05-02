@@ -44,7 +44,7 @@
 
 h1 {
   font-family: Johnson Display Bold, sans-serif !important;
-  font-size: var(--jnj-text-desktop-h1)  !important;
+  font-size: var(--jnj-text-desktop-h2)  !important;
   line-height: var(--jnj-text-desktop-lineheigth-h1) !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
@@ -52,7 +52,7 @@ h1 {
 
 h2 {
   font-family: Johnson Display Bold, sans-serif !important;
-  font-size: var(--jnj-text-desktop-h2) !important;
+  font-size: var(--jnj-text-desktop-h3) !important;
   line-height: var(--jnj-text-desktop-lineheigth-h2) !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;

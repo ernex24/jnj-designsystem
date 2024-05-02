@@ -1,8 +1,8 @@
 {
-  "label": "Tutorial - Basics",
+  "label": "Components",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "description": "Learn the most important Dedisg System concepts."
   }
 }
