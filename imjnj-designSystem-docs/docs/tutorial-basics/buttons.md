@@ -1,6 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { ThemeProvider } from '@mui/material/styles';
@@ -8,10 +12,14 @@ import jnjTheme from '../../src/theme/theme';
 
 # Buttons
 
+<Tabs>
+  <TabItem value="Codebase" label="Codebase" default>
+<br/>
+
 See Buttons documentation from [MUI Buttons](https://mui.com/material-ui/react-button/).
 
 
-## Import buttons to your proyect
+### Import
 
 ```jsx
 
@@ -19,10 +27,10 @@ See Buttons documentation from [MUI Buttons](https://mui.com/material-ui/react-b
 
 ```
 
-## Primary Buttons
+### Primary buttons
 
   <ThemeProvider theme={jnjTheme}>
-  <Stack spacing={4} direction="row">
+  <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
       <Button variant="text">Text</Button>
       <Button variant="contained">Contained</Button>
       <Button variant="outlined">Outlined</Button>
@@ -37,10 +45,10 @@ See Buttons documentation from [MUI Buttons](https://mui.com/material-ui/react-b
 
 ```
 
-## Secondary Buttons
+### Secondary buttons
 
   <ThemeProvider theme={jnjTheme}>
- <Stack spacing={4} direction="row">
+ <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
       <Button color="secondary" variant="text">Text</Button>
       <Button color="secondary" variant="contained">Contained</Button>
       <Button color="secondary" variant="outlined">Outlined</Button>
@@ -56,7 +64,7 @@ See Buttons documentation from [MUI Buttons](https://mui.com/material-ui/react-b
 
   ```
 
-  ## Buttons Size
+### Buttons size
 
   <ThemeProvider theme={jnjTheme}>
  <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
@@ -75,7 +83,7 @@ See Buttons documentation from [MUI Buttons](https://mui.com/material-ui/react-b
 
   ```
 
-    ## Figma buttons file
+   ### Figma buttons file
 
 <iframe
   height="450"
@@ -83,6 +91,16 @@ See Buttons documentation from [MUI Buttons](https://mui.com/material-ui/react-b
   src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FIKgg9mk0liILChULi9LvaM%2FComponents-J%2526J---v1.1.0%3Ftype%3Ddesign%26node-id%3D4702%253A74217%26mode%3Ddesign%26t%3DaauGeEtkawvO4h6l-1"
   allowfullscreen
 />
+
+
+  </TabItem>
+  <TabItem value="UserExperience" label="User Experience">
+
+
+  </TabItem>
+</Tabs>
+
+
 
 
 

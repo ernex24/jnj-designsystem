@@ -324,7 +324,7 @@ table {
 }
 
 @font-face {
-    font-family: "Johnson Display Ligth";
+    font-family: "Johnson Display Light";
     font-style: normal;
     font-weight: 400;
     src: url(./fonts/JohnsonDisplay-Light.woff2) format('woff2')
@@ -352,7 +352,7 @@ table {
 }
 
 @font-face {
-    font-family: "Johnson Text Ligth";
+    font-family: "Johnson Text Light";
     font-style: normal;
     font-weight: 400;
     src: url(./fonts/JohnsonText-Light.woff2) format('woff2')

@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import './styles.css'
 
 const jnjTheme = createTheme({
     breakpoints: {
@@ -634,20 +635,6 @@ const jnjTheme = createTheme({
             letterSpacing: '0em',
             color: '#212121',
         },
-        subtitle1: {
-            fontFamily: 'Johnson Text Light',
-            fontSize: '1.25rem',
-            lineHeight: '1rem',
-            letterSpacing: '0em',
-            color: '#212121',
-        },
-        subtitle2: {
-            fontFamily: 'Johnson Text Light',
-            fontSize: '1.25rem',
-            lineHeight: '1rem',
-            letterSpacing: '0em',
-            color: '#212121',
-        },
         bodyS: {
             fontFamily: 'Johnson Text Regular',
             fontSize: '0.87rem',
@@ -722,7 +709,7 @@ const jnjTheme = createTheme({
             lineHeight: '1.12rem',
         },
         caption: {
-            fontFamily: 'Johnson Text Light',
+            fontFamily: 'Johnson Text Regular',
             fontSize: '0.62rem',
             lineHeight: '1rem',
             letterSpacing: '0em',
@@ -741,6 +728,27 @@ const jnjTheme = createTheme({
             lineHeight: '1.5rem',
             letterSpacing: '0em',
             textTransform: 'none',
+        },
+        subtitle1: {
+            fontFamily: 'Johnson Text Light',
+            fontSize: '1.25rem',
+            lineHeight: '1rem',
+            letterSpacing: '0em',
+            color: '#212121',
+        },
+        subtitle2: {
+            fontFamily: 'Johnson Text Light',
+            fontSize: '1.25rem',
+            lineHeight: '1rem',
+            letterSpacing: '0em',
+            color: '#212121',
+        },
+        subHeader: {
+            fontFamily: 'Johnson Text Light',
+            fontSize: '1.25rem',
+            lineHeight: '1rem',
+            letterSpacing: '0em',
+            color: '#212121',
         },
         overline: undefined,
     },
