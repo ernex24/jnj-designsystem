@@ -15,7 +15,7 @@ import Typography from '@mui/material/Typography';
 
 # Checkbox
 
-See Checkbox documentation from [MUI Checkbox](https://mui.com/material-ui/react-checkbox/).
+See complete components documentation from [MUI Checkbox](https://mui.com/material-ui/react-checkbox/).
 
 ### Import
 

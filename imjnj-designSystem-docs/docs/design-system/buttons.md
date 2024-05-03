@@ -16,7 +16,7 @@ import jnjTheme from '../../src/theme/theme';
   <TabItem value="Codebase" label="Codebase" default>
 <br/>
 
-See Buttons documentation from [MUI Buttons](https://mui.com/material-ui/react-button/).
+See complete components documentation from [MUI Buttons](https://mui.com/material-ui/react-button/).
 
 
 ### Import

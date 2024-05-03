@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 
 # Colors
 
-See MUI documentation for [Tokens Colors](https://mui.com/material-ui/customization/color/).
+See complete components documentation from [Tokens Colors](https://mui.com/material-ui/customization/color/).
 
   <ThemeProvider theme={jnjTheme}>
 

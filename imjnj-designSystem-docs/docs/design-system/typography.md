@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 
 # Typography
 
-See MUI documentation for [Typography](https://mui.com/material-ui/react-typography/).
+See complete components documentation from [Typography](https://mui.com/material-ui/react-typography/).
 
 
 ### Import

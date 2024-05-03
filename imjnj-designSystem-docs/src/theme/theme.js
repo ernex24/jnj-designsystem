@@ -77,6 +77,67 @@ const jnjTheme = createTheme({
     },
     spacing: [0, 2, 4, 8, 16, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176],
     components: {
+
+        MuiDataGrid: {
+            styleOverrides: {
+                root: {
+                    fontFamily: 'Johnson Text Regular',
+                    fontSize: '1rem',
+                    lineHeight: '1.12rem',
+                    letterSpacing: '0em',
+                    color: '#212121',
+                    border: 0,
+                    '& .MuiDataGrid-columnsContainer': {
+                  
+                    },
+                    '& .MuiDataGrid-colCell': {
+                
+                    },
+                    '& .MuiDataGrid-cell': {
+                      
+                    },
+                    '& .MuiDataGrid-row': {
+                 
+                    },
+                    '& .MuiDataGrid-footer': {
+                  
+                    },
+                    '& .MuiTablePagination-root': {
+                        color: '#212121',
+                    },
+                },
+            },
+        },
+
+        MuiTab:{
+            defaultProps: {
+                disableRipple: true,
+            },
+            styleOverrides: {
+                root: {
+                    fontFamily: 'Johnson Text Regular',
+                    fontSize: '1rem',
+                    lineHeight: '1.12rem',
+                    letterSpacing: '0em',
+                    color: '#212121',
+                    padding: '16px 8px',
+                    '&:hover': {
+                     color: '#eb1700',
+                    },
+                    '&:active': {
+                        color: '#212121',
+                    },
+                    '&.MuiTab-root.Mui-selected': {
+                        color: '#212121',
+                        fontFamily: 'Johnson Text Bold',
+                    },
+                    '&.disabled': {
+                        color: '#c1bbb3',
+                    },
+                },
+            },
+        },
+
         MuiSlider: {
             styleOverrides: {
                 root: {
