@@ -76,7 +76,93 @@ const jnjTheme = createTheme({
         borderRadius: 8,
     },
     spacing: [0, 2, 4, 8, 16, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176],
+    
+    shadows: [
+        "none",
+        "0px 4px 16px rgb(0 0 0 / 10%)",
+        "0px 0px 8px rgb(0 0 0 / 16%)",
+        "0px 4px 16px rgb(0 0 0 / 16%)",
+        "0px 4px 24px rgb(0 0 0 / 24%)",
+        "0px 4px 32px rgb(0 0 0 / 24%)",
+        ...Array(20).fill('none')
+      ],
+    
     components: {
+
+        MuiCssBaseline: {
+            styleOverrides: `
+            `
+          },
+
+        MuiTable: {
+        styleOverrides: {
+            root: {
+                color: '#212121',
+                fontFamily: 'Johnson Text Regular',
+                borderRadius: 0
+            },
+            }
+        },
+
+        MuiTableRow: {
+            styleOverrides: {
+                root: {
+                    color: '#212121',
+                    fontFamily: 'Johnson Text Regular',
+                    backgroundColor: '#ffffff',
+                    borderRadius: 0
+                },
+            }
+        },
+
+        MuiTableBody: {
+            styleOverrides: {
+                root: {
+                    color: '#212121',
+                    fontFamily: 'Johnson Text Regular',
+                    borderRadius: 0
+                },
+            }
+        },
+
+        MuiTableCell: {
+            styleOverrides: {
+                root: {
+                    color: '#212121',
+                    fontFamily: 'Johnson Text Regular',
+                    backgroundColor: '#ffffff',
+                    border: 0,
+                    borderRadius: 0
+                },
+                }
+            },
+
+            MuiTablePagination: {
+                styleOverrides: {
+                    root: {
+                        color: '#212121',
+                        fontFamily: 'Johnson Text Regular',
+                        backgroundColor: '#ffffff',
+                        border: 0,
+                        borderRadius: 0
+                    },
+                    }
+                },
+    
+
+        
+        MuiTableHead: {
+            styleOverrides: {
+                root: {
+                    color: '#212121',
+                    fontFamily: 'Johnson Text Regular',
+                    backgroundColor: '#ffffff',
+                    border: 0,
+                    borderRadius: 0
+                },
+                }
+            },
+    
 
         MuiDataGrid: {
             styleOverrides: {
@@ -87,28 +173,20 @@ const jnjTheme = createTheme({
                     letterSpacing: '0em',
                     color: '#212121',
                     border: 0,
-                    '& .MuiDataGrid-columnsContainer': {
-                  
-                    },
-                    '& .MuiDataGrid-colCell': {
-                
-                    },
-                    '& .MuiDataGrid-cell': {
-                      
-                    },
-                    '& .MuiDataGrid-row': {
-                 
-                    },
-                    '& .MuiDataGrid-footer': {
-                  
-                    },
                     '& .MuiTablePagination-root': {
                         color: '#212121',
                     },
+                    '& .MuiDataGrid-window': {
+                        color: '#212121',
+                    },
+                    '& .GridColumnMenu': {
+                        color: '#212121',
+                    },
+
                 },
             },
         },
-
+     
         MuiTab:{
             defaultProps: {
                 disableRipple: true,

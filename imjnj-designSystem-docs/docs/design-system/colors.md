@@ -9,6 +9,9 @@ import jnjTheme from '../../src/theme/theme';
 import { Box } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
+import ColorSwatch  from '../../src/components/UiComponents/ColorSwatch.js' 
+
+
 # Colors
 
 See complete components documentation from [Tokens Colors](https://mui.com/material-ui/customization/color/).
@@ -18,52 +21,10 @@ See complete components documentation from [Tokens Colors](https://mui.com/mater
 ## Core colors
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
-
-    <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'primary.main',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-        primary.main
-        ```
-    </Stack>
-
-     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'secondary.main',
-            boxShadow: 4,
-
-          }}
-        />
-        ```jsx
-        secondary.main
-        ```
-    </Stack>
-
-     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'white',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-        white
-        ```
-    </Stack>
+    
+          <ColorSwatch token="primary.main" hex="#EB1700" rgb="rgba(235, 23, 0, 1)" textColor="white" />
+          <ColorSwatch token="secondary.main" hex="#212121" rgb="rgba(255, 255, 255, 1)" textColor="white" />
+          <ColorSwatch token="white" hex="#FFFFFF" rgb="rgba(33, 33, 33, 1)" textColor="black" />
 
         </Stack>
 
@@ -72,6 +33,7 @@ See complete components documentation from [Tokens Colors](https://mui.com/mater
 ## Text colors
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
+    
 
       <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
           
@@ -107,138 +69,24 @@ See complete components documentation from [Tokens Colors](https://mui.com/mater
     ### Gray colors
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
-
-    <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'gray.gray10',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-        gray.gray10
-        ```
+      <ColorSwatch token="gray.gray10" hex="#F9F8F7" rgb="rgba(249, 248, 247, 1)" textColor="black" />
+      <ColorSwatch token="gray.gray20" hex="#F1EFED" rgb="rgba(241, 239, 237, 1)" textColor="black" />
+      <ColorSwatch token="gray.gray30" hex="#E8E6E3" rgb="rgba(232, 230, 227, 1)" textColor="black" />
+      <ColorSwatch token="gray.gray40" hex="#D5CFC9" rgb="rgba(213, 207, 201, 1)" textColor="black" />
     </Stack>
-
-     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'gray.gray20',
-            boxShadow: 4,
-
-          }}
-        />
-        ```jsx
-       gray.gray20
-        ```
-    </Stack>
-
-     <Stack  direction="column" justifyContent="center" alignItems="center" spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'gray.gray30',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-      gray.gray40
-        ```
-    </Stack>
-
-     <Stack  direction="column" justifyContent="center" alignItems="center" spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'gray.gray40',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-       gray.gray30
-        ```
-    </Stack>
-
-        </Stack>
 
  <br/>  
       
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
 
-    <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'gray.gray50',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-        gray.gray50
-        ```
-    </Stack>
-
  
-
-     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'gray.gray60',
-            boxShadow: 4,
-
-          }}
-        />
-        ```jsx
-        gray.gray60
-        ```
+  <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
+      <ColorSwatch token="gray.gray50" hex="#C1BBB3" rgb="rgba(249, 248, 247, 1)" textColor="black" />
+      <ColorSwatch token="gray.gray60" hex="#A39992" rgb="rgba(241, 239, 237, 1)" textColor="black" />
+      <ColorSwatch token="gray.gray70" hex="#81766F" rgb="rgba(232, 230, 227, 1)" textColor="white" />
+      <ColorSwatch token="gray.gray80" hex="#564C47" rgb="rgba(213, 207, 201, 1)" textColor="white" />
     </Stack>
-
-     <Stack  direction="column" justifyContent="center" alignItems="center" spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'gray.gray70',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-       gray.gray70
-        ```
-    </Stack>
-
-     <Stack  direction="column" justifyContent="center" alignItems="center" spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'gray.gray80',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-        gray.gray80
-        ```
-    </Stack>
-
-        </Stack>
+  </Stack>
 
 
 
@@ -248,51 +96,13 @@ See complete components documentation from [Tokens Colors](https://mui.com/mater
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
 
-    <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'warning.main',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-        warning.main
-        ```
+      <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
+        <ColorSwatch token="warning.light" hex="#FDF0E6" rgb="rgba(253, 240, 230, 1)" textColor="black" />
+        <ColorSwatch token="warning.main" hex="#F5AC25" rgb="rgba(245, 172, 37, 1)" textColor="black" />
+        <ColorSwatch token="warning.dark" hex="#F37820" rgb="rgba(243, 120, 32, 1)" textColor="white" />
     </Stack>
 
-     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'warning.dark',
-            boxShadow: 4,
-
-          }}
-        />
-        ```jsx
-        warning.dark
-        ```
-    </Stack>
-
-     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'warning.light',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-        warning.light
-        ```
-    </Stack>
+   
 
         </Stack>
 
@@ -302,51 +112,15 @@ See complete components documentation from [Tokens Colors](https://mui.com/mater
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
 
-    <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'success.main',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-        success.main
-        ```
+   
+      <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
+        <ColorSwatch token="success.light" hex="#EAF2EA" rgb="rgba(234, 242, 234, 1)" textColor="black" />
+        <ColorSwatch token="success.main" hex="#6EBD44" rgb="rgba(110, 189, 68, 1)" textColor="black" />
+        <ColorSwatch token="success.dark" hex="#359942" rgb="rgba(53, 153, 66, 1)" textColor="white" />
     </Stack>
 
-     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'success.dark',
-            boxShadow: 4,
-
-          }}
-        />
-        ```jsx
-        success.dark
-        ```
-    </Stack>
-
-     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'success.light',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-       success.light
-        ```
-    </Stack>
+     
+    
 
         </Stack>
 
@@ -355,113 +129,30 @@ See complete components documentation from [Tokens Colors](https://mui.com/mater
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
 
-    <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'error.main',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-        error.main
-        ```
-    </Stack>
+      <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
+        <ColorSwatch token="error.light" hex="#FBEAEA" rgb="rgba(251, 234, 234, 1)" textColor="black" />
+        <ColorSwatch token="error.main" hex="#D32F2F" rgb="rgba(211, 47, 47, 1)" textColor="black" />
+        <ColorSwatch token="error.dark" hex="#C62828" rgb="rgba(198, 40, 40, 1))" textColor="white" />
+      </Stack>
 
-     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'error.dark',
-            boxShadow: 4,
-
-          }}
-        />
-        ```jsx
-        error.dark
-        ```
-    </Stack>
-
-     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'error.light',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-       error.light
-        ```
-    </Stack>
-
-        </Stack>
+      </Stack>
 
 
           
 ### Info
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
-
-    <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'info.main',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-        info.main
-        ```
+       <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
+        <ColorSwatch token="info.light" hex="#EAF9FF" rgb="rgba(230, 243, 250, 1)" textColor="black" />
+        <ColorSwatch token="info.main" hex="#00A0DF" rgb="rgba(0, 160, 223, 1)" textColor="black" />
+        <ColorSwatch token="info.dark" hex="#1C75BC" rgb="rgba(28, 117, 188, 1)" textColor="white" />
+      </Stack>
     </Stack>
-
-     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'info.dark',
-            boxShadow: 4,
-
-          }}
-        />
-        ```jsx
-        info.dark
-        ```
-    </Stack>
-
-     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
-          <Box
-          sx={{
-            width: 100,
-            height: 100,
-            borderRadius: 1,
-            bgcolor: 'info.light',
-            boxShadow: 4,
-          }}
-        />
-        ```jsx
-       info.light
-        ```
-    </Stack>
-
-        </Stack>
-
-
                  
 ## Charts colors
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
+    
 
     <Stack  direction="column" justifyContent="center" alignItems="center"  spacing={4}>
           <Box
