@@ -20,10 +20,24 @@ See complete components documentation from [Tokens Colors](https://mui.com/mater
 
 ## Core colors
 
-    <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
-    
-          <ColorSwatch token="primary.main" hex="#EB1700" rgb="rgba(235, 23, 0, 1)" textColor="white" />
+        <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
+        <ColorSwatch token="primary.light" hex="#EB1700" rgb="rgba(235, 23, 0, 1)" textColor="white" />
+        <ColorSwatch token="primary.main" hex="#EB1700" rgb="rgba(235, 23, 0, 1)" textColor="white" />
+        <ColorSwatch token="primary.dark" hex="#EB1700" rgb="rgba(235, 23, 0, 1)" textColor="white" />
+        </Stack>
+
+ <br/>  
+
+          <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
+          <ColorSwatch token="secondary.light" hex="#212121" rgb="rgba(255, 255, 255, 1)" textColor="white" />
           <ColorSwatch token="secondary.main" hex="#212121" rgb="rgba(255, 255, 255, 1)" textColor="white" />
+          <ColorSwatch token="secondary.dark" hex="#212121" rgb="rgba(255, 255, 255, 1)" textColor="white" />
+        </Stack>
+
+        
+ <br/>  
+
+          <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
           <ColorSwatch token="white" hex="#FFFFFF" rgb="rgba(33, 33, 33, 1)" textColor="black" />
 
         </Stack>
