@@ -22,53 +22,61 @@ import Grid from '@mui/material/Grid';
 
 ```
 
-There are two types of layout: containers and items, grids are divided in 12 colums and there are five grid breakpoints: xs, sm, md, lg, and xl. a single grid can behave diffeent depending of the asigned number of colums in each breakpoint.
+Grids are fluid and they are conformed by containers and items for the internal grid, are divided in **12 colums** and have five breakpoints: xs, sm, md, lg, and xl. a single grid can behave different depending of the asigned number of colums in each breakpoint.
 
+You can assign a margin to the grid and define the gap between each grid element using the spacing system.
+
+    The asigned breakpoints in the J&J theme are from:
+    - xs: **8px**
+    - sm: **600px**
+    - md: **900px**
+    - lg: **1296px**
+    - xl: **1536px**
 
   <ThemeProvider theme={jnjTheme}>
- 
-    ### Container grids
 
-<Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
+    ### Contained grids 72px margin
+
+    <Box mx={{ xs: 3, md: 5, lg: 10, xl: 10 }}>
+      <Grid container   spacing={{ xs: 2, md: 2, lg: 3, xl: 3 }}  columns={{ xs: 4, sm: 8, md: 12, lg: 12, xl: 12 }} mx={3}>
         <Grid item xs={12}>
           <div className="jnj-color-background-gray-30">xs=12</div>
         </Grid>
            <Grid item xs={1}>
-          <div className="jnj-color-background-gray-30">xs=12</div>
+          <div className="jnj-color-background-gray-30">xs=1</div>
         </Grid>
            <Grid item xs={1}>
-          <div className="jnj-color-background-gray-30">xs=12</div>
+          <div className="jnj-color-background-gray-30">xs=1</div>
         </Grid>
            <Grid item xs={1}>
-          <div className="jnj-color-background-gray-30">xs=12</div>
+          <div className="jnj-color-background-gray-30">xs=1</div>
         </Grid>
            <Grid item xs={1}>
-          <div className="jnj-color-background-gray-30">xs=12</div>
+          <div className="jnj-color-background-gray-30">xs=1</div>
         </Grid>
            <Grid item xs={1}>
-          <div className="jnj-color-background-gray-30">xs=12</div>
+          <div className="jnj-color-background-gray-30">xs=1</div>
         </Grid>
            <Grid item xs={1}>
-          <div className="jnj-color-background-gray-30">xs=12</div>
+          <div className="jnj-color-background-gray-30">xs=1</div>
         </Grid>
            <Grid item xs={1}>
-          <div className="jnj-color-background-gray-30">xs=12</div>
+          <div className="jnj-color-background-gray-30">xs=1</div>
         </Grid>
            <Grid item xs={1}>
-          <div className="jnj-color-background-gray-30">xs=12</div>
+          <div className="jnj-color-background-gray-30">xs=1</div>
         </Grid>
            <Grid item xs={1}>
-          <div className="jnj-color-background-gray-30">xs=12</div>
+          <div className="jnj-color-background-gray-30">xs=1</div>
         </Grid>
            <Grid item xs={1}>
-          <div className="jnj-color-background-gray-30">xs=12</div>
+          <div className="jnj-color-background-gray-30">xs=1</div>
         </Grid>
            <Grid item xs={1}>
-          <div className="jnj-color-background-gray-30">xs=12</div>
+          <div className="jnj-color-background-gray-30">xs=1</div>
         </Grid>
            <Grid item xs={1}>
-          <div className="jnj-color-background-gray-30">xs=12</div>
+          <div className="jnj-color-background-gray-30">xs=1</div>
         </Grid>
         <Grid item xs={8}>
           <div className="jnj-color-background-gray-30">xs=8</div>
@@ -93,10 +101,146 @@ There are two types of layout: containers and items, grids are divided in 12 col
         </Grid>
       </Grid>
     </Box>
+  <br/>
 
-  <br/><br/>
+      ```jsx
+    <Box mx={{ xs: 4, md: 5, lg: 10, xl: 10 }}>
+      <Grid container   spacing={{ xs: 2, md: 2, lg: 3, xl: 3 }}  columns={{ xs: 4, sm: 8, md: 12, lg: 12, xl: 12 }} mx={3}>
+        <Grid item xs={12}>
+          <div className="jnj-color-background-gray-30">xs=12</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+        <Grid item xs={8}>
+          <div className="jnj-color-background-gray-30">xs=8</div>
+        </Grid>
+        <Grid item xs={4}>
+          <div className="jnj-color-background-gray-30">xs=4</div>
+        </Grid>
+        <Grid item xs={4}>
+          <div className="jnj-color-background-gray-30">xs=4</div>
+        </Grid>
+        <Grid item xs={8}>
+          <div className="jnj-color-background-gray-30">xs=8</div>
+        </Grid>
+          <Grid item xs={4}>
+          <div className="jnj-color-background-gray-30">xs=4</div>
+        </Grid>
+          <Grid item xs={4}>
+          <div className="jnj-color-background-gray-30">xs=4</div>
+        </Grid>
+          <Grid item xs={4}>
+          <div className="jnj-color-background-gray-30">xs=4</div>
+        </Grid>
+      </Grid>
+    </Box>
+      ```
 
-       ```jsx
+ 
+    ### Fluid grids full screen
+
+      <Box mx={{ xs: 4, md: 5, lg: 5, xl: 5 }}>
+      <Grid container spacing={{ xs: 2, md: 2, lg: 3, xl: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 12, xl: 12 }} mx={3}>
+        <Grid item xs={12}>
+          <div className="jnj-color-background-gray-30">xs=12</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+           <Grid item xs={1}>
+          <div className="jnj-color-background-gray-30">xs=1</div>
+        </Grid>
+        <Grid item xs={8}>
+          <div className="jnj-color-background-gray-30">xs=8</div>
+        </Grid>
+        <Grid item xs={4}>
+          <div className="jnj-color-background-gray-30">xs=4</div>
+        </Grid>
+        <Grid item xs={4}>
+          <div className="jnj-color-background-gray-30">xs=4</div>
+        </Grid>
+        <Grid item xs={8}>
+          <div className="jnj-color-background-gray-30">xs=8</div>
+        </Grid>
+          <Grid item xs={4}>
+          <div className="jnj-color-background-gray-30">xs=4</div>
+        </Grid>
+          <Grid item xs={4}>
+          <div className="jnj-color-background-gray-30">xs=4</div>
+        </Grid>
+          <Grid item xs={4}>
+          <div className="jnj-color-background-gray-30">xs=4</div>
+        </Grid>
+      </Grid>
+      </Box>
+ 
+  <br/>
+
+      ```jsx
         <Grid container spacing={2}>
         <Grid item xs={12}>
           <div className="jnj-color-background-gray-30">xs=12</div>
@@ -159,9 +303,7 @@ There are two types of layout: containers and items, grids are divided in 12 col
           <div className="jnj-color-background-gray-30">xs=4</div>
         </Grid>
       </Grid>
-
-
-       ```
+      ```
 
   </ThemeProvider>
 
