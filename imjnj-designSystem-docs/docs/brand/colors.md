@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 import Stack from '@mui/material/Stack';
@@ -27,20 +27,18 @@ See complete components documentation from [Tokens Colors](https://mui.com/mater
         </Stack>
 
  <br/>  
-
           <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
           <ColorSwatch token="secondary.light" hex="#212121" rgb="rgba(255, 255, 255, 1)" textColor="white" />
-          <ColorSwatch token="secondary.main" hex="#212121" rgb="rgba(255, 255, 255, 1)" textColor="white" />
+          <ColorSwatch token="secondary.main" hex="#212121" rgb="rgba(33, 33, 33, 1)" textColor="white" />
           <ColorSwatch token="secondary.dark" hex="#212121" rgb="rgba(255, 255, 255, 1)" textColor="white" />
-        </Stack>
+          </Stack>
 
         
  <br/>  
-
           <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
-          <ColorSwatch token="white" hex="#FFFFFF" rgb="rgba(33, 33, 33, 1)" textColor="black" />
-
-        </Stack>
+          <ColorSwatch token="white" hex="#FFFFFF" rgb="rgba(255, 255, 255, 1)" textColor="black" />
+          <ColorSwatch token="black" hex="#212121" rgb="rgba(33, 33, 33, 1)" textColor="white" />
+          </Stack>
 
 
   
