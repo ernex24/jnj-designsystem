@@ -15,6 +15,7 @@ import ColorSwatch  from '../../src/components/UiComponents/ColorSwatch.js'
 # Elevation
 
 See complete components documentation from [Elevation](https://mui.com/material-ui/react-paper/#elevation).
+The elevation is the level of shadow casted from the component to the background and the amount of this shadow is defined incrementally from 0 to 5.
 
   <ThemeProvider theme={jnjTheme}>
 
