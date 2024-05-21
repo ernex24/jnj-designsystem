@@ -21,10 +21,14 @@ See complete components documentation from [Elevation](https://mui.com/material-
 ## Core colors
 
         <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
-        <ColorSwatch  boxS="1" token="white" hex="boxShadow: 1" rgb="elevation{1}" textColor="white" />
-        <ColorSwatch boxS="2" token="white" hex="boxShadow: 2" rgb="elevation{2}" textColor="white" />
-        <ColorSwatch boxS="3" token="white" hex="boxShadow: 3" rgb="elevation{3}" textColor="white" />
-           <ColorSwatch boxS="4" token="white" hex="boxShadow: 4" rgb="elevation{4}" textColor="white" />
+          <ColorSwatch boxS="1" token="white" hex="boxShadow: 1" rgb="elevation{1}" textColor="white" />
+          <ColorSwatch boxS="2" token="white" hex="boxShadow: 2" rgb="elevation{2}" textColor="white" />
+          <ColorSwatch boxS="3" token="white" hex="boxShadow: 3" rgb="elevation{3}" textColor="white" />
+        </Stack>
+
+         <Stack mt={5} direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
+          <ColorSwatch boxS="4" token="white" hex="boxShadow: 4" rgb="elevation{4}" textColor="white" />
+           <ColorSwatch boxS="5" token="white" hex="boxShadow: 5" rgb="elevation{5}" textColor="white" />
         </Stack>
 
  
