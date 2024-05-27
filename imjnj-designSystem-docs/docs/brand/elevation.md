@@ -32,7 +32,13 @@ The elevation is the level of shadow casted from the component to the background
            <ColorSwatch boxS="5" token="white" hex="boxShadow: 5" rgb="elevation{5}" textColor="white" />
         </Stack>
 
- 
+        <br/> <br/>
+
+        Elevation in MUI needs to be added using [SX Prop](https://mui.com/system/getting-started/the-sx-prop/).
+
+        ```jsx
+            <Box sx={{ boxShadow: 2,}}>
+        ```
       
 
   </ThemeProvider>

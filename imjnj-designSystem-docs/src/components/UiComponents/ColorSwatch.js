@@ -3,7 +3,7 @@ import { Box, ThemeProvider, Typography } from '@mui/material';
 import jnjTheme from '../../../src/theme/theme';
 import Stack from '@mui/material/Stack';
 
-export default function ColorSwatch({boxS = 2, token, hex, rgb, textColor,  }) {
+export default function ColorSwatch({boxS = 2,borderR = 2, token, hex, rgb, textColor,  }) {
 
   return (
 
@@ -12,7 +12,7 @@ export default function ColorSwatch({boxS = 2, token, hex, rgb, textColor,  }) {
 
         sx={{
             width: 179,
-            borderRadius: 2,
+            borderRadius: borderR,
             boxShadow: boxS,
             margin: 4,
         }}>
