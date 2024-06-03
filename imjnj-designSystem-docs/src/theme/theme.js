@@ -262,7 +262,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1rem',
                         padding: '4px 8px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             color: '#fff',
                             backgroundColor: '#B80000',
@@ -284,7 +284,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1.12rem',
                         padding: '8px 16px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             color: '#fff',
                             backgroundColor: '#B80000',
@@ -306,7 +306,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1.5rem',
                         textTransform: 'none',
                         padding: '8px 16px',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             color: '#fff',
                             backgroundColor: '#B80000',
@@ -329,7 +329,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1rem',
                         padding: '4px 8px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             color: '#fff',
                             backgroundColor: '#564C47',
@@ -352,7 +352,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1.12rem',
                         padding: '8px 16px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             color: '#fff',
                             backgroundColor: '#564C47',
@@ -375,7 +375,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1.5rem',
                         textTransform: 'none',
                         padding: '8px 16px',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             color: '#fff',
                             backgroundColor: '#564C47',
@@ -396,7 +396,7 @@ const jnjTheme = createTheme({
                         fontSize: '0.87rem',
                         lineHeight: '1rem',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         padding: '4px 8px',
                         '&:hover': {
                             backgroundColor: '#B80000',
@@ -416,7 +416,7 @@ const jnjTheme = createTheme({
                         fontSize: '1rem',
                         lineHeight: '1.12rem',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         padding: '8px 16px',
                         '&:hover': {
                             backgroundColor: '#B80000',
@@ -436,7 +436,7 @@ const jnjTheme = createTheme({
                         fontSize: '1.12rem',
                         lineHeight: '1.5rem',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         padding: '8px 16px',
                         '&:hover': {
                             backgroundColor: '#B80000',
@@ -457,7 +457,7 @@ const jnjTheme = createTheme({
                         fontSize: '0.87rem',
                         lineHeight: '1rem',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         padding: '4px 8px',
                         color: '#fff',
                         '&:hover': {
@@ -479,7 +479,7 @@ const jnjTheme = createTheme({
                         fontSize: '1rem',
                         lineHeight: '1.12rem',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         padding: '8px 16px',
                         color: '#fff',
                         '&:hover': {
@@ -501,7 +501,7 @@ const jnjTheme = createTheme({
                         fontSize: '1.12rem',
                         lineHeight: '1.5rem',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         padding: '8px 16px',
                         color: '#fff',
                         '&:hover': {
@@ -525,7 +525,7 @@ const jnjTheme = createTheme({
                         textTransform: 'none',
                         padding: '4px 8px',
                         color: '#212121',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             backgroundColor: '#B80000',
                             color: '#fff',
@@ -549,7 +549,7 @@ const jnjTheme = createTheme({
                         textTransform: 'none',
                         padding: '8px 16px',
                         color: '#212121',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             backgroundColor: '#B80000',
                             color: '#fff',
@@ -573,7 +573,7 @@ const jnjTheme = createTheme({
                         textTransform: 'none',
                         padding: '8px 16px',
                         color: '#212121',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             backgroundColor: '#B80000',
                             color: '#fff',
@@ -596,7 +596,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1rem',
                         padding: '4px 8px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             backgroundColor: '#564C47',
                             color: '#fff',
@@ -619,7 +619,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1.12rem',
                         padding: '8px 16px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             backgroundColor: '#564C47',
                             color: '#fff',
@@ -642,7 +642,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1.5rem',
                         padding: '8px 16px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             backgroundColor: '#564C47',
                             color: '#fff',

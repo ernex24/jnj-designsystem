@@ -6,6 +6,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Button from '@mui/material/Button';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import { motion, useScroll } from "framer-motion";
 
 import { ThemeProvider } from '@mui/material/styles';
 
@@ -34,9 +35,12 @@ function HomepageHeader() {
 }
 
 export default function Home() {
+  const { scrollYProgress } = useScroll();
   const {siteConfig} = useDocusaurusContext();
   return (
+    
     <ThemeProvider theme={jnjTheme}>
+       <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }}/>
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
