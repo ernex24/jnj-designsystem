@@ -40,7 +40,9 @@ export default function Home() {
   return (
     
     <ThemeProvider theme={jnjTheme}>
+       
        <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }}/>
+
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">

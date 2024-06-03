@@ -14,14 +14,11 @@ import ColorSwatch  from '../../src/components/UiComponents/ColorSwatch.js'
 
 # Border Radius
 
-See complete components documentation from [Elevation](https://mui.com/material-ui/react-paper/#elevation). <br/>
 Border Radius are defined by default in 8px, 12px is defined for buttons and 16px for layout elements.
 
   <ThemeProvider theme={jnjTheme}>
 
-## Core colors
-
-        <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
+        <Stack  direction="row" justifyContent="center" alignItems="center"  spacing={4}>
           <ColorSwatch boxS="3" token="white" hex="Border Radius: 8px" textColor="white" borderR="8px" />
           <ColorSwatch boxS="3" token="white" hex="Border Radius: 12px" textColor="white" borderR="12px" />
           <ColorSwatch boxS="3" token="white" hex="Border Radius: 16px" textColor="white" borderR="16px" />
@@ -34,7 +31,6 @@ Border Radius are defined by default in 8px, 12px is defined for buttons and 16p
         ```jsx
             <Box sx={{ borderRadius: '12px'}}>
         ```
-
 
   </ThemeProvider>
   <br />

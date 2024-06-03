@@ -90,10 +90,10 @@ const jnjTheme = createTheme({
     components: {
 
         MuiCssBaseline: {
-            styleOverrides: `
-            `
+            styleOverrides: {
+               
+            }
           },
-
         MuiTable: {
         styleOverrides: {
             root: {
