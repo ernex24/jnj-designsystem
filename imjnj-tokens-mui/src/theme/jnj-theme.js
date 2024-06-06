@@ -1,5 +1,6 @@
 import { createTheme } from '@mui/material/styles';
-import './jnjFonts.css';
+import './styles.css'
+
 const jnjTheme = createTheme({
     breakpoints: {
         values: {
@@ -21,7 +22,7 @@ const jnjTheme = createTheme({
         text: {
             disabled: '#c1bbb3',
             secondary: '#212121',
-            primary: '#212121',
+            primary: '#eb1700',
         },
         warning: {
             main: '#f5ac25',
@@ -75,7 +76,146 @@ const jnjTheme = createTheme({
         borderRadius: 8,
     },
     spacing: [0, 2, 4, 8, 16, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176],
+    
+    shadows: [
+        "none",
+        "0px 4px 16px 0px rgb(0 0 0 / 6%)",
+        "0px 0px 8px 0px rgb(0 0 0 / 16%)",
+        "0px 4px 16px 0px rgb(0 0 0 / 16%)",
+        "0px 4px 32px 0px rgb(0 0 0 / 24%)",
+        "0px 4px 40px 0px rgb(0 0 0 / 32%)",
+        ...Array(20).fill('none')
+      ],
+    
     components: {
+
+        MuiCssBaseline: {
+            styleOverrides: {
+               
+            }
+          },
+        MuiTable: {
+        styleOverrides: {
+            root: {
+                color: '#212121',
+                fontFamily: 'Johnson Text Regular',
+                borderRadius: 0
+            },
+            }
+        },
+
+        MuiTableRow: {
+            styleOverrides: {
+                root: {
+                    color: '#212121',
+                    fontFamily: 'Johnson Text Regular',
+                    backgroundColor: '#ffffff',
+                    borderRadius: 0
+                },
+            }
+        },
+
+        MuiTableBody: {
+            styleOverrides: {
+                root: {
+                    color: '#212121',
+                    fontFamily: 'Johnson Text Regular',
+                    borderRadius: 0
+                },
+            }
+        },
+
+        MuiTableCell: {
+            styleOverrides: {
+                root: {
+                    color: '#212121',
+                    fontFamily: 'Johnson Text Regular',
+                    backgroundColor: '#ffffff',
+                    border: 0,
+                    borderRadius: 0
+                },
+                }
+            },
+
+            MuiTablePagination: {
+                styleOverrides: {
+                    root: {
+                        color: '#212121',
+                        fontFamily: 'Johnson Text Regular',
+                        backgroundColor: '#ffffff',
+                        border: 0,
+                        borderRadius: 0
+                    },
+                    }
+                },
+    
+
+        
+        MuiTableHead: {
+            styleOverrides: {
+                root: {
+                    color: '#212121',
+                    fontFamily: 'Johnson Text Regular',
+                    backgroundColor: '#ffffff',
+                    border: 0,
+                    borderRadius: 0
+                },
+                }
+            },
+    
+
+        MuiDataGrid: {
+            styleOverrides: {
+                root: {
+                    fontFamily: 'Johnson Text Regular',
+                    fontSize: '1rem',
+                    lineHeight: '1.12rem',
+                    letterSpacing: '0em',
+                    color: '#212121',
+                    border: 0,
+                    '& .MuiTablePagination-root': {
+                        color: '#212121',
+                    },
+                    '& .MuiDataGrid-window': {
+                        color: '#212121',
+                    },
+                    '& .GridColumnMenu': {
+                        color: '#212121',
+                    },
+
+                },
+            },
+        },
+     
+        MuiTab:{
+            defaultProps: {
+                disableRipple: true,
+            },
+            styleOverrides: {
+                root: {
+                    fontFamily: 'Johnson Text Regular',
+                    fontSize: '1rem',
+                    lineHeight: '1.12rem',
+                    letterSpacing: '0em',
+                    color: '#212121',
+                    padding: '16px 8px',
+                    '&:hover': {
+                     color: '#eb1700',
+                    },
+                    '&:active': {
+                        color: '#212121',
+                    },
+                    '&.MuiTab-root.Mui-selected': {
+                        color: '#212121',
+                        fontFamily: 'Johnson Text Bold',
+                    },
+                    '&.disabled': {
+                        color: '#c1bbb3',
+                    },
+                },
+            },
+        },
+
         MuiSlider: {
             styleOverrides: {
                 root: {
@@ -122,7 +262,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1rem',
                         padding: '4px 8px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             color: '#fff',
                             backgroundColor: '#B80000',
@@ -144,7 +284,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1.12rem',
                         padding: '8px 16px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             color: '#fff',
                             backgroundColor: '#B80000',
@@ -166,7 +306,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1.5rem',
                         textTransform: 'none',
                         padding: '8px 16px',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             color: '#fff',
                             backgroundColor: '#B80000',
@@ -189,7 +329,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1rem',
                         padding: '4px 8px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             color: '#fff',
                             backgroundColor: '#564C47',
@@ -212,7 +352,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1.12rem',
                         padding: '8px 16px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             color: '#fff',
                             backgroundColor: '#564C47',
@@ -235,7 +375,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1.5rem',
                         textTransform: 'none',
                         padding: '8px 16px',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             color: '#fff',
                             backgroundColor: '#564C47',
@@ -256,13 +396,15 @@ const jnjTheme = createTheme({
                         fontSize: '0.87rem',
                         lineHeight: '1rem',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         padding: '4px 8px',
                         '&:hover': {
                             backgroundColor: '#B80000',
+                            color: '#fff',
                         },
                         '&:active': {
                             backgroundColor: '#F15D4D',
+                            color: '#fff',
                         },
                     },
                 },
@@ -276,13 +418,15 @@ const jnjTheme = createTheme({
                         fontSize: '1rem',
                         lineHeight: '1.12rem',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         padding: '8px 16px',
                         '&:hover': {
                             backgroundColor: '#B80000',
+                            color: '#fff',
                         },
                         '&:active': {
                             backgroundColor: '#F15D4D',
+                            color: '#fff',
                         },
                     },
                 },
@@ -296,13 +440,15 @@ const jnjTheme = createTheme({
                         fontSize: '1.12rem',
                         lineHeight: '1.5rem',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         padding: '8px 16px',
                         '&:hover': {
                             backgroundColor: '#B80000',
+                            color: '#fff',
                         },
                         '&:active': {
                             backgroundColor: '#F15D4D',
+                            color: '#fff',
                         },
                     },
                 },
@@ -317,7 +463,7 @@ const jnjTheme = createTheme({
                         fontSize: '0.87rem',
                         lineHeight: '1rem',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         padding: '4px 8px',
                         color: '#fff',
                         '&:hover': {
@@ -339,7 +485,7 @@ const jnjTheme = createTheme({
                         fontSize: '1rem',
                         lineHeight: '1.12rem',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         padding: '8px 16px',
                         color: '#fff',
                         '&:hover': {
@@ -361,7 +507,7 @@ const jnjTheme = createTheme({
                         fontSize: '1.12rem',
                         lineHeight: '1.5rem',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         padding: '8px 16px',
                         color: '#fff',
                         '&:hover': {
@@ -385,7 +531,7 @@ const jnjTheme = createTheme({
                         textTransform: 'none',
                         padding: '4px 8px',
                         color: '#212121',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             backgroundColor: '#B80000',
                             color: '#fff',
@@ -409,7 +555,7 @@ const jnjTheme = createTheme({
                         textTransform: 'none',
                         padding: '8px 16px',
                         color: '#212121',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             backgroundColor: '#B80000',
                             color: '#fff',
@@ -433,7 +579,7 @@ const jnjTheme = createTheme({
                         textTransform: 'none',
                         padding: '8px 16px',
                         color: '#212121',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             backgroundColor: '#B80000',
                             color: '#fff',
@@ -456,7 +602,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1rem',
                         padding: '4px 8px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             backgroundColor: '#564C47',
                             color: '#fff',
@@ -479,7 +625,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1.12rem',
                         padding: '8px 16px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             backgroundColor: '#564C47',
                             color: '#fff',
@@ -502,7 +648,7 @@ const jnjTheme = createTheme({
                         lineHeight: '1.5rem',
                         padding: '8px 16px',
                         textTransform: 'none',
-                        borderRadius: 100,
+                        borderRadius: 12,
                         '&:hover': {
                             backgroundColor: '#564C47',
                             color: '#fff',
@@ -601,8 +747,8 @@ const jnjTheme = createTheme({
         },
         h2: {
             fontFamily: 'Johnson Display Bold',
-            fontSize: '3rem',
-            lineHeight: '3rem',
+            fontSize: '3.8rem',
+            lineHeight: '3.5rem',
             letterSpacing: '0em',
             color: '#212121',
         },
@@ -629,20 +775,6 @@ const jnjTheme = createTheme({
         },
         h6: {
             fontFamily: 'Johnson Display Bold',
-            fontSize: '1.25rem',
-            lineHeight: '1rem',
-            letterSpacing: '0em',
-            color: '#212121',
-        },
-        subtitle1: {
-            fontFamily: 'Johnson Text Light',
-            fontSize: '1.25rem',
-            lineHeight: '1rem',
-            letterSpacing: '0em',
-            color: '#212121',
-        },
-        subtitle2: {
-            fontFamily: 'Johnson Text Light',
             fontSize: '1.25rem',
             lineHeight: '1rem',
             letterSpacing: '0em',
@@ -722,7 +854,7 @@ const jnjTheme = createTheme({
             lineHeight: '1.12rem',
         },
         caption: {
-            fontFamily: 'Johnson Text Light',
+            fontFamily: 'Johnson Text Regular',
             fontSize: '0.62rem',
             lineHeight: '1rem',
             letterSpacing: '0em',
@@ -741,6 +873,27 @@ const jnjTheme = createTheme({
             lineHeight: '1.5rem',
             letterSpacing: '0em',
             textTransform: 'none',
+        },
+        subtitle1: {
+            fontFamily: 'Johnson Text Light',
+            fontSize: '1.25rem',
+            lineHeight: '1rem',
+            letterSpacing: '0em',
+            color: '#212121',
+        },
+        subtitle2: {
+            fontFamily: 'Johnson Text Light',
+            fontSize: '1.25rem',
+            lineHeight: '1rem',
+            letterSpacing: '0em',
+            color: '#212121',
+        },
+        subHeader: {
+            fontFamily: 'Johnson Text Light',
+            fontSize: '2rem',
+            lineHeight: '2.5rem',
+            letterSpacing: '0em',
+            color: '#212121',
         },
         overline: undefined,
     },

@@ -196,7 +196,7 @@ table {
     --jnj-font-text-medium: url(./fonts/JohnsonText-Medium.woff2);
     --jnj-font-text-bold: url(./fonts/JohnsonText-Bold.woff2);
     --jnj-text-desktop-h1: 3.8rem;
-    --jnj-text-desktop-lineheigth-h1: 3.5rem;
+    --jnj-text-desktop-lineheigth-h1: 4.5rem;
     --jnj-text-desktop-h2: 3rem;
     --jnj-text-desktop-lineheigth-h2: 3rem;
     --jnj-text-desktop-h3: 2.4rem;
@@ -324,7 +324,7 @@ table {
 }
 
 @font-face {
-    font-family: "Johnson Display Ligth";
+    font-family: "Johnson Display Light";
     font-style: normal;
     font-weight: 400;
     src: url(./fonts/JohnsonDisplay-Light.woff2) format('woff2')
@@ -352,7 +352,7 @@ table {
 }
 
 @font-face {
-    font-family: "Johnson Text Ligth";
+    font-family: "Johnson Text Light";
     font-style: normal;
     font-weight: 400;
     src: url(./fonts/JohnsonText-Light.woff2) format('woff2')
@@ -1949,12 +1949,12 @@ hr {
     border-radius: var(--jnj-border-radius-32)
 }
 
-.jnj-background-image {
+/* .jnj-background-image {
     background-image: url(./JJ_BodyIllustration_Object_PetriDishBacteriaCultureGlovedHand_Colorway01-uExJnlEM.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
-}
+} */
 
 .jnj-button-large {
     background-color: var(--jnj-color-core-jnjred) !important;
