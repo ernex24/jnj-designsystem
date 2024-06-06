@@ -101,7 +101,9 @@ h6 {
 }
 
 .navbar {
-  background-color: var(--ifm-navbar-background-color);
+  background-color: var(--jnj-color-background-header) !important;
+  -webkit-backdrop-filter: var(--jnj-effect-blur-s);
+  backdrop-filter: var(--jnj-effect-blur-s);
   box-shadow: var(--jnj-effect-shadow-elevation-l);
   display: flex;
   height: var(--ifm-navbar-height);

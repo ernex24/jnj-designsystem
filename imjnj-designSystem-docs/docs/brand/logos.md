@@ -26,7 +26,7 @@ import MTLogoWhite from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_White.svg'
   All the J&J logos are available in .svg format, in the theme/logos folder is recommended to import the .svg files as React Components to be able to apply dinamic classes using the design system css classes.
 
      ```jsx
-    import { ReactComponent as IMLogoRed } from '@imjnj/tokens/dist/logos/JJ_IM_Logo_SingleLine_Red.svg';
+    import IMLogoRed from '@imjnj/tokens/dist/logos/JJ_IM_Logo_SingleLine_Red.svg';
     ```
 
 ## Innovative Medicine
@@ -39,9 +39,9 @@ import MTLogoWhite from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_White.svg'
     <br />
 
        ```jsx
-        <IMLogoRed/>
-        <IMLogoBlack/>
-        <IMLogoWhite className="jnj-color-background-core-black jnj-padding-8"  />
+        <img src={IMLogoRed} alt="JJ Logo"/>
+        <img src={IMLogoBlack} alt="JJ Logo"/>
+        <img src={MLogoWhite} alt="JJ Logo"/>
       ```
 
     ## J&J
@@ -52,10 +52,11 @@ import MTLogoWhite from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_White.svg'
         <JNJLogoWhite className="jnj-color-background-core-black jnj-padding-8" />
     </Stack>
   <br />
+
     ```jsx
-        <JNJLogoRed/>
-        <JNJLogoBlack/>
-        <JNJLogoWhite className="jnj-color-background-core-black jnj-padding-8" />
+        <img src={JNJLogoRed} alt="JJ Logo"/>
+        <img src={JNJLogoBlack} alt="JJ Logo"/>
+        <img src={JNJLogoWhite} alt="JJ Logo"/>
     ```
     ## Med Tech
 
@@ -65,10 +66,11 @@ import MTLogoWhite from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_White.svg'
         <MTLogoWhite className="jnj-color-background-core-black jnj-padding-8" />
     </Stack>
       <br />
+      
     ```jsx
-          <MTLogoRed/>
-          <MTLogoBlack/>
-          <MTLogoWhite className="jnj-color-background-core-black jnj-padding-8" />
+        <img src={MTLogoRed} alt="JJ Logo"/>
+        <img src={MTLogoBlack} alt="JJ Logo"/>
+        <img src={MTLogoWhite} alt="JJ Logo"/>
       ```
 
   </ThemeProvider>
