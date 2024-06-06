@@ -4,11 +4,13 @@ sidebar_position: 0
 
 # Installation
 
-Let's discover **IM Design system**.
+Let's discover **Our Design system**.
+
+Our design system is theme from Material UI for React, with all the J&J Styles comming from the new brand guidelines.
 
 ## Getting Started
 
-Get started by **creating a new app** or integrating the design system in a already created app.
+To get started you need to have installed the following development environment.
 
 ### What you'll need
 
@@ -22,7 +24,6 @@ Get started by **creating a new app** or integrating the design system in a alre
 
 ## Instaling the library
 
-This library is a theme for MUI with the styles of the  **New J&J brand**.
 The theme will automatically be added to your project after you run the command:
 
 ```bash
@@ -34,24 +35,21 @@ The command also installs all necessary dependencies you need to run the theme.
 
 ## Configure the library
 
-1. Add the **theme provider** from MUI and import the theme **jnjTheme** downloaded from the package manager :
+1. MUI use a react context **theme provider** you need to import the theme ptovider from MUI and the JNJ Theme from the package downloaded from the package manager:
 
 ```jsx title="src/main.jsx"
 import { ThemeProvider} from '@mui/material/styles';
-import jnjTheme from '@imjnj/tokens/dist';
-import '../theme/styles.css'
+import jnjTheme from '@imjnj/tokens/dist/theme.js';
+import '@imjnj/tokens/dist/styles.css'
 ```
 
-2.  2 You need to pass your complete app trough the theme provider and call the imported theme
+2.  2 You need to pass your app/components you want to style trough the theme provider and call the imported theme **jnjTheme**
 
 ```jsx title="src/main.jsx"
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+
     <ThemeProvider theme={jnjTheme}>
     <App />
     </ThemeProvider>
-  </React.StrictMode>,
-)
 ```
 
-And you will be able to use now all the components from MUI with the JNJ Brand theme applied
+You will be able to use now all the components from MUI with the JNJ Brand theme applied
