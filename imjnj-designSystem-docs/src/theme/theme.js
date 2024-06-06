@@ -79,11 +79,11 @@ const jnjTheme = createTheme({
     
     shadows: [
         "none",
-        "0px 4px 16px 0px rgb(0 0 0 / 6%)",
-        "0px 0px 8px 0px rgb(0 0 0 / 16%)",
-        "0px 4px 16px 0px rgb(0 0 0 / 16%)",
-        "0px 4px 32px 0px rgb(0 0 0 / 24%)",
-        "0px 4px 40px 0px rgb(0 0 0 / 32%)",
+        "0px 4px 16px 0px rgba(0, 0, 0, 0.06)",
+        "0px 0px 8px 0px rgba(0, 0, 0, 0.16)",
+        "0px 4px 16px 0px rgba(0, 0, 0, 0.16)",
+        "0px 4px 32px 0px rgba(0, 0, 0, 0.24)",
+        "0px 4px 40px 0px rgba(0, 0, 0, 0.32)",
         ...Array(20).fill('none')
       ],
     

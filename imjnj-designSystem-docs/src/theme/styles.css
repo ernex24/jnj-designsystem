@@ -225,11 +225,11 @@ table {
     --jnj-text-desktop-lineheigth-placeholder: 1.5rem;
     --jnj-text-desktop-eyebrow: 1.25rem;
     --jnj-text-desktop-lineheigth-eyebrow: 2.5rem;
-    --jnj-effect-shadow-elevation-xs: 0px 4px 16px rgb(0 0 0 / 10%);
-    --jnj-effect-shadow-elevation-s: 0px 0px 8px rgb(0 0 0 / 16%);
-    --jnj-effect-shadow-elevation-m: 0px 4px 16px rgb(0 0 0 / 16%);
-    --jnj-effect-shadow-elevation-l: 0px 4px 24px rgb(0 0 0 / 24%);
-    --jnj-effect-shadow-elevation-xl: 0px 4px 32px rgb(0 0 0 / 24%);
+    --jnj-effect-shadow-elevation-xs: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+    --jnj-effect-shadow-elevation-s: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+    --jnj-effect-shadow-elevation-m: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+    --jnj-effect-shadow-elevation-l: 0px 4px 32px 0px rgba(0, 0, 0, 0.24);
+    --jnj-effect-shadow-elevation-xl: 0px 4px 40px 0px rgba(0, 0, 0, 0.32);
     --jnj-effect-blur-xs: blur(8px);
     --jnj-effect-blur-s: blur(16px);
     --jnj-effect-blur-m: blur(32px);
@@ -2042,7 +2042,7 @@ hr {
 .jnj-header {
     filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, .4));
     background-color: var(--jnj-color-background-header) !important;
-    border-radius: var(--jnj-border-radius-8);
+    border-radius: var(--jnj-border-radius-16);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2063,7 +2063,7 @@ hr {
 .jnj-header-menu {
     filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, .4));
     background-color: var(--jnj-color-background-header) !important;
-    border-radius: var(--jnj-border-radius-8);
+    border-radius: var(--jnj-border-radius-16);
     display: flex;
     flex-direction: column;
     align-items: center;
