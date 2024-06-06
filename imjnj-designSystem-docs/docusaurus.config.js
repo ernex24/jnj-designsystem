@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'IM Design System',
-  tagline: 'Comprensive set of design tokens, components, and guidelines for building digital products at IM.',
+  title: 'Design System',
+  tagline: 'Beautiful and easy to use UI components for data heavy interfaces.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -20,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'J&J', // Usually your GitHub org/user name.
+  projectName: 'J&J Design System', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -72,13 +72,13 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
+          /* {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Documentation',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          }, */
+     /*      {to: '/blog', label: 'Blog', position: 'left'}, */
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
@@ -96,22 +96,22 @@ const config = {
                 label: 'Documentation',
                 to: '/docs/intro',
               },
+              {
+                label: 'Confluence page',
+                to: 'https://confluence.jnj.com/display/VADY/Design+System',
+              },
             ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Teams Channel',
+                href: 'https://teams.microsoft.com/l/channel/19%3AW-msHkqii1pelrdAJtrgBruvunING_T-xyPhvvI1mq41%40thread.tacv2/General?groupId=4caee6bf-abb9-49a3-a285-b11629d769c4&tenantId=3ac94b33-9135-4821-9502-eafda6592a35',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Community of practice',
+                href: 'https://jnj.sharepoint.com/teams/UXUICoPControlTower',
               },
             ],
           },
@@ -122,14 +122,10 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} IM Design System`,
+        copyright: `All rigths reserved © ${new Date().getFullYear()}`,
       },
       prism: {
         theme: prismThemes.github,

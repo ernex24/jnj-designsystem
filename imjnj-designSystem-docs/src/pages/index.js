@@ -6,50 +6,40 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Button from '@mui/material/Button';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import { motion, useScroll } from "framer-motion";
+import Box from '@mui/material/Box';
+
+import Typography from '@mui/material/Typography';
 
 import { ThemeProvider } from '@mui/material/styles';
 
 import jnjTheme from '../theme/theme'; // Adjust path as needed
 import '../theme/styles.css'
 
-
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-
-
+     <>
+    <div className='heroImage1'></div>
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title jnj-margin-bottom-16">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-        <Button  component={Link}  to="/docs/intro" variant="contained">Getting Started</Button>
-        </div>
+      <div className="container heroTitle1">
+      <Typography variant="h1" gutterBottom>Empowering your vision <br/> with our design system</Typography>
+      <Typography variant="subHeader" gutterBottom>Beautiful and easy to use UI components <br/> for data heavy interfaces.</Typography>
+      <Box  sx={{ mt: 4 }}><Button  component={Link}  to="/docs/intro" variant="contained">Getting Started</Button></Box>
       </div>
     </header>
-  
+    </>
   );
 }
 
 export default function Home() {
-  const { scrollYProgress } = useScroll();
   const {siteConfig} = useDocusaurusContext();
   return (
-    
     <ThemeProvider theme={jnjTheme}>
-       
-       <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }}/>
-
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Beautiful and easy to use UI components for data heavy interfaces.">
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+        {/* <main> <HomepageFeatures /> </main> */}
     </Layout>
     </ThemeProvider>
   );

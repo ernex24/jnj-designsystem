@@ -400,9 +400,11 @@ const jnjTheme = createTheme({
                         padding: '4px 8px',
                         '&:hover': {
                             backgroundColor: '#B80000',
+                            color: '#fff',
                         },
                         '&:active': {
                             backgroundColor: '#F15D4D',
+                            color: '#fff',
                         },
                     },
                 },
@@ -420,9 +422,11 @@ const jnjTheme = createTheme({
                         padding: '8px 16px',
                         '&:hover': {
                             backgroundColor: '#B80000',
+                            color: '#fff',
                         },
                         '&:active': {
                             backgroundColor: '#F15D4D',
+                            color: '#fff',
                         },
                     },
                 },
@@ -440,9 +444,11 @@ const jnjTheme = createTheme({
                         padding: '8px 16px',
                         '&:hover': {
                             backgroundColor: '#B80000',
+                            color: '#fff',
                         },
                         '&:active': {
                             backgroundColor: '#F15D4D',
+                            color: '#fff',
                         },
                     },
                 },
@@ -741,8 +747,8 @@ const jnjTheme = createTheme({
         },
         h2: {
             fontFamily: 'Johnson Display Bold',
-            fontSize: '3rem',
-            lineHeight: '3rem',
+            fontSize: '3.8rem',
+            lineHeight: '3.5rem',
             letterSpacing: '0em',
             color: '#212121',
         },
@@ -884,8 +890,8 @@ const jnjTheme = createTheme({
         },
         subHeader: {
             fontFamily: 'Johnson Text Light',
-            fontSize: '1.25rem',
-            lineHeight: '1rem',
+            fontSize: '2rem',
+            lineHeight: '2.5rem',
             letterSpacing: '0em',
             color: '#212121',
         },

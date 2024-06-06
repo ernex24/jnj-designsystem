@@ -129,3 +129,41 @@ h6 {
   flex-direction: column;
   margin-top: 78px;
 }
+
+.heroBanner_src-pages-index-module {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0 16px 16px 16px;
+  width: auto;
+  height: 88vh;
+  border-radius: 48px;
+}
+
+.titleWidth{
+  max-width: 50%;
+}
+
+.footer {
+    background-color: #ffffff;
+    color: var(--ifm-footer-color);
+    padding: var(--ifm-footer-padding-vertical) var(--ifm-footer-padding-horizontal);
+}
+
+.heroImage1 {
+  background-image: url('../../static/img/heroimage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: -22px;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.heroTitle1{
+  z-index: 20;
+}
