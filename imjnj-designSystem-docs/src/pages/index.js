@@ -22,9 +22,9 @@ function HomepageHeader() {
     <div className='heroImage1'></div>
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container heroTitle1">
-      <Typography variant="h1" gutterBottom>Empowering your vision <br/> with our design system</Typography>
-      <Typography variant="subHeader" gutterBottom>Beautiful and easy to use UI components <br/> for data heavy interfaces.</Typography>
-      <Box  sx={{ mt: 4 }}><Button  component={Link}  to="/docs/intro" variant="contained">Getting Started</Button></Box>
+      <Typography variant="h1" color='white' gutterBottom>Empowering your vision <br/> with our design system</Typography>
+      <Typography variant="subHeader" color='white' gutterBottom>Beautiful and easy to use UI components <br/> for data heavy interfaces.</Typography>
+      <Box  sx={{ mt: 4 }}><Button color='secondary' component={Link}  to="/docs/intro" variant="contained">Getting Started</Button></Box>
       </div>
     </header>
     </>
