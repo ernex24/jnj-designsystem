@@ -225,11 +225,11 @@ table {
     --jnj-text-desktop-lineheigth-placeholder: 1.5rem;
     --jnj-text-desktop-eyebrow: 1.25rem;
     --jnj-text-desktop-lineheigth-eyebrow: 2.5rem;
-    --jnj-effect-shadow-elevation-xs: 0px 4px 16px rgb(0 0 0 / 10%);
-    --jnj-effect-shadow-elevation-s: 0px 0px 8px rgb(0 0 0 / 16%);
-    --jnj-effect-shadow-elevation-m: 0px 4px 16px rgb(0 0 0 / 16%);
-    --jnj-effect-shadow-elevation-l: 0px 4px 24px rgb(0 0 0 / 24%);
-    --jnj-effect-shadow-elevation-xl: 0px 4px 32px rgb(0 0 0 / 24%);
+    --jnj-effect-shadow-elevation-xs: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+    --jnj-effect-shadow-elevation-s: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+    --jnj-effect-shadow-elevation-m: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+    --jnj-effect-shadow-elevation-l: 0px 4px 32px 0px rgba(0, 0, 0, 0.24);
+    --jnj-effect-shadow-elevation-xl:0px 4px 40px 0px rgba(0, 0, 0, 0.32);
     --jnj-effect-blur-xs: blur(8px);
     --jnj-effect-blur-s: blur(16px);
     --jnj-effect-blur-m: blur(32px);
@@ -294,7 +294,7 @@ table {
 .jnj-layout-card {
     padding: var(--jnj-space-32);
     margin-bottom: var(--jnj-space-8);
-    filter: drop-shadow(var(--jnj-effect-shadow-elevation-s));
+    box-shadow: var(--jnj-effect-shadow-elevation-s);
     border-radius: var(--jnj-border-radius-16);
     background-color: var(--jnj-color-background-card)
 }
@@ -302,7 +302,7 @@ table {
 .jnj-layout-card-dark {
     padding: var(--jnj-space-32);
     margin-bottom: var(--jnj-space-8);
-    filter: drop-shadow(var(--jnj-effect-shadow-elevation-s));
+    box-shadow: var(--jnj-effect-shadow-elevation-s);
     border-radius: var(--jnj-border-radius-16);
     background-color: var(--jnj-color-background-card-dark)
 }
@@ -1702,23 +1702,23 @@ html {
 }
 
 .jnj-effects-shadow-xs {
-    filter: drop-shadow(var(--jnj-effect-shadow-elevation-xs))
+    box-shadow: var(--jnj-effect-shadow-elevation-xs);
 }
 
 .jnj-effects-shadow-s {
-    filter: drop-shadow(var(--jnj-effect-shadow-elevation-s))
+    box-shadow: var(--jnj-effect-shadow-elevation-s);
 }
 
 .jnj-effects-shadow-m {
-    filter: drop-shadow(var(--jnj-effect-shadow-elevation-m))
+    box-shadow: var(--jnj-effect-shadow-elevation-m);
 }
 
 .jnj-effects-shadow-l {
-    filter: drop-shadow(var(--jnj-effect-shadow-elevation-l))
+    box-shadow: var(--jnj-effect-shadow-elevation-l);
 }
 
 .jnj-effects-shadow-xl {
-    filter: drop-shadow(var(--jnj-effect-shadow-elevation-xl))
+    box-shadow: var(--jnj-effect-shadow-elevation-xl);
 }
 
 .jnj-color-background-core-white {
@@ -2040,19 +2040,53 @@ hr {
 }
 
 .jnj-header {
-    filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, .5));
+    box-shadow: var(--jnj-effect-shadow-elevation-xl);
     background-color: var(--jnj-color-background-header) !important;
-    border-radius: var(--jnj-border-radius-8);
+    border-radius: var(--jnj-border-radius-16);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: var(--jnj-space-16);
-    -webkit-backdrop-filter: var(--jnj-effect-blur-l);
-    backdrop-filter: var(--jnj-effect-blur-l)
+    -webkit-backdrop-filter: var(--jnj-effect-blur-s);
+    backdrop-filter: var(--jnj-effect-blur-s);
+    margin: 8px;
+}
+
+.jnj-header-logo{
+    display: flex;
+    width: auto;
+    height: 32px;
+    max-height: 32px;
+    min-height: 32px;
+}
+
+.jnj-header-menu {
+    box-shadow: var(--jnj-effect-shadow-elevation-xl);
+    background-color: var(--jnj-color-background-header) !important;
+    border-radius: var(--jnj-border-radius-16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--jnj-space-16);
+    -webkit-backdrop-filter: var(--jnj-effect-blur-s);
+    backdrop-filter: var(--jnj-effect-blur-s);
+    height: 103px;
+    max-height: 103px;
+    min-height: 103px;
+    margin: 8px;
+}
+
+.jnj-header-menu-internal{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .jnj-header-dark {
-    filter: drop-shadow(0px 4px 16px rgb(0, 0, 0));
+    box-shadow: var(--jnj-effect-shadow-elevation-xl);
     background-color: var(--jnj-color-background-header-dark) !important;
     border-radius: var(--jnj-border-radius-8);
     display: flex;
