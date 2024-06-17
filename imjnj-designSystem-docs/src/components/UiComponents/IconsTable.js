@@ -629,8 +629,6 @@ const rows = [
     { id: 616, icon: <UIcons.ImageUserUp />, name: 'ImageUserUp' },
     { id: 617, icon: <UIcons.ImageUserX />, name: 'ImageUserX' },
     { id: 618, icon: <UIcons.ImageX />, name: 'ImageX' },
-
-
     { id: 626, icon: <UIcons.InfoCircle />, name: 'InfoCircle' },
     { id: 627, icon: <UIcons.InfoHexagon />, name: 'InfoHexagon' },
     { id: 628, icon: <UIcons.InfoOctagon />, name: 'InfoOctagon' },
@@ -642,12 +640,9 @@ const rows = [
     { id: 634, icon: <UIcons.ItalicSquare />, name: 'ItalicSquare' },
     { id: 635, icon: <UIcons.Key01 />, name: 'Key01' },
     { id: 636, icon: <UIcons.Key02 />, name: 'Key02' },
-
     { id: 638, icon: <UIcons.Laptop01 />, name: 'Laptop01' },
     { id: 639, icon: <UIcons.Laptop02 />, name: 'Laptop02' },
     { id: 640, icon: <UIcons.LayerSingle />, name: 'LayerSingle' },
-
-
     { id: 643, icon: <UIcons.LayoutAlt01 />, name: 'LayoutAlt01' },
     { id: 644, icon: <UIcons.LayoutAlt02 />, name: 'LayoutAlt02' },
     { id: 645, icon: <UIcons.LayoutAlt03 />, name: 'LayoutAlt03' },
@@ -655,20 +650,16 @@ const rows = [
     { id: 647, icon: <UIcons.LayoutBottom />, name: 'LayoutBottom' },
     { id: 648, icon: <UIcons.LayoutGrid01 />, name: 'LayoutGrid01' },
     { id: 649, icon: <UIcons.LayoutGrid02 />, name: 'LayoutGrid02' },
-  
- 
     { id: 652, icon: <UIcons.LayoutLeft />, name: 'LayoutLeft' },
     { id: 653, icon: <UIcons.LayoutRight />, name: 'LayoutRight' },
     { id: 654, icon: <UIcons.LayoutTop />, name: 'LayoutTop' },
     { id: 655, icon: <UIcons.LeftIndent01 />, name: 'LeftIndent01' },
     { id: 656, icon: <UIcons.LeftIndent02 />, name: 'LeftIndent02' },
-
     { id: 659, icon: <UIcons.Lightbulb01 />, name: 'Lightbulb01' },
     { id: 660, icon: <UIcons.Lightbulb02 />, name: 'Lightbulb02' },
     { id: 661, icon: <UIcons.Lightbulb03 />, name: 'Lightbulb03' },
     { id: 662, icon: <UIcons.Lightbulb04 />, name: 'Lightbulb04' },
     { id: 663, icon: <UIcons.Lightbulb05 />, name: 'Lightbulb05' },
-
     { id: 667, icon: <UIcons.LineChartDown01 />, name: 'LineChartDown01' },
     { id: 668, icon: <UIcons.LineChartDown02 />, name: 'LineChartDown02' },
     { id: 669, icon: <UIcons.LineChartDown03 />, name: 'LineChartDown03' },
@@ -697,8 +688,6 @@ const rows = [
     { id: 692, icon: <UIcons.Lock02 />, name: 'Lock02' },
     { id: 693, icon: <UIcons.Lock03 />, name: 'Lock03' },
     { id: 694, icon: <UIcons.Lock04 />, name: 'Lock04' },
-
-
     { id: 697, icon: <UIcons.LogIn01 />, name: 'LogIn01' },
     { id: 698, icon: <UIcons.LogIn02 />, name: 'LogIn02' },
     { id: 699, icon: <UIcons.LogIn03 />, name: 'LogIn03' },
@@ -710,7 +699,6 @@ const rows = [
     { id: 705, icon: <UIcons.Luggage01 />, name: 'Luggage01' },
     { id: 706, icon: <UIcons.Luggage02 />, name: 'Luggage02' },
     { id: 707, icon: <UIcons.Luggage03 />, name: 'Luggage03' },
-
     { id: 709, icon: <UIcons.MagicWand01 />, name: 'MagicWand01' },
     { id: 710, icon: <UIcons.MagicWand02 />, name: 'MagicWand02' },
     { id: 711, icon: <UIcons.Mail01 />, name: 'Mail01' },
@@ -720,17 +708,12 @@ const rows = [
     { id: 715, icon: <UIcons.Mail05 />, name: 'Mail05' },
     { id: 716, icon: <UIcons.Map01 />, name: 'Map01' },
     { id: 717, icon: <UIcons.Map02 />, name: 'Map02' },
-
-
-
     { id: 726, icon: <UIcons.MarkerPin01 />, name: 'MarkerPin01' },
     { id: 727, icon: <UIcons.MarkerPin02 />, name: 'MarkerPin02' },
     { id: 728, icon: <UIcons.MarkerPin03 />, name: 'MarkerPin03' },
     { id: 729, icon: <UIcons.MarkerPin04 />, name: 'MarkerPin04' },
     { id: 730, icon: <UIcons.MarkerPin05 />, name: 'MarkerPin05' },
     { id: 731, icon: <UIcons.MarkerPin06 />, name: 'MarkerPin06' },
-
-
     { id: 740, icon: <UIcons.Menu01 />, name: 'Menu01' },
     { id: 741, icon: <UIcons.Menu02 />, name: 'Menu02' },
     { id: 742, icon: <UIcons.Menu03 />, name: 'Menu03' },
@@ -764,10 +747,7 @@ const rows = [
     { id: 770, icon: <UIcons.MessageTextSquare02 />, name: 'MessageTextSquare02' },
     { id: 771, icon: <UIcons.MessageXCircle />, name: 'MessageXCircle' },
     { id: 772, icon: <UIcons.MessageXSquare />, name: 'MessageXSquare' },
-
-
     { id: 775, icon: <UIcons.Microscope />, name: 'Microscope' },
-
     { id: 777, icon: <UIcons.Minus />, name: 'Minus' },
     { id: 778, icon: <UIcons.MinusCircle />, name: 'MinusCircle' },
     { id: 779, icon: <UIcons.MinusSquare />, name: 'MinusSquare' },
@@ -784,18 +764,13 @@ const rows = [
     { id: 790, icon: <UIcons.MoonStar />, name: 'MoonStar' },
     { id: 791, icon: <UIcons.Mouse />, name: 'Mouse' },
     { id: 792, icon: <UIcons.Move />, name: 'Move' },
-
-
     { id: 795, icon: <UIcons.NavigationPointerOff01 />, name: 'NavigationPointerOff01' },
     { id: 796, icon: <UIcons.NavigationPointerOff02 />, name: 'NavigationPointerOff02' },
     { id: 797, icon: <UIcons.NavigationPointer01 />, name: 'NavigationPointer01' },
     { id: 798, icon: <UIcons.NavigationPointer02 />, name: 'NavigationPointer02' },
-
     { id: 802, icon: <UIcons.NotificationBox />, name: 'NotificationBox' },
     { id: 803, icon: <UIcons.NotificationMessage />, name: 'NotificationMessage' },
-
     { id: 805, icon: <UIcons.Octagon />, name: 'Octagon' },
-
     { id: 807, icon: <UIcons.PackageCheck />, name: 'PackageCheck' },
     { id: 808, icon: <UIcons.PackageMinus />, name: 'PackageMinus' },
     { id: 809, icon: <UIcons.PackagePlus />, name: 'PackagePlus' },
@@ -837,7 +812,6 @@ const rows = [
     { id: 845, icon: <UIcons.PieChart02 />, name: 'PieChart02' },
     { id: 846, icon: <UIcons.PieChart03 />, name: 'PieChart03' },
     { id: 847, icon: <UIcons.PieChart04 />, name: 'PieChart04' },
-
     { id: 849, icon: <UIcons.Pilcrow01 />, name: 'Pilcrow01' },
     { id: 850, icon: <UIcons.Pilcrow02 />, name: 'Pilcrow02' },
     { id: 851, icon: <UIcons.PilcrowSquare />, name: 'PilcrowSquare' },
@@ -849,8 +823,6 @@ const rows = [
     { id: 857, icon: <UIcons.Play />, name: 'Play' },
     { id: 858, icon: <UIcons.PlusCircle />, name: 'PlusCircle' },
     { id: 859, icon: <UIcons.PlusSquare />, name: 'PlusSquare' },
-
-
     { id: 868, icon: <UIcons.Power01 />, name: 'Power01' },
     { id: 869, icon: <UIcons.Power02 />, name: 'Power02' },
     { id: 870, icon: <UIcons.Power03 />, name: 'Power03' },
@@ -860,7 +832,6 @@ const rows = [
     { id: 874, icon: <UIcons.Printer />, name: 'Printer' },
     { id: 875, icon: <UIcons.PuzzlePiece01 />, name: 'PuzzlePiece01' },
     { id: 876, icon: <UIcons.PuzzlePiece02 />, name: 'PuzzlePiece02' },
-
     { id: 885, icon: <UIcons.QrCode01 />, name: 'QrCode01' },
     { id: 886, icon: <UIcons.QrCode02 />, name: 'QrCode02' },
     { id: 887, icon: <UIcons.ReceiptCheck />, name: 'ReceiptCheck' },
@@ -870,7 +841,6 @@ const rows = [
     { id: 891, icon: <UIcons.Recording03 />, name: 'Recording03' },
     { id: 892, icon: <UIcons.Reflect01 />, name: 'Reflect01' },
     { id: 893, icon: <UIcons.Reflect02 />, name: 'Reflect02' },
-
     { id: 896, icon: <UIcons.RefreshCcw01 />, name: 'RefreshCcw01' },
     { id: 897, icon: <UIcons.RefreshCcw02 />, name: 'RefreshCcw02' },
     { id: 898, icon: <UIcons.RefreshCcw03 />, name: 'RefreshCcw03' },
@@ -881,26 +851,20 @@ const rows = [
     { id: 903, icon: <UIcons.Repeat02 />, name: 'Repeat02' },
     { id: 904, icon: <UIcons.Repeat03 />, name: 'Repeat03' },
     { id: 905, icon: <UIcons.Repeat04 />, name: 'Repeat04' },
-
-
     { id: 919, icon: <UIcons.ReverseLeft />, name: 'ReverseLeft' },
     { id: 920, icon: <UIcons.ReverseRight />, name: 'ReverseRight' },
     { id: 921, icon: <UIcons.RightIndent01 />, name: 'RightIndent01' },
     { id: 922, icon: <UIcons.RightIndent02 />, name: 'RightIndent02' },
-
     { id: 926, icon: <UIcons.Rss01 />, name: 'Rss01' },
     { id: 927, icon: <UIcons.Rss02 />, name: 'Rss02' },
     { id: 928, icon: <UIcons.Ruler />, name: 'Ruler' },
-
     { id: 930, icon: <UIcons.Save01 />, name: 'Save01' },
     { id: 931, icon: <UIcons.Save02 />, name: 'Save02' },
     { id: 932, icon: <UIcons.Save03 />, name: 'Save03' },
     { id: 933, icon: <UIcons.Scale01 />, name: 'Scale01' },
     { id: 934, icon: <UIcons.Scale02 />, name: 'Scale02' },
-
     { id: 938, icon: <UIcons.Scales01 />, name: 'Scales01' },
     { id: 939, icon: <UIcons.Scales02 />, name: 'Scales02' },
-
     { id: 942, icon: <UIcons.Scan />, name: 'Scan' },
     { id: 943, icon: <UIcons.Scissors01 />, name: 'Scissors01' },
     { id: 944, icon: <UIcons.Scissors02 />, name: 'Scissors02' },
@@ -923,7 +887,6 @@ const rows = [
     { id: 961, icon: <UIcons.Settings02 />, name: 'Settings02' },
     { id: 962, icon: <UIcons.Settings03 />, name: 'Settings03' },
     { id: 963, icon: <UIcons.Settings04 />, name: 'Settings04' },
-
     { id: 966, icon: <UIcons.Share01 />, name: 'Share01' },
     { id: 967, icon: <UIcons.Share02 />, name: 'Share02' },
     { id: 968, icon: <UIcons.Share03 />, name: 'Share03' },
@@ -937,28 +900,19 @@ const rows = [
     { id: 976, icon: <UIcons.ShieldOff />, name: 'ShieldOff' },
     { id: 977, icon: <UIcons.ShieldPlus />, name: 'ShieldPlus' },
     { id: 978, icon: <UIcons.ShieldTick />, name: 'ShieldTick' },
-
     { id: 980, icon: <UIcons.ShoppingCart01 />, name: 'ShoppingCart01' },
     { id: 981, icon: <UIcons.ShoppingCart02 />, name: 'ShoppingCart02' },
     { id: 982, icon: <UIcons.ShoppingCart03 />, name: 'ShoppingCart03' },
-  
-    
-
     { id: 993, icon: <UIcons.Simcard />, name: 'Simcard' },
-
     { id: 996, icon: <UIcons.SkipBack />, name: 'SkipBack' },
     { id: 997, icon: <UIcons.SkipForward />, name: 'SkipForward' },
     { id: 998, icon: <UIcons.SlashCircle01 />, name: 'SlashCircle01' },
     { id: 999, icon: <UIcons.SlashCircle02 />, name: 'SlashCircle02' },
     { id: 1000, icon: <UIcons.SlashOctagon />, name: 'SlashOctagon' },
-
-
     { id: 1003, icon: <UIcons.Sliders01 />, name: 'Sliders01' },
     { id: 1004, icon: <UIcons.Sliders02 />, name: 'Sliders02' },
     { id: 1005, icon: <UIcons.Sliders03 />, name: 'Sliders03' },
     { id: 1006, icon: <UIcons.Sliders04 />, name: 'Sliders04' },
-  
-
     { id: 1014, icon: <UIcons.SpacingHeight01 />, name: 'SpacingHeight01' },
     { id: 1015, icon: <UIcons.SpacingHeight02 />, name: 'SpacingHeight02' },
     { id: 1016, icon: <UIcons.SpacingWidth01 />, name: 'SpacingWidth01' },
@@ -966,7 +920,6 @@ const rows = [
     { id: 1018, icon: <UIcons.Speaker01 />, name: 'Speaker01' },
     { id: 1019, icon: <UIcons.Speaker02 />, name: 'Speaker02' },
     { id: 1020, icon: <UIcons.Speaker03 />, name: 'Speaker03' },
-
     { id: 1023, icon: <UIcons.Star01 />, name: 'Star01' },
     { id: 1024, icon: <UIcons.Star02 />, name: 'Star02' },
     { id: 1025, icon: <UIcons.Star03 />, name: 'Star03' },
@@ -974,19 +927,15 @@ const rows = [
     { id: 1027, icon: <UIcons.Star05 />, name: 'Star05' },
     { id: 1028, icon: <UIcons.Star06 />, name: 'Star06' },
     { id: 1029, icon: <UIcons.Star07 />, name: 'Star07' },
-
-
     { id: 1033, icon: <UIcons.StickerCircle />, name: 'StickerCircle' },
     { id: 1034, icon: <UIcons.StickerSquare />, name: 'StickerSquare' },
     { id: 1035, icon: <UIcons.StopCircle />, name: 'StopCircle' },
     { id: 1036, icon: <UIcons.StopSquare />, name: 'StopSquare' },
     { id: 1037, icon: <UIcons.Stop />, name: 'Stop' },
-
     { id: 1039, icon: <UIcons.Sun />, name: 'Sun' },
     { id: 1040, icon: <UIcons.SunSetting01 />, name: 'SunSetting01' },
     { id: 1041, icon: <UIcons.SunSetting02 />, name: 'SunSetting02' },
     { id: 1042, icon: <UIcons.SunSetting03 />, name: 'SunSetting03' },
-
     { id: 1046, icon: <UIcons.SwitchHorizontal01 />, name: 'SwitchHorizontal01' },
     { id: 1047, icon: <UIcons.SwitchHorizontal02 />, name: 'SwitchHorizontal02' },
     { id: 1048, icon: <UIcons.SwitchVertical01 />, name: 'SwitchVertical01' },

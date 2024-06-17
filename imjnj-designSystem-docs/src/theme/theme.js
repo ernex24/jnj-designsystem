@@ -89,11 +89,80 @@ const jnjTheme = createTheme({
     
     components: {
 
-        MuiCssBaseline: {
+        MuiInputLabel: {
             styleOverrides: {
-               
-            }
+                root: {
+                fontFamily: 'Johnson Text Medium',
+                fontSize: '14px',
+                position: 'static',
+            transform: 'none',
+                '&.Mui-disabled': {
+                    color: '#A39992'
+                  },
+                }
+            },
+        },
+
+        MuiInputBase: {
+            styleOverrides: {
+              root: {
+
+                border: '1px solid #A39992', // Default border
+                borderRadius: '8px', // Default border radius
+                fontFamily: 'Johnson Text Regular',
+                lineHeight: '24px',
+                color: '#212121',
+  
+                '&:hover': {
+                  borderColor: '#212121', // Change border color on hover
+                },
+                '&.Mui-focused': {
+                  borderColor: '#eb1700', // Change border color on focus
+                  boxShadow: `0 0 0 3px rgba(235, 23, 0, 0.5)`, // Box shadow when focused
+                },
+                '&.Mui-disabled': {
+                  borderColor: '#F1EFED', // Change border color when disabled
+                  backgroundColor: '#F1EFED', // Change background color when disabled
+                  color: '#A39992', // Change text color when disabled
+                },
+                '&.Mui-error': {
+                  color: '#eb1700',
+                  borderColor: '#D32F2F', // Change border color on error
+                },
+              },
+              input: {
+                padding: '0px',
+                '&::placeholder': {
+                  color: '#A39992', // Placeholder text color
+                  opacity: 1,
+                },
+              },
+            },
+            variants: [
+              {
+                props: { size: 'small' },
+                style: {
+                  fontSize: '14px',
+                  padding: '5px 8px',
+                },
+              },
+              {
+                props: { size: 'medium' },
+                style: {
+                  fontSize: '16px',
+                  padding: '8px 12px',
+                },
+              },
+              {
+                props: { size: 'large' },
+                style: {
+                  fontSize: '18px',
+                  padding: '10px 16px',
+                },
+              },
+            ],
           },
+          
         MuiTable: {
         styleOverrides: {
             root: {
