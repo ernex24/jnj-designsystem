@@ -5,9 +5,9 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import { ThemeProvider } from '@mui/material/styles';
 import jnjTheme from '../../src/theme/theme';
-import InputLabel from '@mui/material/InputLabel';
-import InputBase from '@mui/material/InputBase';
-import FormControl from '@mui/material/FormControl';
+import { InputBase, FormControl, InputLabel, FormHelperText, InputAdornment } from '@mui/material';
+
+import { SearchSm } from "../../src/theme/icons-react/build/cjs/Index.js";
 
 # Inputs
 
@@ -17,41 +17,42 @@ See complete components documentation from [MUI Input](https://mui.com/material-
 
     <Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
         <FormControl variant="standard">
-            <InputLabel shrink sx={{ mt: -4 }} >Size</InputLabel>
-            <InputBase size='small' placeholder="Small"/>
+            <InputLabel shrink >Size</InputLabel>
+            <InputBase size='small' placeholder="Small" fullWidth />
+            <FormHelperText>Helper text for small input</FormHelperText>
         </FormControl>
 
         <FormControl variant="standard">
-            <InputLabel shrink sx={{ mt: -4 }}>Size</InputLabel>
-            <InputBase size='medium' placeholder="Medium"/>
+            <InputLabel shrink >Size</InputLabel>
+            <InputBase size='medium' placeholder="Medium" fullWidth />
+            <FormHelperText>Helper text for medium input</FormHelperText>
         </FormControl>
 
         <FormControl variant="standard">
-            <InputLabel shrink sx={{ mt: -4 }}>Size</InputLabel>
-            <InputBase size='large' placeholder="Large"/>
+            <InputLabel shrink >Size</InputLabel>
+            <InputBase size='large' placeholder="Large" fullWidth />
+            <FormHelperText>Helper text for large input</FormHelperText>
         </FormControl>
 
     </Stack>
   <br/>
     <Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
 
-
         <FormControl disabled variant="standard">
-                <InputLabel shrink sx={{ mt: -4 }}>Status</InputLabel>
-                <InputBase size='medium' placeholder="Disabled"/>
+                <InputLabel shrink >Status</InputLabel>
+                <InputBase  fullWidth size='medium' placeholder="Disabled" fullWidth />
+                <FormHelperText>Helper text for input</FormHelperText>
         </FormControl>
 
         <FormControl error variant="standard">
-            <InputLabel shrink sx={{ mt: -4 }}>Status</InputLabel>
-            <InputBase size='medium' placeholder="Error"/>
+            <InputLabel shrink>Status</InputLabel>
+            <InputBase size='medium' placeholder="Error" fullWidth />
+            <FormHelperText>Helper text for input</FormHelperText>
         </FormControl>
-
-    
-
 
     </Stack>
 
- </ThemeProvider>
+
 
 ### Import
 
@@ -69,5 +70,39 @@ import FormControl from '@mui/material/FormControl';
 
 ```
 
+### Inputs with icons
 
+  <br/>  <br/>
+   <Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
+
+        <FormControl variant="standard">
+                <InputLabel shrink>Status</InputLabel>
+                <InputBase 
+                    size='medium' 
+                    placeholder="Disabled" 
+                    endAdornment={
+                    <InputAdornment position="end">
+                      <SearchSm/>
+                    </InputAdornment>
+                    } 
+                   />
+                <FormHelperText>Helper text for disabled input</FormHelperText>
+        </FormControl>
+
+        <FormControl variant="standard">
+            <InputLabel shrink >Leading Icon</InputLabel>
+            <InputBase 
+                size='medium'
+                placeholder="Search"
+                startAdornment={
+                    <InputAdornment position="start">
+                      <SearchSm/>
+                    </InputAdornment>
+          } />
+            <FormHelperText>Helper text for leading icon input</FormHelperText>
+        </FormControl>
+
+    </Stack>
+
+ </ThemeProvider>
     

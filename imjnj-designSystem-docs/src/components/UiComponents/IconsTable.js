@@ -1076,6 +1076,7 @@ export default function IconsDataTable() {
   return (
     <div style={{ height: 700, width: '100%' }}>
          <TextField
+        placeholder='Search Icon'
         label="Filter by name"
         variant="outlined"
         fullWidth
