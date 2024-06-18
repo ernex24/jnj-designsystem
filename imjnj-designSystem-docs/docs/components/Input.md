@@ -6,8 +6,9 @@ import TextField from '@mui/material/TextField';
 import { ThemeProvider } from '@mui/material/styles';
 import jnjTheme from '../../src/theme/theme';
 import { InputBase, FormControl, InputLabel, FormHelperText, InputAdornment } from '@mui/material';
-
+import Box from '@mui/material/Box';
 import { SearchSm } from "../../src/theme/icons-react/build/cjs/Index.js";
+import MenuItem from '@mui/material/MenuItem';
 
 # Inputs
 
@@ -16,57 +17,85 @@ See complete components documentation from [MUI Input](https://mui.com/material-
  <ThemeProvider theme={jnjTheme}>
 
     <Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
-        <FormControl variant="standard">
-            <InputLabel shrink >Size</InputLabel>
-            <InputBase size='small' placeholder="Small" fullWidth />
-            <FormHelperText>Helper text for small input</FormHelperText>
-        </FormControl>
-
-        <FormControl variant="standard">
-            <InputLabel shrink >Size</InputLabel>
-            <InputBase size='medium' placeholder="Medium" fullWidth />
-            <FormHelperText>Helper text for medium input</FormHelperText>
-        </FormControl>
-
-        <FormControl variant="standard">
-            <InputLabel shrink >Size</InputLabel>
-            <InputBase size='large' placeholder="Large" fullWidth />
-            <FormHelperText>Helper text for large input</FormHelperText>
-        </FormControl>
+       
+        <TextField 
+            InputLabelProps={{ shrink: true }} 
+            placeholder='Small' label="Size" 
+            variant="outlined"  
+            size="small"
+        />
+        
+        <TextField 
+            InputLabelProps={{ shrink: true }} 
+            placeholder='Medium' label="Size" 
+            variant="outlined" 
+            size="medium" 
+        />
+        
+        <TextField 
+            InputLabelProps={{ shrink: true }} 
+            placeholder='Large' 
+            label="Size" 
+            variant="outlined" 
+            size="large" 
+        />
 
     </Stack>
+
   <br/>
+
     <Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
+        
+        <TextField 
+            disabled 
+            InputLabelProps={{ shrink: true }} 
+            placeholder='Disabled' 
+            label="Status" 
+            variant="outlined" 
+            size="medium" 
+        />
 
-        <FormControl disabled variant="standard">
-                <InputLabel shrink >Status</InputLabel>
-                <InputBase  fullWidth size='medium' placeholder="Disabled" fullWidth />
-                <FormHelperText>Helper text for input</FormHelperText>
-        </FormControl>
-
-        <FormControl error variant="standard">
-            <InputLabel shrink>Status</InputLabel>
-            <InputBase size='medium' placeholder="Error" fullWidth />
-            <FormHelperText>Helper text for input</FormHelperText>
-        </FormControl>
-
-    </Stack>
-
+        <TextField 
+            error 
+            InputLabelProps={{ shrink: true }} 
+            placeholder='Error' 
+            label="Status" 
+            variant="outlined" 
+            size="medium" 
+            helperText="Please enter your name"
+        />
+    </Stack >
 
 
 ### Import
 
 ```jsx
 
-import InputLabel from '@mui/material/InputLabel';
-import InputBase from '@mui/material/InputBase';
-import FormControl from '@mui/material/FormControl';
+    import TextField from '@mui/material/TextField';
 
+     <TextField 
+        placeholder='Small' 
+        label="Size" 
+        variant="outlined"  
+        size="small"
+        InputLabelProps={{ shrink: true }} 
+       />
 
-<FormControl variant="standard">
-    <InputLabel shrink sx={{ mt: -4 }}>Label</InputLabel>
-    <InputBase size='small' placeholder="Enter text"/>
-</FormControl>
+     <TextField 
+        placeholder='Medium' 
+        label="Size" 
+        variant="outlined" 
+        size="medium" 
+        InputLabelProps={{ shrink: true }} 
+     />
+    
+     <TextField 
+        placeholder='Large'
+        label="Size"
+        variant="outlined"
+        size="large"
+        InputLabelProps={{ shrink: true }} 
+     />
 
 ```
 
@@ -75,34 +104,176 @@ import FormControl from '@mui/material/FormControl';
   <br/>  <br/>
    <Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
 
-        <FormControl variant="standard">
-                <InputLabel shrink>Status</InputLabel>
-                <InputBase 
-                    size='medium' 
-                    placeholder="Disabled" 
-                    endAdornment={
-                    <InputAdornment position="end">
-                      <SearchSm/>
-                    </InputAdornment>
-                    } 
-                   />
-                <FormHelperText>Helper text for disabled input</FormHelperText>
-        </FormControl>
 
-        <FormControl variant="standard">
-            <InputLabel shrink >Leading Icon</InputLabel>
-            <InputBase 
-                size='medium'
-                placeholder="Search"
-                startAdornment={
-                    <InputAdornment position="start">
-                      <SearchSm/>
-                    </InputAdornment>
-          } />
-            <FormHelperText>Helper text for leading icon input</FormHelperText>
-        </FormControl>
+     <TextField 
+        placeholder='Start'
+        label="Icon"
+        variant="outlined"
+        size="large"
+        InputLabelProps={{ shrink: true }} 
+         InputProps={{
+            startAdornment: <InputAdornment position="start"><SearchSm/></InputAdornment>,
+          }}
+     />
+
+    <TextField 
+        placeholder='End'
+        label="Icon"
+        variant="outlined"
+        size="large"
+        InputLabelProps={{ shrink: true }} 
+         InputProps={{
+            endAdornment: <InputAdornment position="end"><SearchSm/></InputAdornment>,
+          }}
+     />
 
     </Stack>
+    
+  <br/>  <br/>
+
+    ```jsx
+
+import { InputAdornment } from '@mui/material';
+ 
+    <TextField 
+        placeholder='Start'
+        label="Icon"
+        variant="outlined"
+        size="large"
+        InputLabelProps={{ shrink: true }} 
+         InputProps={{
+            startAdornment: <InputAdornment position="start"><Icon/></InputAdornment>,
+        }}
+    />
+
+    <TextField 
+        placeholder='End'
+        label="Icon"
+        variant="outlined"
+        size="large"
+        InputLabelProps={{ shrink: true }} 
+         InputProps={{
+            endAdornment: <InputAdornment position="end"><Icon/></InputAdornment>,
+          }}
+    />
+
+```
+
+### Inputs with formats
+
+  <br/>  <br/>
+   <Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
+
+
+
+    <TextField 
+        placeholder='Start'
+        label="Icon"
+        variant="outlined"
+        size="large"
+        helperText="Please enter your name"
+        InputLabelProps={{ shrink: true }} 
+         InputProps={{
+            startAdornment: <InputAdornment position="start">$</InputAdornment>,
+          }}
+    />
+
+
+    <TextField 
+        placeholder='End'
+        label="Icon"
+        variant="outlined"
+        size="large"
+        InputLabelProps={{ shrink: true }} 
+        helperText="Please enter your name"
+         InputProps={{
+            endAdornment: <InputAdornment position="end">€</InputAdornment>,
+          }}
+    />
+
+    </Stack>
+    
+  <br/>  <br/>
+
+    ```jsx
+
+import { InputAdornment } from '@mui/material';
+ 
+    <TextField 
+        placeholder='Start'
+        label="Icon"
+        variant="outlined"
+        size="large"
+        InputLabelProps={{ shrink: true }} 
+         InputProps={{
+            startAdornment: <InputAdornment position="start"><Icon/></InputAdornment>,
+          }}
+    />
+
+    <TextField 
+        placeholder='End'
+        label="Icon"
+        variant="outlined"
+        size="large"
+        InputLabelProps={{ shrink: true }} 
+         InputProps={{
+            endAdornment: <InputAdornment position="end"><Icon/></InputAdornment>,
+          }}
+    />
+
+```
+
+
+### Selectors
+
+   <Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
+        <TextField 
+            select
+            fullWidth
+            placeholder='Select'
+            label="Icon"
+            variant="outlined"
+            size="medium"
+            defaultValue="000"
+            InputProps={{ startAdornment: <InputAdornment position="start">€</InputAdornment> }}
+            InputLabelProps={{ shrink: true }} 
+            >
+                <MenuItem value="100"> 100 </MenuItem>
+                <MenuItem value="200"> 200 </MenuItem>
+                <MenuItem value="300"> 300 </MenuItem>
+                <MenuItem value="400"> 400 </MenuItem>
+        </TextField>
+    </Stack>
+    
+  <br/>  <br/>
+
+    ```jsx
+
+import { InputAdornment } from '@mui/material';
+ 
+    <TextField 
+        placeholder='Start'
+        label="Icon"
+        variant="outlined"
+        size="large"
+        InputLabelProps={{ shrink: true }} 
+         InputProps={{
+            startAdornment: <InputAdornment position="start"><Icon/></InputAdornment>,
+          }}
+    />
+
+    <TextField 
+        placeholder='End'
+        label="Icon"
+        variant="outlined"
+        size="large"
+        InputLabelProps={{ shrink: true }} 
+         InputProps={{
+            endAdornment: <InputAdornment position="end"><Icon/></InputAdornment>,
+          }}
+    />
+
+```
 
  </ThemeProvider>
     

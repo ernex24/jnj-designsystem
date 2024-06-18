@@ -89,79 +89,200 @@ const jnjTheme = createTheme({
     
     components: {
 
-        MuiInputLabel: {
-            styleOverrides: {
-                root: {
-                fontFamily: 'Johnson Text Medium',
-                fontSize: '14px',
-                position: 'static',
-            transform: 'none',
-                '&.Mui-disabled': {
-                    color: '#A39992'
-                  },
-                }
-            },
-        },
-
-        MuiInputBase: {
+        MuiOutlinedInput: {
             styleOverrides: {
               root: {
-
-                border: '1px solid #A39992', // Default border
-                borderRadius: '8px', // Default border radius
-                fontFamily: 'Johnson Text Regular',
-                lineHeight: '24px',
-                color: '#212121',
-  
-                '&:hover': {
-                  borderColor: '#212121', // Change border color on hover
+                borderRadius: '8px', // Set the border radius to make it rounded
+                fontSize: '16px',
+                '& fieldset': {
+                  borderColor: '#A39992', // Default border color
                 },
-                '&.Mui-focused': {
-                  borderColor: '#eb1700', // Change border color on focus
-                  boxShadow: `0 0 0 3px rgba(235, 23, 0, 0.5)`, // Box shadow when focused
+                '& .MuiInputLabel-root': {
+                  position: 'static',
+                  transform: 'none',
                 },
-                '&.Mui-disabled': {
+                '&:hover fieldset': {
+                  borderColor: '#212121 !important', // Change border color on hover
+                },
+                '&.Mui-focused fieldset': {
+                  borderColor: '#eb1700 !important', // Change border color on focus
+                  boxShadow: `0 0 0 3px rgba(235, 23, 0, 0.2)`, // Box shadow when focused
+                },
+                '&.Mui-disabled fieldset': {
                   borderColor: '#F1EFED', // Change border color when disabled
                   backgroundColor: '#F1EFED', // Change background color when disabled
-                  color: '#A39992', // Change text color when disabled
+                  color: '#C1BBB3',
                 },
-                '&.Mui-error': {
-                  color: '#eb1700',
+                '&.Mui-error fieldset': {
                   borderColor: '#D32F2F', // Change border color on error
+                },
+                '& legend': {
+                  width: '0', // Remove space of the legend
+                  visibility: 'hidden', // Hide the legend
                 },
               },
               input: {
-                padding: '0px',
+                fontFamily: 'Johnson Text Regular',
+                lineHeight: '24px',
+                color: '#212121',
                 '&::placeholder': {
                   color: '#A39992', // Placeholder text color
                   opacity: 1,
                 },
-              },
-            },
             variants: [
               {
                 props: { size: 'small' },
                 style: {
-                  fontSize: '14px',
-                  padding: '5px 8px',
+                    padding: '6px 8px',
+                    fontSize: '14px',
                 },
               },
               {
                 props: { size: 'medium' },
                 style: {
-                  fontSize: '16px',
-                  padding: '8px 12px',
+                    padding: '8px 8px',
+                    fontSize: '16px',
                 },
               },
               {
                 props: { size: 'large' },
                 style: {
-                  fontSize: '18px',
-                  padding: '10px 16px',
+                    padding: '12px 8px',
+                    fontSize: '18px',
                 },
               },
             ],
+        },
+        },
           },
+
+        MuiInputLabel: {
+            styleOverrides: {
+              root: {
+                fontFamily: 'Johnson Text Medium',
+                fontSize: '14px',
+                position: 'static',
+                transform: 'none',
+                color: 'black', // Change this to your desired label color
+                '&.Mui-disabled': {
+                  color: '#A39992'
+                },
+                shrink: {
+                    transform: 'none',
+                  },
+              },
+            },
+          },
+
+        // MuiTextField: {
+        //     styleOverrides: {
+        //       root: {
+        //         '& .MuiInputBase-root': {
+        //           borderRadius: '4px', // Default border radius
+        //           fontFamily: 'Johnson Text Regular',
+        //           lineHeight: '24px',
+        //           fontSize: '16px',
+        //           color: '#212121',
+        //           margin: 0,
+        //           '&:hover': {
+        //           },
+        //           '&.Mui-focused': {
+        //             borderColor: '#eb1700', // Change border color on focus
+        //             boxShadow: `0 0 0 3px rgba(235, 23, 0, 0.5)`, // Box shadow when focused
+        //           },
+        //           '&.Mui-disabled': {
+        //             borderColor: '#F1EFED', // Change border color when disabled
+        //             backgroundColor: '#F1EFED', // Change background color when disabled
+        //             color: '#A39992', // Change text color when disabled
+        //           },
+        //           '&.Mui-error': {
+        //             color: '#eb1700',
+        //             borderColor: '#D32F2F', // Change border color on error
+        //           },
+        //         },
+        //         '& .MuiInputBase-input': {
+        //           padding: '0px',
+        //           '&::placeholder': {
+        //             color: '#A39992', // Placeholder text color
+        //             opacity: 1,
+        //           },
+        //         },
+        //         'MuiOutlinedInput-notchedOutline': {
+        //             border: '1px solid #A39992', 
+        //         },
+        //         '& .MuiInputLabel-root': {
+        //           fontFamily: 'Johnson Text Medium',
+        //           fontSize: '14px',
+        //           position: 'static',
+        //           transform: 'none',
+        //           '&.Mui-disabled': {
+        //             color: '#A39992'
+        //           },
+        //         },
+        //       },
+        //     },
+        //   },
+        
+
+        // MuiInputBase: {
+        //     styleOverrides: {
+        //       root: {
+
+        //         border: '1px solid #A39992', // Default border
+        //         borderRadius: '8px', // Default border radius
+        //         fontFamily: 'Johnson Text Regular',
+        //         lineHeight: '24px',
+        //         color: '#212121',
+  
+        //         '&:hover': {
+        //           borderColor: '#212121', // Change border color on hover
+        //         },
+        //         '&.Mui-focused': {
+        //           borderColor: '#eb1700', // Change border color on focus
+        //           boxShadow: `0 0 0 3px rgba(235, 23, 0, 0.5)`, // Box shadow when focused
+        //         },
+        //         '&.Mui-disabled': {
+        //           borderColor: '#F1EFED', // Change border color when disabled
+        //           backgroundColor: '#F1EFED', // Change background color when disabled
+        //           color: '#A39992', // Change text color when disabled
+        //         },
+        //         '&.Mui-error': {
+        //           color: '#eb1700',
+        //           borderColor: '#D32F2F', // Change border color on error
+        //         },
+        //       },
+        //       input: {
+        //         padding: '0px',
+        //         '&::placeholder': {
+        //           color: '#A39992', // Placeholder text color
+        //           opacity: 1,
+        //         },
+        //       },
+        //     },
+        //     variants: [
+        //       {
+        //         props: { size: 'small' },
+        //         style: {
+        //           fontSize: '14px',
+        //           padding: '5px 8px',
+        //         },
+        //       },
+        //       {
+        //         props: { size: 'medium' },
+        //         style: {
+        //           fontSize: '16px',
+        //           padding: '8px 12px',
+        //         },
+        //       },
+        //       {
+        //         props: { size: 'large' },
+        //         style: {
+        //           fontSize: '18px',
+        //           padding: '10px 16px',
+        //         },
+        //       },
+        //     ],
+        //   },
           
         MuiTable: {
         styleOverrides: {

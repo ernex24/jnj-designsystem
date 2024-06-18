@@ -2,7 +2,9 @@ import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import * as UIcons from "../../theme/icons-react/build/cjs/Index.js";
 import TextField from '@mui/material/TextField';
+import { InputBase, FormControl, InputLabel, FormHelperText, InputAdornment } from '@mui/material';
 import { useState } from 'react';
+
 
 const columns = [
   
@@ -1075,15 +1077,23 @@ export default function IconsDataTable() {
 
   return (
     <div style={{ height: 700, width: '100%' }}>
-         <TextField
-        placeholder='Search Icon'
-        label="Filter by name"
-        variant="outlined"
-        fullWidth
-        value={filterText}
-        onChange={handleFilterChange}
-        style={{ marginBottom: '1rem' }}
-      />
+
+<FormControl fullWidth variant="standard">
+            <InputLabel shrink >Leading Icon</InputLabel>
+            <InputBase 
+              fullWidth
+                size='medium'
+                placeholder="Search"
+                value={filterText}
+                onChange={handleFilterChange}
+                startAdornment={
+                    <InputAdornment position="start">
+                      <UIcons.SearchSm/>
+                    </InputAdornment>
+          } />
+            <FormHelperText>Same icons that in Figma at 24px x 24px</FormHelperText>
+        </FormControl>
+
       <DataGrid
         rows={filteredRows}
         columns={columns}
