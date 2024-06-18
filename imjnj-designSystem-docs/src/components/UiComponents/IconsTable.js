@@ -1078,20 +1078,20 @@ export default function IconsDataTable() {
   return (
     <div style={{ height: 700, width: '100%' }}>
 
-<FormControl fullWidth variant="standard">
-            <InputLabel shrink >Leading Icon</InputLabel>
-            <InputBase 
-              fullWidth
-                size='medium'
-                placeholder="Search"
-                value={filterText}
-                onChange={handleFilterChange}
-                startAdornment={
-                    <InputAdornment position="start">
-                      <UIcons.SearchSm/>
-                    </InputAdornment>
-          } />
-            <FormHelperText>Same icons that in Figma at 24px x 24px</FormHelperText>
+        <FormControl fullWidth variant="standard">
+      <TextField 
+        placeholder='Start'
+        label="Icons"
+        variant="outlined"
+        value={filterText}
+        onChange={handleFilterChange}
+        size="large"
+        helperText="Same icons that in Figma at 24px x 24px"
+        InputLabelProps={{ shrink: true }} 
+         InputProps={{
+            startAdornment: <InputAdornment position="start"><UIcons.SearchSm/></InputAdornment>,
+          }}
+     />
         </FormControl>
 
       <DataGrid
