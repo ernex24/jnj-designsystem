@@ -9,6 +9,7 @@ import { InputBase, FormControl, InputLabel, FormHelperText, InputAdornment } fr
 import Box from '@mui/material/Box';
 import { SearchSm } from "../../src/theme/icons-react/build/cjs/Index.js";
 import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select'; 
 
 # Inputs
 
@@ -164,8 +165,6 @@ import { InputAdornment } from '@mui/material';
   <br/>  <br/>
    <Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
 
-
-
     <TextField 
         placeholder='Start'
         label="Icon"
@@ -177,7 +176,6 @@ import { InputAdornment } from '@mui/material';
             startAdornment: <InputAdornment position="start">$</InputAdornment>,
           }}
     />
-
 
     <TextField 
         placeholder='End'
@@ -227,6 +225,7 @@ import { InputAdornment } from '@mui/material';
 ### Selectors
 
    <Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
+   
         <TextField 
             select
             fullWidth

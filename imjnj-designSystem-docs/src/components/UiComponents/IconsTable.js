@@ -2,7 +2,7 @@ import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import * as UIcons from "../../theme/icons-react/build/cjs/Index.js";
 import TextField from '@mui/material/TextField';
-import { InputBase, FormControl, InputLabel, FormHelperText, InputAdornment } from '@mui/material';
+import { FormControl, InputAdornment } from '@mui/material';
 import { useState } from 'react';
 
 

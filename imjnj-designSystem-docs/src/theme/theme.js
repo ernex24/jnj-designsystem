@@ -89,6 +89,30 @@ const jnjTheme = createTheme({
     
     components: {
 
+        MuiMenu: {
+            styleOverrides: {
+              paper: {
+                backgroundColor: '#ffffff', // Default background color for the menu
+                boxShadow: '0px 4px 16px 0px rgba(0, 0, 0, 0.16)', // Default shadow for the menu
+                borderRadius: '8px', // Border radius for the menu
+              },
+            },
+          },
+
+        MuiMenuItem: {
+            styleOverrides: {
+              root: {
+                backgroundColor: '#ffffff', // Default background color
+                '&:hover': {
+                  backgroundColor: '#E8E6E3', // Background color on hover
+                },
+                '&.Mui-selected': {
+                  backgroundColor: '#E8E6E3', // Background color when selected
+                },
+              },
+            },
+          },
+
         MuiOutlinedInput: {
             styleOverrides: {
               root: {
