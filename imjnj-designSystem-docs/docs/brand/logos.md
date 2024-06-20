@@ -26,7 +26,17 @@ import MTLogoWhite from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_White.svg'
   All the J&J logos are available in .svg format, in the theme/logos folder is recommended to import the .svg files as React Components to be able to apply dinamic classes using the design system css classes.
 
      ```jsx
-    import IMLogoRed from '@imjnj/tokens/dist/logos/JJ_IM_Logo_SingleLine_Red.svg';
+   import IMLogoRed from '@jnj_dnds/designsystem/dist/theme/logos/JJ_IM_Logo_SingleLine_Red.svg';
+   import IMLogoBlack from '@jnj_dnds/designsystem/dist/theme/logos/JJ_IM_Logo_SingleLine_Black.svg';
+   import IMLogoWhite from '@jnj_dnds/designsystem/dist/theme/logos/JJ_IM_Logo_SingleLine_White.svg';
+
+  import JNJLogoRed from '@jnj_dnds/designsystem/dist/theme/logos/JNJ_Logo_SingleLine_Red.svg';
+  import JNJLogoBlack from '@jnj_dnds/designsystem/dist/theme/logos/JNJ_Logo_SingleLine_Black.svg';
+  import JNJLogoWhite from '@jnj_dnds/designsystem/dist/theme/logos/JNJ_Logo_SingleLine_White.svg';
+
+  import MTLogoRed from '@jnj_dnds/designsystem/dist/theme/logos/JNJ_MT_Logo_SingleLine_Red.svg';
+  import MTLogoBlack from '@jnj_dnds/designsystem/dist/theme/logos/JNJ_MT_Logo_SingleLine_Black.svg';
+  import MTLogoWhite from '@jnj_dnds/designsystem/dist/theme/logos/JNJ_MT_Logo_SingleLine_White.svg';
     ```
 
 ## Innovative Medicine
