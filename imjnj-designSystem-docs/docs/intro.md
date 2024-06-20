@@ -12,12 +12,18 @@ Our design system is a theme for MUI, incorporating the official J&J Styleguide 
 
 To get started, ensure you have the following development environment set up.
 
-### Prerequisites
+### Front-end Tech Stack
 
 1. **[Node.js](https://react.dev/)** (version 18.x or later): Provides the JavaScript runtime environment.
 2. **[NPM](https://www.npmjs.com/)** (version 7.x or later): Bundled with Node.js, used for installing and managing packages.
-3. **[React.js](https://react.dev/)** (version 17.x or later): JavaScript library for building user interfaces.
-4. **[MUI](https://mui.com/material-ui/getting-started/)** (version 5.x or later): Open-source React component library implementing Google's Material Design.
+3. **[React.js](https://react.dev/)** (version 17.x or later): JavaScript library for building user interfaces create with Create React App, Vite, Next.js etc.
+4. **[MUI](https://mui.com/material-ui/getting-started/)** (version 5.x or later): Open-source React component library implementing Google's Material Design with emotion for styles management.
+
+```bash 
+
+npm install @mui/material @emotion/react @emotion/styled
+
+```
 
 ## Installing the Library
 
@@ -34,7 +40,6 @@ This command can be executed in Command Prompt, Powershell, Terminal, or any int
 ## Configuring the library
 
 1. MUI uses a React context called ThemeProvider. You need to import ThemeProvider from MUI and the JNJ Theme from the package you installed:
-
 
 ```jsx title="src/main.jsx"
 import { ThemeProvider} from '@mui/material/styles';
