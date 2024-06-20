@@ -64,11 +64,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/social-card.png',
       navbar: {
         title: '',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'JNJ Desiign System',
           src: 'img/logo.svg',
         },
         items: [
@@ -85,6 +85,11 @@ const config = {
           //   position: 'right',
           // },
         ],
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
       },
       footer: {
         style: 'light',
@@ -132,6 +137,7 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+    
 };
 
 export default config;

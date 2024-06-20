@@ -19,10 +19,12 @@
   --ifm-footer-background-color: var(--jnj-color-gray-20);
   --ifm-background-color: var(--jnj-color-core-white);
   --ifm-heading-color: var(--jnj-color-core-black);
+  --ifm-navbar-background-color: var(--jnj-color-background-header);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
+  --ifm-navbar-background-color: var(--ifm-background-surface-color);
   --ifm-color-primary: var(--jnj-color-core-jnjred);
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -101,7 +103,7 @@ h6 {
 }
 
 .navbar {
-  background-color: var(--jnj-color-background-header) !important;
+  /* background-color: var(--jnj-color-background-header) !important; */
   -webkit-backdrop-filter: var(--jnj-effect-blur-s);
   backdrop-filter: var(--jnj-effect-blur-s);
   box-shadow: var(--jnj-effect-shadow-elevation-l);
