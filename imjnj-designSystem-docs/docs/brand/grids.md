@@ -11,10 +11,11 @@ import Grid from '@mui/material/Grid';
 
 # Grids
 
-See complete MUI component documentation from [Grids](https://mui.com/material-ui/react-grid/).
-
+Explore the complete MUI component documentation from [Grids](https://mui.com/material-ui/react-grid/).
 
 ### Import
+
+To use the Grid component, import it as follows:
 
 ```jsx
 
@@ -22,20 +23,27 @@ import Grid from '@mui/material/Grid';
 
 ```
 
-Grids are fluid and they are conformed by containers and items for the internal grid, are divided in **12 colums** and have five breakpoints: xs, sm, md, lg, and xl. a single grid can behave different depending of the asigned number of colums in each breakpoint.
+##### Overview
+Grids are fluid and consist of containers and items within the internal grid structure. They are divided into 12 columns and support five breakpoints: xs, sm, md, lg, and xl. A single grid can adapt its layout based on the number of columns assigned at each breakpoint.
 
-You can assign a margin to the grid and define the gap between each grid element using the spacing system.
+##### Usage
+Grids allow you to create responsive layouts that change dynamically based on the screen size. You can control the spacing between grid items and the margin around the grid using the spacing system.
 
-    The asigned breakpoints in the J&J theme are from:
-    - xs: **8px**
-    - sm: **600px**
-    - md: **900px**
-    - lg: **1296px**
-    - xl: **1536px**
+##### Breakpoints
+The breakpoints in the J&J theme are defined as follows:
+
+- xs: 8px
+- sm: 600px
+- md: 900px
+- lg: 1296px
+- xl: 1536px
+
+By assigning different column numbers to these breakpoints, you can create versatile and adaptive layouts that look great on any device.
+
 
   <ThemeProvider theme={jnjTheme}>
 
-    ### Contained grids 72px margin
+  ### Contained grids 72px margin
 
     <Box mx={{ xs: 3, md: 5, lg: 10, xl: 10 }}>
       <Grid container   spacing={{ xs: 2, md: 2, lg: 3, xl: 3 }}  columns={{ xs: 4, sm: 8, md: 12, lg: 12, xl: 12 }} mx={3}>
