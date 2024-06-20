@@ -7,7 +7,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import jnjTheme from '../../src/theme/theme';
 import { InputBase, FormControl, InputLabel, FormHelperText, InputAdornment } from '@mui/material';
 import Box from '@mui/material/Box';
-import { SearchSm } from "../../src/theme/icons-react/build/cjs/Index.js";
+import { SearchSm } from "../../src/theme/icons-react/build/cjs/index.js";
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select'; 
 

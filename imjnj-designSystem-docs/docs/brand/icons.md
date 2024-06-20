@@ -15,7 +15,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
 import Icon from '@mui/material/Icon';
-import * as Icons from "../../src/theme/icons-react/build/cjs/Index.js";
+import * as Icons from "../../src/theme/icons-react/build/cjs/index.js";
 
 import IconsDataTable from '../../src/components/UiComponents/IconsTable.js'
 
