@@ -40,7 +40,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         googleTagManager: {
-          containerId: 'G-4P61C7VQ29',
+          containerId: 'G-NJ608NTSWC',
         },
         docs: {
           sidebarPath: './sidebars.js',
