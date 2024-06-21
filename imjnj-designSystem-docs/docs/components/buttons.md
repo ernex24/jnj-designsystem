@@ -15,11 +15,13 @@ import jnjTheme from '../../src/theme/theme';
 <Tabs>
   <TabItem value="Codebase" label="Codebase" default>
 <br/>
+Consistent button styles across the application reinforce branding and improve usability by making interactions predictable and easy to understand.
+<br/>
+Explore documentation from [MUI Buttons](https://mui.com/material-ui/react-button/).
 
-See complete components documentation from [MUI Buttons](https://mui.com/material-ui/react-button/).
+<br/>
 
-
-### Import
+##### Import
 
 ```jsx
 
@@ -28,7 +30,7 @@ See complete components documentation from [MUI Buttons](https://mui.com/materia
 ```
 
 ### Primary buttons
-
+<br/>
   <ThemeProvider theme={jnjTheme}>
   <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
       <Button variant="text">Text</Button>
@@ -46,7 +48,7 @@ See complete components documentation from [MUI Buttons](https://mui.com/materia
 ```
 
 ### Secondary buttons
-
+<br/>
   <ThemeProvider theme={jnjTheme}>
  <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
       <Button color="secondary" variant="text">Text</Button>
@@ -65,7 +67,7 @@ See complete components documentation from [MUI Buttons](https://mui.com/materia
   ```
 
 ### Buttons size
-
+<br/>
   <ThemeProvider theme={jnjTheme}>
  <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
       <Button size="small" color="primary" variant="contained">Contained</Button>
@@ -95,7 +97,30 @@ See complete components documentation from [MUI Buttons](https://mui.com/materia
 
   </TabItem>
   <TabItem value="UserExperience" label="User Experience">
+<br/>
 
+#### Button UX 
+Buttons are a crucial element in a design system, providing users with clear and interactive ways to perform actions. They help guide user behavior, ensuring intuitive navigation and enhancing the overall user experience. 
+<br/>
+##### Accessibility
+<br/>
+Well-designed buttons improve accessibility, ensuring that all users, including those with disabilities, can interact with the application effectively. This involves considerations such as appropriate size for touch targets, sufficient contrast between text and background, and clear, descriptive labels that communicate the button's function.
+<br/>
+##### Feedback and Responsiveness
+<br/>
+Buttons provide immediate feedback through visual and auditory cues, such as changes in color or elevation when clicked. This responsiveness reassures users that their actions have been registered, creating a more interactive and satisfying experience.
+<br/>
+##### Enhancing User Flow
+<br/>
+By strategically placing buttons in logical locations, designers can enhance user flow and streamline tasks. Primary actions should be easy to find and execute, while secondary actions should be available but less prominent. This thoughtful placement helps users complete tasks efficiently, improving their overall experience.
+<br/>
+##### Emotional Appeal
+<br/>
+Aesthetically pleasing button designs can evoke positive emotions, contributing to a more enjoyable user experience. Thoughtful use of color, typography, and micro-interactions can make buttons not only functional but also delightful to use.
+<br/>
+##### In summary,
+<br/>
+buttons are a key element in any design system, significantly impacting usability, accessibility, and overall user satisfaction. By prioritizing consistent, intuitive, and visually appealing button designs, designers can create interfaces that are both effective and enjoyable to use.
 
   </TabItem>
 </Tabs>

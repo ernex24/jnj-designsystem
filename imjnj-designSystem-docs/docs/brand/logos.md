@@ -23,7 +23,7 @@ import MTLogoWhite from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_White.svg'
 
   # Logos
 
-  All the J&J logos are available in .svg format, in the theme/logos folder is recommended to import the .svg files as React Components to be able to apply dinamic classes.
+  All the J&J logos are available in .svg format, in the theme/logos folder is recommended to import the .svg files as React Components to be able to apply dinamic styles comming from tokens, if needed.
 
 ## Innovative Medicine
 

@@ -15,7 +15,7 @@ import BackGroundBox from '../../src/theme/images/boxes1.png'
 
 # Glassmorphism
 
-Glassmorphism is a custom feature created from the CSS of the Design System to add blur blur to the backgrounds driving the attention of the user to the content above the blurred background.
+Glassmorphism is a custom feature in our Design System, created using CSS. It adds a blur effect to backgrounds, drawing user attention to the content placed above the blurred area. This technique enhances visual hierarchy and focus, making the interface more engaging and user-friendly.
 
   <ThemeProvider theme={jnjTheme}>
 

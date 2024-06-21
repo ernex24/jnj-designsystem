@@ -18,13 +18,17 @@ import TableRow from '@mui/material/TableRow';
 
 # Spacing System
 
+ The spacing system is based on multiples of 8px and can be used for margins, paddings, gaps, etc. The spacing values are stored in an array, and you need to reference the array position to get the correct number. The available spacing values are:
+
+ ```jsx
+[0, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176]
+```
+
+
 See complete MUI component documentation from [Spacing](https://mui.com/system/spacing/) and setting [margins and paddings](https://mui.com/system/getting-started/the-sx-prop/#spacing).
 
   <ThemeProvider theme={jnjTheme}>
 
-    ### 8px
-
-    The spacing system is based in multiples of 8px, can be used in margin, paddings gaps etc, the numbers are stored in an array and is necesary to call the position of the array to get the correct number. [0, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176]
 
   <br/>
 

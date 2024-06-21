@@ -21,9 +21,9 @@ import IconsDataTable from '../../src/components/UiComponents/IconsTable.js'
 
 # Icons
 
-Icons are .svg files used as react components, in this way they can innerith properties, read more on how to [include icons as react components](https://mui.com/material-ui/icons/#svgicon).
+These icons are already React components and can dynamically receive all properties from the theme, such as color, size, etc. If you need to include a new icon, it is recommended to do so as a React component. For more information, refer to the MUI documentation on [include icons as react components](https://mui.com/material-ui/icons/#svgicon).
 
-Import the icons to be used as react components:
+### Import
 
 ```jsx
 

@@ -24,7 +24,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-navbar-background-color: var(--ifm-background-surface-color);
+  --ifm-navbar-background-color: var(--jnj-color-opacity-black-50);
   --ifm-color-primary: var(--jnj-color-core-jnjred);
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -103,7 +103,7 @@ h6 {
 }
 
 .navbar {
-  /* background-color: var(--jnj-color-background-header) !important; */
+  background-color: var(--ifm-navbar-background-color) !important; 
   -webkit-backdrop-filter: var(--jnj-effect-blur-s);
   backdrop-filter: var(--jnj-effect-blur-s);
   box-shadow: var(--jnj-effect-shadow-elevation-l);
@@ -170,4 +170,31 @@ h6 {
 
 .heroTitle1{
   z-index: 20;
+}
+
+.navbar-sidebar--show {
+  backdrop-filter: none !important;
+}
+
+@media only screen and (max-width: 1000px) {
+ 
+.navbar {
+  background-color: var(--ifm-navbar-background-color) !important; 
+  box-shadow: var(--jnj-effect-shadow-elevation-l);
+  display: flex;
+  height: var(--ifm-navbar-height);
+  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal);
+  border-radius: 8px;
+}
+
+}
+
+.navbar-sidebar {
+  background-color: var(--ifm-navbar-background-color) !important; 
+  -webkit-backdrop-filter: var(--jnj-effect-blur-s);
+  backdrop-filter: var(--jnj-effect-blur-s);
+    box-shadow: var(--ifm-global-shadow-md);
+    transform: translate3d(-100%, 0, 0);
+    transition-property: opacity, visibility, transform;
+    width: var(--ifm-navbar-sidebar-width);
 }

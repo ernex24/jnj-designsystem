@@ -14,8 +14,9 @@ import ColorSwatch  from '../../src/components/UiComponents/ColorSwatch.js'
 
 # Elevation
 
-See complete components documentation from [Elevation](https://mui.com/material-ui/react-paper/#elevation).
-The elevation is the level of shadow casted from the component to the background and the amount of this shadow is defined incrementally from 0 to 5.
+Elevation refers to the level of shadow cast by a component onto the background. This shadow is defined incrementally from 0 to 5. Elevation helps to create a sense of depth and hierarchy in the UI, making components stand out and providing visual cues about their importance and interactivity.
+
+For complete MUI component documentation, see [Elevation](https://mui.com/material-ui/react-paper/#elevation).
 
   <ThemeProvider theme={jnjTheme}>
 

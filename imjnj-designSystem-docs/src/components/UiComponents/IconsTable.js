@@ -9,7 +9,7 @@ import { useState } from 'react';
 const columns = [
   
   { field: 'icon', headerName: 'Icon', width: 200, renderCell: (params) => (<div>{typeof params.value === 'string' ? params.value : params.value}</div>),},
-  { field: 'name', headerName: 'Name', width: 200 }
+  { field: 'name', headerName: 'Icon Name', width: 200 }
 ];
 
 const rows = [
