@@ -39,6 +39,9 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        googleTagManager: {
+          containerId: 'G-4P61C7VQ29',
+        },
         docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
@@ -59,7 +62,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

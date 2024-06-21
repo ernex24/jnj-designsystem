@@ -400,7 +400,6 @@ const jnjTheme = createTheme({
                 },
             },
         },
-     
         MuiTab:{
             defaultProps: {
                 disableRipple: true,
