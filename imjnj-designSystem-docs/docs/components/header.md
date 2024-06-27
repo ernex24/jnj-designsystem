@@ -3,49 +3,71 @@ sidebar_position: 0
 ---
 
 import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { ThemeProvider } from '@mui/material/styles';
 import jnjTheme from '../../src/theme/theme';
-
-import BasicTabs from '../../src/components/UiComponents/CustomTabs.js' 
-
-
+import BasicTabs from '../../src/components/UiComponents/MenuTabs.js' 
 import IMLogoRed from '../../src/theme/logos/JJ_IM_Logo_SingleLine_Red.svg';
-
-
+import Avatar from '@mui/material/Avatar';
+import AvatarImage from '../../src/theme/images/avatarw2.png';
+import Typography from '@mui/material/Typography';
 
 # Header
 
-
 The header is a custom component from the CSS file, is highly customizable so you can adapt it to a variety of different use cases.
-
-
 
 ### Simple header
 
-  The header in it most simple form consist in a pannel with the logo at the left and the posibility to add different actions horizontally aligned to the rigth. 
+  The header in it most simple form consist in a pannel with the logo at the left and the posibility to add different actions horizontally aligned to the rigth.
+
+  The Avatar component is comming from MUI, explore [Avatar component](https://v5-0-6.mui.com/components/avatars/). 
   
   <br/>
   
   <ThemeProvider theme={jnjTheme}>
-  <div className="jnj-header">
-    <div className="jnj-header-logo">
-      <IMLogoRed/>
-    </div>
-     <Button variant="outlined">Test button</Button>
-  </div>
+
+    <Box 
+      component="header" p={'12px'} m={3} elevation={2}  sx={{  width: 1, boxShadow: 4, borderRadius: '12px', bgcolor: 'white' }}>
+      <Stack 
+        direction="row"
+        justifyContent="space-between"
+        alignItems="center"
+        spacing={2}>
+          <IMLogoRed height='32px'/>
+      <Stack 
+        direction="row"
+        alignItems="center"
+        spacing={3}>
+          <Typography variant="bodyM">Jane Doe</Typography>
+          <Avatar alt="Remy Sharp" src={AvatarImage} />
+        </Stack>
+      </Stack>
+    </Box>
     
   </ThemeProvider>
 
   <br />
 
    ```jsx
-    <div className="jnj-header">
-    <div className="jnj-header-logo">
-      <img src={IMLogoRed} alt="JJ Logo"/>
-    </div>
-      <Button variant="outlined">Test button</Button>
-  </div>
+
+    <Box 
+      component="header" p={'12px'} m={3} elevation={2}  sx={{  width: 1, boxShadow: 4, borderRadius: '12px', bgcolor: 'white' }}>
+      <Stack 
+        direction="row"
+        justifyContent="space-between"
+        alignItems="center"
+        spacing={2}>
+          <IMLogoRed height='32px'/>
+      <Stack 
+        direction="row"
+        alignItems="center"
+        spacing={3}>
+          <Typography variant="bodyM">Jane Doe</Typography>
+          <Avatar alt="Remy Sharp" src={AvatarImage} />
+        </Stack>
+      </Stack>
+    </Box>
 
    ```  
 
@@ -58,30 +80,56 @@ The header is a custom component from the CSS file, is highly customizable so yo
   
   <ThemeProvider theme={jnjTheme}>
 
-  <div className="jnj-header-menu">
-    <div className="jnj-header-menu-internal">
-      <div className="jnj-header-logo">
-        <IMLogoRed/>
-      </div>
-      <Button variant="outlined">Test button</Button>
-    </div> 
-        <BasicTabs/> 
-  </div>
-    
+    <Box 
+      component="header" pt={'12px'} px={'12px'} pb={0} m={3} elevation={2}  sx={{ width: 1, boxShadow: 4, borderRadius: '12px', bgcolor: 'white' }}>
+       <Stack 
+        direction="column">
+          <Stack 
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
+            spacing={2}>
+              <IMLogoRed height='32px'/>
+          <Stack
+            direction="row"
+            alignItems="center"
+            spacing={3}>
+              <Typography variant="bodyM">Jane Doe</Typography>
+              <Avatar alt="Remy Sharp" src={AvatarImage} />
+            </Stack>
+          </Stack>
+           <BasicTabs/> 
+       </Stack>
+    </Box>
+
   </ThemeProvider>
   
   <br />
 
    ```jsx
-   <div className="jnj-header-menu">
-    <div className="jnj-header-menu-internal">
-      <div className="jnj-header-logo">
-        <img src={IMLogoRed} alt="JJ Logo"/>
-      </div>
-      <Button variant="outlined">Test button</Button>
-    </div> 
-        <BasicTabs/> 
-  </div>
+
+   <Box 
+      component="header" pt={'12px'} px={'12px'} pb={0} m={3} elevation={2}  sx={{ width: 1, boxShadow: 4, borderRadius: '12px', bgcolor: 'white' }}>
+       <Stack 
+        direction="column">
+          <Stack 
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
+            spacing={2}>
+              <IMLogoRed height='32px'/>
+          <Stack
+            direction="row"
+            alignItems="center"
+            spacing={3}>
+              <Typography variant="bodyM">Jane Doe</Typography>
+              <Avatar alt="Remy Sharp" src={AvatarImage} />
+            </Stack>
+          </Stack>
+           <BasicTabs/> 
+       </Stack>
+    </Box>
+
    ```  
 
 
