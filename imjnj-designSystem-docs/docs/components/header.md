@@ -108,27 +108,15 @@ The header is a custom component from the CSS file, is highly customizable so yo
 
    ```jsx
 
-   <Box 
-      component="header" pt={'12px'} px={'12px'} pb={0} m={3} elevation={2}  sx={{ width: 1, boxShadow: 4, borderRadius: '12px', bgcolor: 'white' }}>
-       <Stack 
-        direction="column">
-          <Stack 
-            direction="row"
-            justifyContent="space-between"
-            alignItems="center"
-            spacing={2}>
-              <IMLogoRed height='32px'/>
-          <Stack
-            direction="row"
-            alignItems="center"
-            spacing={3}>
-              <Typography variant="bodyM">Jane Doe</Typography>
-              <Avatar alt="Remy Sharp" src={AvatarImage} />
-            </Stack>
-          </Stack>
-           <BasicTabs/> 
-       </Stack>
-    </Box>
+   <div className="jnj-header-menu">
+    <div className="jnj-header-menu-internal">
+      <div className="jnj-header-logo">
+        <img src={IMLogoRed} alt="JJ Logo"/>
+      </div>
+      <Button variant="outlined">Test button</Button>
+    </div> 
+        <BasicTabs/> 
+  </div>
 
    ```  
 
