@@ -90,6 +90,46 @@ const jnjTheme = createTheme({
     
     components: {
 
+        MuiChip: {
+            styleOverrides: {
+              root: {
+                backgroundColor: '#EB1700',
+                color: '#ffffff',
+                font: 'Johnson Text Regular',
+                fontSize: '14px',
+                lineHeight: '16px',
+                border: '0',
+                '& .MuiChip-label': {
+                    
+                },
+              },
+              deleteIcon: {
+                color: '#ffffff',
+                '&:hover': {
+                    color: '#ffffff',
+                },
+              },
+            },
+          },
+
+        MuiAutocomplete: {
+            styleOverrides: {
+              popupIndicator: {
+                '&.MuiAutocomplete-popupIndicator': {
+                 paddingRight: '8px'
+                },
+              },
+            },
+          },
+
+        MuiAutocomplete: {
+            styleOverrides: {
+              paper: {
+                color: '#212121', // Change the text color
+              },
+            },
+          },
+
         MuiPickersArrowSwitcher: {
             styleOverrides: {
               root: {
@@ -130,6 +170,7 @@ const jnjTheme = createTheme({
             styleOverrides: {
               root: {
                 fontSize: '1rem', // Change the font size of the calendar numbers
+                lineHeight: '1rem',
                 fontFamily: 'Johnson Text Regular',
                 color: '#212121'
               },
