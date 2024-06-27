@@ -2,12 +2,8 @@
 sidebar_position: 3
 ---
 import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
-
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid'; 
-
 
 # Grids
 
@@ -39,9 +35,6 @@ The breakpoints in the J&J theme are defined as follows:
 - xl: 1536px
 
 By assigning different column numbers to these breakpoints, you can create versatile and adaptive layouts that look great on any device.
-
-
-  <ThemeProvider theme={jnjTheme}>
 
   ### Contained grids 72px margin
 
@@ -312,9 +305,6 @@ By assigning different column numbers to these breakpoints, you can create versa
         </Grid>
       </Grid>
       ```
-
-  </ThemeProvider>
-
 
    ### Figma grids file
 

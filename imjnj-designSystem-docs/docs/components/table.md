@@ -3,12 +3,8 @@ sidebar_position: 8
 ---
 
 import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
-
 import DataGrid from '../../src/components/UiComponents/DataGrid.js' 
 import BasicTable from '../../src/components/UiComponents/Table.js' 
-
 
 # Tables
 
@@ -38,11 +34,10 @@ import { DataGrid } from '@mui/x-data-grid';
 
 ```
 
-  <ThemeProvider theme={jnjTheme}>
   <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
        <DataGrid />
-    </Stack>
-  </ThemeProvider>
+  </Stack>
+
   <br />
 
 
@@ -80,13 +75,12 @@ import Paper from '@mui/material/Paper';
 
 ```
 
-<ThemeProvider theme={jnjTheme}>
+
   <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
        <BasicTable />
-    </Stack>
-  </ThemeProvider>
-  <br />
+  </Stack>
 
+  <br />
 
   ```jsx jsx title="Table.jsx"
 

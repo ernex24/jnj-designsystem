@@ -2,19 +2,14 @@
 sidebar_position: 4
 ---
 import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
-
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid'; 
-
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-
 
 # Spacing System
 
@@ -24,11 +19,7 @@ import TableRow from '@mui/material/TableRow';
 [0, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176]
 ```
 
-
 See complete MUI component documentation from [Spacing](https://mui.com/system/spacing/) and setting [margins and paddings](https://mui.com/system/getting-started/the-sx-prop/#spacing).
-
-  <ThemeProvider theme={jnjTheme}>
-
 
   <br/>
 
@@ -132,11 +123,7 @@ See complete MUI component documentation from [Spacing](https://mui.com/system/s
       </Table>
     </TableContainer>
 
-
   <br/>
-
-  </ThemeProvider>
-
 
    ### Figma spacing file
 

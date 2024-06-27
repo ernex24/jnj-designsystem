@@ -5,8 +5,6 @@ sidebar_position: 0
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
 import BasicTabs from '../../src/components/UiComponents/MenuTabs.js' 
 import IMLogoRed from '../../src/theme/logos/JJ_IM_Logo_SingleLine_Red.svg';
 import Avatar from '@mui/material/Avatar';
@@ -23,8 +21,6 @@ The Footer is a custom component, is highly customizable so you can adapt it to 
   The footer in it most simple form consist in a pannel with the logo at the left and the posibility to add a menu with text or icons.
   
   <br/>
-  
-  <ThemeProvider theme={jnjTheme}>
 
     <Box 
       component="footer" 
@@ -53,8 +49,6 @@ The Footer is a custom component, is highly customizable so you can adapt it to 
           <Typography variant="caption">All rigths reserved</Typography>
       </Stack>
     </Box>
-    
-  </ThemeProvider>
 
   <br />
 
@@ -85,8 +79,6 @@ The Footer is a custom component, is highly customizable so you can adapt it to 
   ### Menu Footer
   
   <br/>
-  
-  <ThemeProvider theme={jnjTheme}>
 
     <Box 
       component="footer" 
@@ -118,8 +110,6 @@ The Footer is a custom component, is highly customizable so you can adapt it to 
           <Typography variant="caption">All rigths reserved</Typography>
       </Stack>
     </Box>
-    
-  </ThemeProvider>
 
   <br />
 

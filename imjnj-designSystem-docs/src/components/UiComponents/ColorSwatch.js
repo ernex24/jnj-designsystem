@@ -1,13 +1,11 @@
 import * as React from 'react';
-import { Box, ThemeProvider, Typography } from '@mui/material';
-import jnjTheme from '../../../src/theme/theme';
+import { Box, Typography } from '@mui/material';
 import Stack from '@mui/material/Stack';
 
 export default function ColorSwatch({boxS = 2,borderR = 2, token, hex, rgb, textColor,  }) {
 
   return (
 
-    <ThemeProvider theme={jnjTheme}>
     <Box
 
         sx={{
@@ -43,6 +41,6 @@ export default function ColorSwatch({boxS = 2,borderR = 2, token, hex, rgb, text
         </Box>
 
     </Box>
-    </ThemeProvider>
+
   );
 }

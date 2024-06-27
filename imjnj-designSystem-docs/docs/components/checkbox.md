@@ -2,9 +2,6 @@
 sidebar_position: 3
 ---
 import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
-
 import FormLabel from '@mui/material/FormLabel';
 import FormControl from '@mui/material/FormControl';
 import FormGroup from '@mui/material/FormGroup';
@@ -27,7 +24,6 @@ import Checkbox from '@mui/material/Checkbox';
 
 ### Primary checkbox
 
-  <ThemeProvider theme={jnjTheme}>
     <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
       <FormGroup>
       <FormControlLabel control={<Checkbox defaultChecked />} label="Label" />
@@ -35,7 +31,6 @@ import Checkbox from '@mui/material/Checkbox';
       <FormControlLabel disabled control={<Checkbox />} label="Disabled" />
     </FormGroup>
     </Stack>
-  </ThemeProvider>
 
   <br />  <br />
 
@@ -51,7 +46,6 @@ import Checkbox from '@mui/material/Checkbox';
 
 ### Secondary checkbox
 
-    <ThemeProvider theme={jnjTheme}>
     <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
       <FormGroup>
       <FormControlLabel  control={<Checkbox color="secondary" defaultChecked />} label="Label" />
@@ -59,7 +53,6 @@ import Checkbox from '@mui/material/Checkbox';
       <FormControlLabel disabled control={<Checkbox color="secondary" />} label="Disabled" />
     </FormGroup>
     </Stack>
-    </ThemeProvider>
 
   <br />
   ```jsx
@@ -72,13 +65,11 @@ import Checkbox from '@mui/material/Checkbox';
 
 ### Checkbox size
 
-  <ThemeProvider theme={jnjTheme}>
  <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
    <Checkbox label="Label" defaultChecked size="small" />
    <Checkbox label="Label"defaultChecked size="medium" />
    <Checkbox label="Label" defaultChecked size="large" />
-  </Stack>
-    </ThemeProvider>
+</Stack>
 
   <br />
   ```jsx
@@ -91,7 +82,6 @@ import Checkbox from '@mui/material/Checkbox';
 
   ### Checkbox form
 
-  <ThemeProvider theme={jnjTheme}>
  <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
    <FormControl
         required
@@ -108,7 +98,6 @@ import Checkbox from '@mui/material/Checkbox';
           </FormGroup>
         </FormControl>
   </Stack>
-    </ThemeProvider>
 
   <br />
   ```jsx

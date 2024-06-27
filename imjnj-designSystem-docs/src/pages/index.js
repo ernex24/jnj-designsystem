@@ -2,18 +2,13 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Button from '@mui/material/Button';
-import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { ThemeProvider, responsiveFontSizes } from '@mui/material/styles';
 import { useTheme } from '@mui/material/styles';
 import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react"
-
-import jnjTheme from '../theme/theme'; // Adjust path as needed
 import '../theme/styles.css'
 
 function HomepageHeader() {
@@ -23,7 +18,7 @@ function HomepageHeader() {
   
   return (
      <>
-       <ThemeProvider theme={jnjTheme}>
+   
        <Analytics/>
     <motion.div initial={{ zIndex:200, opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2, type: "spring",  duration: 2  }}>
       <div className='heroImage1'></div>
@@ -64,7 +59,6 @@ function HomepageHeader() {
       </div>
     </header>
     </motion.div>
-    </ThemeProvider>
     </>
   );
 }
@@ -72,13 +66,11 @@ function HomepageHeader() {
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <ThemeProvider theme={jnjTheme}>
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Beautiful and easy to use UI components for data heavy interfaces.">
       <HomepageHeader />
         {/* <main> <HomepageFeatures /> </main> */}
     </Layout>
-    </ThemeProvider>
   );
 }

@@ -1,14 +1,10 @@
 ---
 sidebar_position: 2
 ---
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
 
 # Buttons
 
@@ -31,13 +27,13 @@ Explore documentation from [MUI Buttons](https://mui.com/material-ui/react-butto
 
 ### Primary buttons
 <br/>
-  <ThemeProvider theme={jnjTheme}>
+
   <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
       <Button variant="text">Text</Button>
       <Button variant="contained">Contained</Button>
       <Button variant="outlined">Outlined</Button>
     </Stack>
-  </ThemeProvider>
+
   <br />
   ```jsx
 
@@ -49,13 +45,12 @@ Explore documentation from [MUI Buttons](https://mui.com/material-ui/react-butto
 
 ### Secondary buttons
 <br/>
-  <ThemeProvider theme={jnjTheme}>
+
  <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
       <Button color="secondary" variant="text">Text</Button>
       <Button color="secondary" variant="contained">Contained</Button>
       <Button color="secondary" variant="outlined">Outlined</Button>
     </Stack>
-    </ThemeProvider>
 
   <br />
   ```jsx
@@ -68,13 +63,12 @@ Explore documentation from [MUI Buttons](https://mui.com/material-ui/react-butto
 
 ### Buttons size
 <br/>
-  <ThemeProvider theme={jnjTheme}>
+
  <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
       <Button size="small" color="primary" variant="contained">Contained</Button>
       <Button size="medium" color="primary" variant="contained">Contained</Button>
       <Button size="large" color="primary" variant="contained">Contained</Button>
   </Stack>
-    </ThemeProvider>
 
   <br />
   ```jsx

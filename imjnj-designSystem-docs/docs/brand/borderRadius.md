@@ -3,14 +3,9 @@ sidebar_position: 7
 ---
 
 import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
-
 import { Box } from '@mui/material';
 import Typography from '@mui/material/Typography';
-
 import ColorSwatch  from '../../src/components/UiComponents/ColorSwatch.js' 
-
 
 # Border Radius
 
@@ -27,8 +22,6 @@ The larger radius for layout elements, such as cards or containers, adds a disti
 
 By strategically using different border radius values, the design system ensures a harmonious and intuitive user experience.
 
-  <ThemeProvider theme={jnjTheme}>
-
         <Stack  direction="row" justifyContent="center" alignItems="center"  spacing={4}>
           <ColorSwatch boxS="3" token="white" hex="Border Radius: 8px" textColor="white" borderR="8px" />
           <ColorSwatch boxS="3" token="white" hex="Border Radius: 12px" textColor="white" borderR="12px" />
@@ -42,8 +35,6 @@ By strategically using different border radius values, the design system ensures
         ```jsx
             <Box sx={{ borderRadius: '12px'}}>
         ```
-
-  </ThemeProvider>
   <br />
 
 ### Figma border radius

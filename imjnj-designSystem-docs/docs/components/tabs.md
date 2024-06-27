@@ -4,23 +4,16 @@ sidebar_position: 6
 
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
-
 import BasicTabs from '../../src/components/UiComponents/CustomTabs.js' 
 import VerticalTabs from '../../src/components/UiComponents/VerticalTabs.js' 
-
-
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-
 
 # Tabs
 
 <br/>
 
 See complete components documentation from [MUI Tabs](https://mui.com/material-ui/react-tabs/).
-
 
 ### Import
 
@@ -33,11 +26,9 @@ See complete components documentation from [MUI Tabs](https://mui.com/material-u
 
 ### Primary tabs
 
-  <ThemeProvider theme={jnjTheme}>
   <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
        <BasicTabs />
     </Stack>
-  </ThemeProvider>
   <br />
   ```jsx
 
@@ -65,11 +56,9 @@ See complete components documentation from [MUI Tabs](https://mui.com/material-u
 
 ### Vertical tabs
 
-  <ThemeProvider theme={jnjTheme}>
   <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
        <VerticalTabs />
-    </Stack>
-  </ThemeProvider>
+  </Stack>
   <br />
   ```jsx
 

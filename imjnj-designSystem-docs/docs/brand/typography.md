@@ -2,9 +2,6 @@
 sidebar_position: 2
 ---
 import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
-
 import Typography from '@mui/material/Typography';
 
 # Typography
@@ -23,7 +20,7 @@ To use the Typography component, import it as follows:
 
 ## Typography Sizes
  <br/>  <br/> 
-  <ThemeProvider theme={jnjTheme}>
+
   <Stack  direction="column" justifyContent="center" alignItems="start" spacing={4}>
 
   ### Titles
@@ -205,7 +202,7 @@ To use the Typography component, import it as follows:
         <br/><br/>
 
     </Stack>
-  </ThemeProvider>
+
   <br />
 
    ### Figma typography file

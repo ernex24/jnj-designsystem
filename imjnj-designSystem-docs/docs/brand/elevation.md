@@ -3,22 +3,15 @@ sidebar_position: 6
 ---
 
 import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
-
 import { Box } from '@mui/material';
 import Typography from '@mui/material/Typography';
-
 import ColorSwatch  from '../../src/components/UiComponents/ColorSwatch.js' 
-
 
 # Elevation
 
 Elevation refers to the level of shadow cast by a component onto the background. This shadow is defined incrementally from 0 to 5. Elevation helps to create a sense of depth and hierarchy in the UI, making components stand out and providing visual cues about their importance and interactivity.
 
 For complete MUI component documentation, see [Elevation](https://mui.com/material-ui/react-paper/#elevation).
-
-  <ThemeProvider theme={jnjTheme}>
 
 ## Core colors
 
@@ -41,8 +34,6 @@ For complete MUI component documentation, see [Elevation](https://mui.com/materi
             <Box sx={{ boxShadow: 2,}}>
         ```
       
-
-  </ThemeProvider>
   <br />
 
 ### Figma elevation file

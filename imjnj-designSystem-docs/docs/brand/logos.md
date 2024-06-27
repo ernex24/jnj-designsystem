@@ -3,23 +3,16 @@ sidebar_position: 0
 ---
 
 import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
 import SvgIcon from '@mui/material/SvgIcon';
-
 import IMLogoRed from '../../src/theme/logos/JJ_IM_Logo_SingleLine_Red.svg';
 import IMLogoBlack from '../../src/theme/logos/JJ_IM_Logo_SingleLine_Black.svg';
 import IMLogoWhite from '../../src/theme/logos/JJ_IM_Logo_SingleLine_White.svg';
-
 import JNJLogoRed from '../../src/theme/logos/JNJ_Logo_SingleLine_Red.svg';
 import JNJLogoBlack from '../../src/theme/logos/JNJ_Logo_SingleLine_Black.svg';
 import JNJLogoWhite from '../../src/theme/logos/JNJ_Logo_SingleLine_White.svg';
-
 import MTLogoRed from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_Red.svg';
 import MTLogoBlack from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_Black.svg';
 import MTLogoWhite from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_White.svg';
-
-  <ThemeProvider theme={jnjTheme}>
 
   # Logos
 
@@ -96,7 +89,7 @@ import MTLogoWhite from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_White.svg'
         <img src={MTLogoBlack} alt="JNJ MT Logo"/>
         <img src={MTLogoWhite} alt="JNJ MT Logo"/>
     ```
-  </ThemeProvider>
+
   <br />
 
 ### Figma logos

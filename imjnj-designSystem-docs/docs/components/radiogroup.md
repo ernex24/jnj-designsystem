@@ -2,9 +2,6 @@
 sidebar_position: 5
 ---
 import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
-
 import FormLabel from '@mui/material/FormLabel';
 import FormControl from '@mui/material/FormControl';
 import FormGroup from '@mui/material/FormGroup';
@@ -31,7 +28,6 @@ import RadioGroup from '@mui/material/RadioGroup';
 
 ### Primary radio group
 
-  <ThemeProvider theme={jnjTheme}>
     <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
     <FormControl>
       <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
@@ -47,7 +43,6 @@ import RadioGroup from '@mui/material/RadioGroup';
        <FormHelperText error><Typography color="error" variant="caption" >This is an error</Typography></FormHelperText>
     </FormControl>
     </Stack>
-  </ThemeProvider>
 
   <br />  <br />
 
@@ -70,7 +65,6 @@ import RadioGroup from '@mui/material/RadioGroup';
 
 ### Secondary radio group
 
-    <ThemeProvider theme={jnjTheme}>
     <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
           <FormControl>
       <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
@@ -85,7 +79,6 @@ import RadioGroup from '@mui/material/RadioGroup';
       </RadioGroup>
     </FormControl>
     </Stack>
-    </ThemeProvider>
 
   <br />
   ```jsx
@@ -108,7 +101,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 
   ### Radio group direcction
 
-    <ThemeProvider theme={jnjTheme}>
+
     <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
           <FormControl>
       <FormLabel id="demo-row-radio-buttons-group-label">Gender</FormLabel>
@@ -129,7 +122,6 @@ import RadioGroup from '@mui/material/RadioGroup';
       </RadioGroup>
     </FormControl>
     </Stack>
-    </ThemeProvider>
 
   <br />
   ```jsx
@@ -157,13 +149,11 @@ import RadioGroup from '@mui/material/RadioGroup';
 
 ### Radio group size
 
-  <ThemeProvider theme={jnjTheme}>
  <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
    <Radio label="Label" defaultChecked size="small" />
    <Radio label="Label" size="medium" />
    <Radio label="Label" size="large" />
   </Stack>
-    </ThemeProvider>
 
   <br />
   ```jsx

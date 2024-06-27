@@ -3,20 +3,13 @@ sidebar_position: 1
 ---
 
 import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
-
 import { Box } from '@mui/material';
 import Typography from '@mui/material/Typography';
-
 import ColorSwatch  from '../../src/components/UiComponents/ColorSwatch.js' 
-
 
 # Colors
 
 Explore the complete documentation from [Tokens Colors MUI](https://mui.com/material-ui/customization/color/).
-
-  <ThemeProvider theme={jnjTheme}>
 
 ## Core colors
 
@@ -39,8 +32,6 @@ Explore the complete documentation from [Tokens Colors MUI](https://mui.com/mate
           <ColorSwatch token="black" hex="#212121" rgb="rgba(33, 33, 33, 1)" textColor="white" />
         </Stack>
 
-
-  
 ## Text colors
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
@@ -159,8 +150,6 @@ Explore the complete documentation from [Tokens Colors MUI](https://mui.com/mate
         <ColorSwatch token="charts.green80" hex="#3B5A0D" rgb="rgba(59, 90, 13, 1)" textColor="white" />
       </Stack>
 
-
-  </ThemeProvider>
   <br />
 
 ### Figma color file

@@ -3,21 +3,14 @@ sidebar_position: 8
 ---
 
 import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
-
 import { Box } from '@mui/material';
 import Typography from '@mui/material/Typography';
-
 import ColorSwatch  from '../../src/components/UiComponents/ColorSwatch.js' 
-
 import BackGroundBox from '../../src/theme/images/boxes1.png'
 
 # Glassmorphism
 
 Glassmorphism is a custom feature in our Design System, created using CSS. It adds a blur effect to backgrounds, drawing user attention to the content placed above the blurred area. This technique enhances visual hierarchy and focus, making the interface more engaging and user-friendly.
-
-  <ThemeProvider theme={jnjTheme}>
 
   #### White glassmorphism
 
@@ -231,8 +224,6 @@ Glassmorphism is a custom feature in our Design System, created using CSS. It ad
             <Box className="jnj-glassmorphism-black-l" > </Box>
         ```
 
-
-  </ThemeProvider>
   <br />
 
 ### Figma glassmorhpism file

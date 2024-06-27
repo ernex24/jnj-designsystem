@@ -2,11 +2,7 @@
 sidebar_position: 3
 ---
 import Stack from '@mui/material/Stack';
-import { ThemeProvider } from '@mui/material/styles';
-import jnjTheme from '../../src/theme/theme';
-
 import Box from '@mui/material/Box';
-
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -37,17 +33,11 @@ import Icon from '@mui/material/Icon';
 <Icon component={IconName} color='primary' fontSize='large'>
 ```
 
-
-  <ThemeProvider theme={jnjTheme}>
-
   <br/>
 
   <IconsDataTable/>
 
   <br/>
-
-  </ThemeProvider>
-
 
    ### Figma icons file
 
