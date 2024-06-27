@@ -1,5 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 import './styles.css'
+import { color } from 'framer-motion';
 
 const jnjTheme = createTheme({
     breakpoints: {
@@ -89,6 +90,71 @@ const jnjTheme = createTheme({
     
     components: {
 
+        MuiPickersArrowSwitcher: {
+            styleOverrides: {
+              root: {
+                '& .MuiTypography-root': {
+                    fontSize: '1rem', // Change font size
+                    color: '#212121', // Change text color
+                    fontFamily: 'Johnson Text Bold',
+                 }
+              },
+            },
+          },
+
+        MuiPickersCalendarHeader: {
+            styleOverrides: {
+                
+              dayLabel: {
+                fontSize: '1rem', // Change font size
+                color: '#212121', // Change text color
+                fontFamily: 'Johnson Text Bold',
+              },
+                switchViewButton: {
+                  fontFamily: 'Johnson Text Bold',
+                  color: '#212121', // Change color of the month switch view button
+                },
+                label: {
+                  fontSize: '1.2rem', // Change font size of the month label
+                  color: '#212121', // Change color of the month label
+                  fontFamily: 'Johnson Text Bold',
+                },
+                '& .MuiPickersYear-yearButton': {
+                    fontSize: '1rem', // Change the font size of the calendar numbers
+                    fontFamily: 'Johnson Text Regular',
+                    color: '#212121',
+                }
+            },
+          },
+        MuiPickersDay: {
+            styleOverrides: {
+              root: {
+                fontSize: '1rem', // Change the font size of the calendar numbers
+                fontFamily: 'Johnson Text Regular',
+                color: '#212121'
+              },
+            },
+          },
+          MuiPickersYear: {
+            styleOverrides: {
+              root: {
+                '& .MuiPickersYear-yearButton': {
+                    fontSize: '1rem', // Change the font size of the calendar numbers
+                    fontFamily: 'Johnson Text Regular',
+                    color: '#212121',
+                }
+              },
+            },
+          },
+        MuiPopper: {
+            styleOverrides: {
+              root: {
+                backgroundColor: 'white', // Example: Customize the background color
+                boxShadow: '0px 4px 32px 0px rgba(0, 0, 0, 0.24)', // Example: Add a box shadow
+                borderRadius: '16px',
+              },
+            },
+          },
         MuiMenu: {
             styleOverrides: {
               paper: {
