@@ -22,13 +22,25 @@ See complete components documentation from [MUI Date Pickers](https://mui.com/x/
 
 ### Import
 
+
 ```jsx
+
+npm install @mui/x-date-pickers
+// Install date library (if not already installed)
+npm install dayjs
+
+```
+
+```jsx
+
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { Calendar, ChevronDown  } from "@jnj_dnds/designsystem/dist/theme/icons-react/build/cjs/";
+
 ```
 
-<br/> <br/>
+<br/>
 
 #### Single date picker
 Select a single day based on month or year
@@ -45,6 +57,15 @@ Select a single day based on month or year
 
   <br/>
 
+  ```jsx
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <DatePicker
+        slots={{ 
+          openPickerIcon: Calendar,
+          switchViewIcon: ChevronDown
+        }}/>
+    </LocalizationProvider>
+```
 
   #### Date range
   Select a number of consecutive dates
@@ -53,10 +74,13 @@ Select a single day based on month or year
 
 ```jsx
 import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { Calendar, ChevronDown  } from "@jnj_dnds/designsystem/dist/theme/icons-react/build/cjs/";
 ```
 
 
-  <br/>   <br/>
+  <br/> 
 
     <Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -64,7 +88,13 @@ import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
         </LocalizationProvider>
     </Stack>
 
-  <br/>   <br/>
+  <br/> 
+
+  ```jsx
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <DateRangePicker localeText={{ start: 'From', end: 'To' }} />
+        </LocalizationProvider>
+```
   
   #### Date range calendar
   Select a range with the view of the calendar
@@ -72,7 +102,9 @@ import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
   <br/>   <br/>
 
   ```jsx
-import { DateRangeCalendar } from '@mui/x-date-pickers-pro/DateRangeCalendar';
+  import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+  import { DateRangeCalendar } from '@mui/x-date-pickers-pro/DateRangeCalendar';
+  import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 ```
   
     <Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
@@ -81,7 +113,20 @@ import { DateRangeCalendar } from '@mui/x-date-pickers-pro/DateRangeCalendar';
         </LocalizationProvider>
     </Stack>
 
+    ```jsx
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+               <DateRangeCalendar/>
+        </LocalizationProvider>
+```
 
 
 
-    
+
+      ### Figma file date picker
+
+<iframe
+  height="450"
+  width="800"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FIKgg9mk0liILChULi9LvaM%2FComponents-J%2526J---v1.1.0%3Fnode-id%3D537-6939%26t%3DJ1rMFShqEzdn1bhu-1"
+  allowfullscreen
+/> 

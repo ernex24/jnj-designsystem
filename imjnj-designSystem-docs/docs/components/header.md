@@ -45,23 +45,29 @@ The header is a custom component from the CSS file, is highly customizable so yo
 
    ```jsx
 
-    <Box 
-      component="header" p={'12px'} m={3} elevation={2}  sx={{  width: 1, boxShadow: 4, borderRadius: '12px', bgcolor: 'white' }}>
-      <Stack 
-        direction="row"
-        justifyContent="space-between"
-        alignItems="center"
-        spacing={2}>
-          <IMLogoRed height='32px'/>
-      <Stack 
-        direction="row"
-        alignItems="center"
-        spacing={3}>
-          <Typography variant="bodyM">Jane Doe</Typography>
-          <Avatar alt="Remy Sharp" src={AvatarImage} />
-        </Stack>
-      </Stack>
-    </Box>
+import IMLogoRed from '@jnj_dnds/designsystem/dist/theme/logos/JJ_IM_Logo_SingleLine_Red.svg';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
+
+<Box component="header" p={'12px'} m={3} elevation={2}  sx={{ boxShadow: 4, borderRadius: '12px', bgcolor: 'white' }}>
+   <Stack 
+     direction="row"
+     justifyContent="space-between"
+     alignItems="center"
+     spacing={2}>
+       <img src={IMLogoRed}height='32px'/>
+   <Stack 
+     direction="row"
+     alignItems="center"
+     spacing={3}>
+       <Typography variant="bodyM">Jane Doe</Typography>
+       <Avatar alt="Jane Doe" src={'AvatarImage'} />
+     </Stack>
+   </Stack>
+ </Box>
+
 
    ```  
 

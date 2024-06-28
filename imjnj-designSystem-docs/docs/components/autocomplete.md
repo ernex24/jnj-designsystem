@@ -22,6 +22,14 @@ See complete components documentation from [MUI Autocomplete](https://mui.com/ma
 
 ### Basic autocomplete 
 
+
+```jsx
+
+import Autocomplete from '@mui/material/Autocomplete';
+import { ChevronDown  } from "@jnj_dnds/designsystem/dist/theme/icons-react/build/cjs/";
+
+```
+
 <Stack direction="row" justifyContent="center" alignItems="flex-start" spacing={4}>
   
      <Autocomplete
@@ -37,6 +45,29 @@ See complete components documentation from [MUI Autocomplete](https://mui.com/ma
           />
         )}
       />
+
+</Stack>
+ <br/>
+```jsx
+
+ 
+     <Autocomplete
+        popupIcon={<ChevronDown />}
+        options={top100Films}
+        sx={{ width: 300 }}
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            label="Single Movie"
+            placeholder="Select movie"
+            InputLabelProps={{ shrink: true }}
+          />
+        )}
+      />
+
+```
+<br/>
+<Stack direction="row" justifyContent="center" alignItems="flex-start" spacing={4}>
 
         <Autocomplete
         multiple
@@ -55,7 +86,26 @@ See complete components documentation from [MUI Autocomplete](https://mui.com/ma
 
 </Stack>
 
+<br/>
+```jsx
 
+ 
+        <Autocomplete
+        multiple
+        popupIcon={<ChevronDown />}
+        options={top100Films}
+        sx={{ width: 300 }}
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            label="Many Movies"
+            placeholder="Select movie"
+            InputLabelProps={{ shrink: true }}
+          />
+        )}
+      />
+
+```
 <br/>
 
 ### Import

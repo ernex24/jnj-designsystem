@@ -54,22 +54,37 @@ The Footer is a custom component, is highly customizable so you can adapt it to 
 
    ```jsx
 
-    <Box 
-      component="header" p={'12px'} m={3} elevation={2}  sx={{  width: 1, boxShadow: 4, borderRadius: '12px', bgcolor: 'white' }}>
+  import IMLogoRed from '@jnj_dnds/designsystem/dist/theme/logos/JJ_IM_Logo_SingleLine_Red.svg';  
+  import Box from '@mui/material/Box';
+  import Stack from '@mui/material/Stack';
+  import Typography from '@mui/material/Typography';
+
+     <Box 
+      component="footer" 
+      display="flex"
+      alignItems="center"
+      justifyContent="space-between"
+      justify
+      p={'12px'} 
+        sx={{  
+          bgcolor: 'white', 
+          borderTop: 1, 
+          borderColor: 'divider'
+          }}>
       <Stack 
         direction="row"
-        justifyContent="space-between"
         alignItems="center"
-        spacing={2}>
-          <IMLogoRed height='32px'/>
+        spacing={4}>
+           <img src={IMLogoRed}height='32px'/>
+      </Stack>
       <Stack 
+        justifyContent="flex-end"
         direction="row"
         alignItems="center"
         spacing={3}>
-          <Typography variant="bodyM">Jane Doe</Typography>
-          <Avatar alt="Remy Sharp" src={AvatarImage} />
-        </Stack>
+          <Typography variant="caption">All rigths reserved</Typography>
       </Stack>
+    </Box>k>
     </Box>
 
    ```  

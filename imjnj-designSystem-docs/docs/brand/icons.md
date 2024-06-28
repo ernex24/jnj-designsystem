@@ -24,7 +24,7 @@ These icons are already React components and can dynamically receive all propert
 ```jsx
 
 // Import the icon
-import { IconName } from "@imjnj/tokens/dist/icons-react";
+import { IconName } from "@jnj_dnds/designsystem/dist/theme/icons-react/build/cjs/";
 
 //Import the icon component from MUI to apply the theme
 import Icon from '@mui/material/Icon';

@@ -1,6 +1,5 @@
 import { createTheme } from '@mui/material/styles';
 import './styles.css'
-import { color } from 'framer-motion';
 
 const jnjTheme = createTheme({
     breakpoints: {
@@ -586,8 +585,6 @@ const jnjTheme = createTheme({
                       },
                     },
                   },
-              
-              
             ]
         },
     
