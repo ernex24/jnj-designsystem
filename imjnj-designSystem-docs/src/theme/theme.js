@@ -142,7 +142,7 @@ const jnjTheme = createTheme({
                   fontSize: '0.875',
                   lineHeight: '1rem',
                   '&:hover': {
-                    backgroundColor: '#E8E6E3'
+                    backgroundColor: '#F1EFED'
                   },
                   '& .MuiChip-icon': {
                     color: '#212121',
@@ -165,7 +165,7 @@ const jnjTheme = createTheme({
                   fontSize: '0.875',
                   lineHeight: '1rem',
                   '&:hover': {
-                    backgroundColor: '#EAF2EA'
+                    backgroundColor: '#F1EFED'
                   },
                   '& .MuiChip-icon': {
                     color: '#212121',

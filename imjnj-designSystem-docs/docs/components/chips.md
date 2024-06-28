@@ -32,6 +32,7 @@ Explore documentation from [Chips](https://mui.com/material-ui/react-chip).
   <Stack m={4} direction="row" justifyContent="center" alignItems="center" spacing={4}>
    
       <Chip 
+        color="default"
         label="Chip Outlined Trailing Icon" 
         variant="outlined" 
         size="small" 
@@ -41,12 +42,14 @@ Explore documentation from [Chips](https://mui.com/material-ui/react-chip).
       />
 
       <Chip 
+       color="default"
         label="Chip Outlined" 
         variant="outlined" 
         size="small"
       />
 
     <Chip 
+      color="default"
       icon={<Icon component={Check} 
       color='secondary'/>}  
       label="Chip Outlined Leading Icon" 
