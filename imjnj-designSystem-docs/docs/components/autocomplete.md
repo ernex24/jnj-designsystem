@@ -105,10 +105,4 @@ import { ChevronDown  } from "@jnj_dnds/designsystem/dist/theme/icons-react/buil
         )}
       />
 
-```
-<br/>
-
-### Import
-
-```jsx
 

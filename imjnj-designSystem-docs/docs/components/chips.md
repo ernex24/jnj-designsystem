@@ -579,7 +579,7 @@ Explore documentation from [Chips](https://mui.com/material-ui/react-chip).
 
   <br />
 
-  ### Chips color secondary
+  ### Chips color Primary
   <br/>
 
   <Stack m={4} direction="row" justifyContent="center" alignItems="center" spacing={4}>
