@@ -438,7 +438,7 @@ html {
 }
 
 .jnj-text-subheader {
-    font-family: Johnson Text Ligth, sans-serif !important;
+    font-family: Johnson Text Light, sans-serif !important;
     font-size: var(--jnj-text-desktop-sub-header) !important;
     line-height: var(--jnj-text-desktop-lineheigth-sub-header) !important;
     color: var(--jnj-color-text) !important;
@@ -711,7 +711,7 @@ html {
 }
 
 .jnj-text-subheader-dark {
-    font-family: Johnson Text Ligth, sans-serif!important ;
+    font-family: Johnson Text Light, sans-serif!important ;
     font-size: var(--jnj-text-desktop-sub-header)!important ;
     line-height: var(--jnj-text-desktop-lineheigth-sub-header)!important ;
     color: var(--jnj-color-text-dark)!important ;
