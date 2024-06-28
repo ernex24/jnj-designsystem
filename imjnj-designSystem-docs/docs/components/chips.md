@@ -5,49 +5,488 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Stack from '@mui/material/Stack';
 import Chip from '@mui/material/Chip';
+import { XClose, Check } from "../../src/theme/icons-react/build/cjs/index.js";
+import {handleClick, handleDelete} from '../../src/components/UiComponents/handle.js' 
+import Icon from '@mui/material/Icon';
 
 # Chips
 
 <Tabs>
   <TabItem value="Codebase" label="Codebase" default>
-<br/>
-Consistent button styles across the application reinforce branding and improve usability by making interactions predictable and easy to understand.
-<br/>
-Explore documentation from [MUI Buttons](https://mui.com/material-ui/react-button/).
+
+Explore documentation from [Chips](https://mui.com/material-ui/react-chip).
 
 <br/>
 
 ##### Import
+<br/>
 ```jsx
 
  import Chip from '@mui/material/Chip';
 
 ```
 <br/>
-### Primary buttons
-<br/>
+### Chips default
 <br/>
 
-  <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
-      <Chip label="Chip Filled" />
-      <Chip label="Chip Outlined" variant="outlined" />
+  <Stack m={4} direction="row" justifyContent="center" alignItems="center" spacing={4}>
+   
+      <Chip 
+        label="Chip Outlined Trailing Icon" 
+        variant="outlined" 
+        size="small" 
+        onClick={handleClick}
+        onDelete={handleDelete}
+        deleteIcon={<Icon component={XClose} color='secondary'/>}
+      />
+
+      <Chip 
+        label="Chip Outlined" 
+        variant="outlined" 
+        size="small"
+      />
+
+    <Chip 
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip Outlined Leading Icon" 
+      variant="outlined" 
+      size="small" 
+    />
+
     </Stack>
+
+      ```jsx
+
+      <Chip 
+        label="Chip Outlined Trailing Icon" 
+        variant="outlined" 
+        size="small" 
+        onClick={handleClick}
+        onDelete={handleDelete}
+        deleteIcon={<Icon component={XClose} color='secondary'/>}
+      />
+
+      <Chip 
+        label="Chip Outlined" 
+        variant="outlined" 
+        size="small"
+      />
+
+    <Chip 
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip Outlined Leading Icon" 
+      variant="outlined" 
+      size="small" 
+    />
+
+    ```
+
+    <Stack m={4} direction="row" justifyContent="center" alignItems="center" spacing={4}>
+
+      <Chip 
+        label="Chip Filled Trailing Icon" 
+        variant="filled" 
+        size="small" 
+        onClick={handleClick}
+        onDelete={handleDelete}
+        deleteIcon={<Icon component={XClose} color='secondary'/>}
+      />
+
+      <Chip
+        label="Chip Filled" 
+        variant="filled" 
+        size="small" 
+      />
+
+      <Chip 
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip Filled Leading Icon" 
+      variant="filled" 
+      size="small" 
+    />
+
+  </Stack>
+
+      ```jsx
+
+      <Chip 
+        label="Chip Filled Trailing Icon" 
+        variant="filled" 
+        size="small" 
+        onClick={handleClick}
+        onDelete={handleDelete}
+        deleteIcon={<Icon component={XClose} color='secondary'/>}
+      />
+
+      <Chip
+        label="Chip Filled" 
+        variant="filled" 
+        size="small" 
+      />
+
+      <Chip 
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip Filled Leading Icon" 
+      variant="filled" 
+      size="small" 
+    />
+
+    ```
+
+  <Stack m={4}  direction="row" justifyContent="center" alignItems="center" spacing={4}>
+
+    <Chip 
+      label="Chip filled-light Leading Icon" 
+      variant="filled-ligth" 
+      size="small" 
+      onClick={handleClick}
+      onDelete={handleDelete}
+      deleteIcon={<Icon component={XClose} color='secondary'/>}
+    />
+
+    <Chip
+      label="Chip filled-ligth"
+      variant="filled-ligth"
+      size="small"
+    />
+
+     <Chip 
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip filled-ligth Leading Icon" 
+      variant="filled-ligth" 
+      size="small" 
+    />
+
+  </Stack>
+
+
+      ```jsx
+     <Chip 
+      label="Chip filled-light Leading Icon" 
+      variant="filled-ligth" 
+      size="small" 
+      onClick={handleClick}
+      onDelete={handleDelete}
+      deleteIcon={<Icon component={XClose} color='secondary'/>}
+    />
+
+    <Chip
+      label="Chip filled-ligth"
+      variant="filled-ligth"
+      size="small"
+    />
+
+     <Chip 
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip filled-ligth Leading Icon" 
+      variant="filled-ligth" 
+      size="small" 
+    />
+
+    ```
 
   <br />
 
-  ```jsx
-   <Chip label="Chip Filled" />
-   <Chip label="Chip Outlined" variant="outlined" />
-```
+### Chips color success
+<br/>
+
+  <Stack m={4} direction="row" justifyContent="center" alignItems="center" spacing={4}>
+   
+      <Chip 
+        color="success"
+        label="Chip Outlined Trailing Icon" 
+        variant="outlined" 
+        size="small" 
+        onClick={handleClick}
+        onDelete={handleDelete}
+        deleteIcon={<Icon component={XClose} color='secondary'/>}
+      />
+
+      <Chip 
+       color="success"
+        label="Chip Outlined" 
+        variant="outlined" 
+        size="small"
+      />
+
+    <Chip 
+     color="success"
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip Outlined Leading Icon" 
+      variant="outlined" 
+      size="small" 
+    />
+
+    </Stack>
+
+    <Stack m={4} direction="row" justifyContent="center" alignItems="center" spacing={4}>
+
+      <Chip 
+       color="success"
+        label="Chip Filled Trailing Icon" 
+        variant="filled" 
+        size="small" 
+        onClick={handleClick}
+        onDelete={handleDelete}
+        deleteIcon={<Icon component={XClose} color='secondary'/>}
+      />
+
+      <Chip
+       color="success"
+        label="Chip Filled" 
+        variant="filled" 
+        size="small" 
+      />
+
+      <Chip 
+      color="success"
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip Filled Leading Icon" 
+      variant="filled" 
+      size="small" 
+    />
+
+  </Stack>
+
+  <Stack m={4}  direction="row" justifyContent="center" alignItems="center" spacing={4}>
+
+    <Chip 
+     color="success"
+      label="Chip filled-light Leading Icon" 
+      variant="filled-ligth" 
+      size="small" 
+      onClick={handleClick}
+      onDelete={handleDelete}
+      deleteIcon={<Icon component={XClose} color='secondary'/>}
+    />
+
+    <Chip
+     color="success"
+      label="Chip filled-ligth"
+      variant="filled-ligth"
+      size="small"
+    />
+
+     <Chip 
+      color="success"
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip filled-ligth Leading Icon" 
+      variant="filled-ligth" 
+      size="small" 
+    />
+
+  </Stack>
+
+  <br />
+  
+  ### Chips color warning
+  <br/>
+
+  <Stack m={4} direction="row" justifyContent="center" alignItems="center" spacing={4}>
+   
+      <Chip 
+        color="warning"
+        label="Chip Outlined Trailing Icon" 
+        variant="outlined" 
+        size="small" 
+        onClick={handleClick}
+        onDelete={handleDelete}
+        deleteIcon={<Icon component={XClose} color='secondary'/>}
+      />
+
+      <Chip 
+       color="warning"
+        label="Chip Outlined" 
+        variant="outlined" 
+        size="small"
+      />
+
+    <Chip 
+     color="warning"
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip Outlined Leading Icon" 
+      variant="outlined" 
+      size="small" 
+    />
+
+    </Stack>
+
+    <Stack m={4} direction="row" justifyContent="center" alignItems="center" spacing={4}>
+
+      <Chip 
+       color="warning"
+        label="Chip Filled Trailing Icon" 
+        variant="filled" 
+        size="small" 
+        onClick={handleClick}
+        onDelete={handleDelete}
+        deleteIcon={<Icon component={XClose} color='secondary'/>}
+      />
+
+      <Chip
+       color="warning"
+        label="Chip Filled" 
+        variant="filled" 
+        size="small" 
+      />
+
+      <Chip 
+      color="warning"
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip Filled Leading Icon" 
+      variant="filled" 
+      size="small" 
+    />
+
+  </Stack>
+
+  <Stack m={4}  direction="row" justifyContent="center" alignItems="center" spacing={4}>
+
+    <Chip 
+       color="warning"
+      label="Chip filled-light Leading Icon" 
+      variant="filled-ligth" 
+      size="small" 
+      onClick={handleClick}
+      onDelete={handleDelete}
+      deleteIcon={<Icon component={XClose} color='secondary'/>}
+    />
+
+    <Chip
+       color="warning"
+      label="Chip filled-ligth"
+      variant="filled-ligth"
+      size="small"
+    />
+
+     <Chip 
+        color="warning"
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip filled-ligth Leading Icon" 
+      variant="filled-ligth" 
+      size="small" 
+    />
+
+  </Stack>
+
+  <br />
+
+
+  ### Chips color error
+  <br/>
+
+  <Stack m={4} direction="row" justifyContent="center" alignItems="center" spacing={4}>
+   
+      <Chip 
+        color="error"
+        label="Chip Outlined Trailing Icon" 
+        variant="outlined" 
+        size="small" 
+        onClick={handleClick}
+        onDelete={handleDelete}
+        deleteIcon={<Icon component={XClose} color='secondary'/>}
+      />
+
+      <Chip 
+       color="error"
+        label="Chip Outlined" 
+        variant="outlined" 
+        size="small"
+      />
+
+    <Chip 
+     color="error"
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip Outlined Leading Icon" 
+      variant="outlined" 
+      size="small" 
+    />
+
+    </Stack>
+
+    <Stack m={4} direction="row" justifyContent="center" alignItems="center" spacing={4}>
+
+      <Chip 
+       color="error"
+        label="Chip Filled Trailing Icon" 
+        variant="filled" 
+        size="small" 
+        onClick={handleClick}
+        onDelete={handleDelete}
+        deleteIcon={<Icon component={XClose} color='secondary'/>}
+      />
+
+      <Chip
+       color="error"
+        label="Chip Filled" 
+        variant="filled" 
+        size="small" 
+      />
+
+      <Chip 
+      color="error"
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip Filled Leading Icon" 
+      variant="filled" 
+      size="small" 
+    />
+
+  </Stack>
+
+  <Stack m={4}  direction="row" justifyContent="center" alignItems="center" spacing={4}>
+
+    <Chip 
+       color="error"
+      label="Chip filled-light Leading Icon" 
+      variant="filled-ligth" 
+      size="small" 
+      onClick={handleClick}
+      onDelete={handleDelete}
+      deleteIcon={<Icon component={XClose} color='secondary'/>}
+    />
+
+    <Chip
+       color="error"
+      label="Chip filled-ligth"
+      variant="filled-ligth"
+      size="small"
+    />
+
+     <Chip 
+        color="error"
+      icon={<Icon component={Check} 
+      color='secondary'/>}  
+      label="Chip filled-ligth Leading Icon" 
+      variant="filled-ligth" 
+      size="small" 
+    />
+
+  </Stack>
+
+  <br />
 
 
 
    ### Figma buttons file
-
+<br/>
 <iframe
   height="450"
   width="800"
-  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FIKgg9mk0liILChULi9LvaM%2FComponents-J%2526J---v1.1.0%3Ftype%3Ddesign%26node-id%3D4702%253A74217%26mode%3Ddesign%26t%3DaauGeEtkawvO4h6l-1"
+  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FIKgg9mk0liILChULi9LvaM%2FComponents-J%2526J---v1.1.0%3Fnode-id%3D2139-21366%26t%3DHKTcnUU0Sgk8wfrP-1"
   allowfullscreen
 />
 

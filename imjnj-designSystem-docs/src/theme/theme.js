@@ -92,26 +92,300 @@ const jnjTheme = createTheme({
 
         MuiChip: {
             styleOverrides: {
-              root: {
-                backgroundColor: '#EB1700',
-                color: '#ffffff',
-                font: 'Johnson Text Regular',
-                fontSize: '14px',
-                lineHeight: '16px',
-                border: '0',
-                '& .MuiChip-label': {
-                    
+                root: {
+                    backgroundColor: '#F1EFED',
+                    color: '#212121',
+                    fontFamily: 'Johnson Text Regular',
+                    fontSize: '0.875',
+                    lineHeight: '1rem',
+                },
+                label: {
+              
+                },
+                deleteIcon: {
+                    color: '#A39992',
+                  '&:hover': {
+                    color: '#212121',
+                  },
                 },
               },
-              deleteIcon: {
-                color: '#ffffff',
-                '&:hover': {
-                    color: '#ffffff',
+            variants: [
+              // default variant
+              {
+                props: { variant: 'filled', color: 'default', size: 'small' },
+                style: {
+                  backgroundColor: '#A39992',
+                  color: '#fff',
+                  fontFamily: 'Johnson Text Regular',
+                  fontSize: '0.875',
+                  lineHeight: '1rem',
+                  '&:hover': {
+                    backgroundColor: '#81766F'
+                  },
+                  '& .MuiChip-icon': {
+                    color: '#fff',
+                  },
+                  '& .MuiChip-deleteIcon': {
+                    color: '#fff',
+                    '&:hover': {
+                      color: '#212121',
+                    },
+                  },
                 },
               },
-            },
-          },
-
+              {
+                props: { variant: 'filled-ligth', color: 'default', size: 'small' },
+                style: {
+                  backgroundColor: '#F1EFED',
+                  color: '#212121',
+                  fontFamily: 'Johnson Text Regular',
+                  fontSize: '0.875',
+                  lineHeight: '1rem',
+                  '&:hover': {
+                    backgroundColor: '#E8E6E3'
+                  },
+                  '& .MuiChip-icon': {
+                    color: '#212121',
+                  },
+                  '& .MuiChip-deleteIcon': {
+                    color: '#212121',
+                    '&:hover': {
+                      color: '#C62828',
+                    },
+                  },
+                },
+              },
+              {
+                props: { variant: 'outlined', color: 'default', size: 'small' },
+                style: {
+                  backgroundColor: 'transparent',
+                  border: '1px solid #A39992',
+                  color: '#212121',
+                  fontFamily: 'Johnson Text Regular',
+                  fontSize: '0.875',
+                  lineHeight: '1rem',
+                  '&:hover': {
+                    backgroundColor: '#EAF2EA'
+                  },
+                  '& .MuiChip-icon': {
+                    color: '#212121',
+                  },
+                  '& .MuiChip-deleteIcon': {
+                    color: '#A39992',
+                    '&:hover': {
+                      color: '#C62828',
+                    },
+                  },
+                },
+              },
+               // success variant
+               {
+                props: { variant: 'filled', color: 'success', size: 'small' },
+                style: {
+                  backgroundColor: '#53CE76',
+                  color: '#fff',
+                  fontFamily: 'Johnson Text Regular',
+                  fontSize: '0.875',
+                  lineHeight: '1rem',
+                  '&:hover': {
+                    backgroundColor: '#328714'
+                  },
+                  '& .MuiChip-icon': {
+                    color: '#fff',
+                  },
+                  '& .MuiChip-deleteIcon': {
+                    color: '#fff',
+                    '&:hover': {
+                      color: '#212121',
+                    },
+                  },
+                },
+              },
+              {
+                props: { variant: 'filled-ligth', color: 'success', size: 'small' },
+                style: {
+                  backgroundColor: '#EAF2EA',
+                  color: '#359942',
+                  fontFamily: 'Johnson Text Regular',
+                  fontSize: '0.875',
+                  lineHeight: '1rem',
+                  '&:hover': {
+                    backgroundColor: '#EAF2EA'
+                  },
+                  '& .MuiChip-icon': {
+                    color: '#359942',
+                  },
+                  '& .MuiChip-deleteIcon': {
+                    color: '#359942',
+                    '&:hover': {
+                      color: '#C62828',
+                    },
+                  },
+                },
+              },
+              {
+                props: { variant: 'outlined', color: 'success', size: 'small' },
+                style: {
+                  backgroundColor: 'transparent',
+                  border: '1px solid #53CE76',
+                  color: '#359942',
+                  fontFamily: 'Johnson Text Regular',
+                  fontSize: '0.875',
+                  lineHeight: '1rem',
+                  '&:hover': {
+                    backgroundColor: '#F9F8F7'
+                  },
+                  '& .MuiChip-icon': {
+                    color: '#359942',
+                  },
+                  '& .MuiChip-deleteIcon': {
+                    color: '#359942',
+                    '&:hover': {
+                      color: '#C62828',
+                    },
+                  },
+                },
+              },
+               // warning variant
+               {
+                props: { variant: 'filled', color: 'warning', size: 'small' },
+                style: {
+                  backgroundColor: '#F5AC25',
+                  color: '#fff',
+                  fontFamily: 'Johnson Text Regular',
+                  fontSize: '0.875',
+                  lineHeight: '1rem',
+                  '&:hover': {
+                    backgroundColor: '#F37820'
+                  },
+                  '& .MuiChip-icon': {
+                    color: '#fff',
+                  },
+                  '& .MuiChip-deleteIcon': {
+                    color: '#fff',
+                    '&:hover': {
+                      color: '#212121',
+                    },
+                  },
+                },
+              },
+              {
+                props: { variant: 'filled-ligth', color: 'warning', size: 'small' },
+                style: {
+                  backgroundColor: '#FDF0E6',
+                  color: '#F37820',
+                  fontFamily: 'Johnson Text Regular',
+                  fontSize: '0.875',
+                  lineHeight: '1rem',
+                  '&:hover': {
+                    backgroundColor: '#FDF0E6'
+                  },
+                  '& .MuiChip-icon': {
+                    color: '#F37820',
+                  },
+                  '& .MuiChip-deleteIcon': {
+                    color: '#F37820',
+                    '&:hover': {
+                      color: '#C62828',
+                    },
+                  },
+                },
+              },
+              {
+                props: { variant: 'outlined', color: 'warning', size: 'small' },
+                style: {
+                  backgroundColor: 'transparent',
+                  border: '1px solid #F5AC25',
+                  color: '#F37820',
+                  fontFamily: 'Johnson Text Regular',
+                  fontSize: '0.875',
+                  lineHeight: '1rem',
+                  '&:hover': {
+                    backgroundColor: '#F9F8F7'
+                  },
+                  '& .MuiChip-icon': {
+                    color: '#F37820',
+                  },
+                  '& .MuiChip-deleteIcon': {
+                    color: '#F37820',
+                    '&:hover': {
+                      color: '#C62828',
+                    },
+                  },
+                },
+              },
+              // error variant
+              {
+                props: { variant: 'filled', color: 'error', size: 'small' },
+                style: {
+                  backgroundColor: '#D32F2F',
+                  color: '#fff',
+                  fontFamily: 'Johnson Text Regular',
+                  fontSize: '0.875',
+                  lineHeight: '1rem',
+                  '&:hover': {
+                    backgroundColor: '#D32F2F'
+                  },
+                  '& .MuiChip-icon': {
+                    color: '#fff',
+                  },
+                  '& .MuiChip-deleteIcon': {
+                    color: '#fff',
+                    '&:hover': {
+                        color: '#212121',
+                    },
+                  },
+                },
+              },
+              {
+                props: { variant: 'filled-ligth', color: 'error', size: 'small' },
+                style: {
+                  backgroundColor: '#FBEAEA',
+                  color: '#C62828',
+                  fontFamily: 'Johnson Text Regular',
+                  fontSize: '0.875',
+                  lineHeight: '1rem',
+                  '&:hover': {
+                    backgroundColor: '#FBEAEA'
+                  },
+                  '& .MuiChip-icon': {
+                    color: '#C62828',
+                  },
+                  '& .MuiChip-deleteIcon': {
+                    color: '#C62828',
+                    '&:hover': {
+                        color: '#212121',
+                    },
+                  },
+                },
+              },
+              {
+                props: { variant: 'outlined', color: 'error', size: 'small' },
+                style: {
+                  backgroundColor: 'transparent',
+                  border: '1px solid #D32F2F',
+                  color: '#C62828',
+                  fontFamily: 'Johnson Text Regular',
+                  fontSize: '0.875',
+                  lineHeight: '1rem',
+                  '&:hover': {
+                    backgroundColor: '#FBEAEA'
+                  },
+                  '& .MuiChip-icon': {
+                    color: '#C62828',
+                  },
+                  '& .MuiChip-deleteIcon': {
+                    color: '#C62828',
+                    '&:hover': {
+                      color: '#212121',
+                    },
+                  },
+                },
+              },
+              
+            ]
+        },
+    
         MuiAutocomplete: {
             styleOverrides: {
               popupIndicator: {

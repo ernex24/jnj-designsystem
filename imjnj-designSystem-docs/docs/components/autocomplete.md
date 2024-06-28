@@ -22,7 +22,7 @@ See complete components documentation from [MUI Autocomplete](https://mui.com/ma
 
 ### Basic autocomplete 
 
-<Stack direction="row" justifyContent="center" alignItems="center" spacing={4}>
+<Stack direction="row" justifyContent="center" alignItems="flex-start" spacing={4}>
   
      <Autocomplete
         popupIcon={<ChevronDown />}
@@ -37,7 +37,7 @@ See complete components documentation from [MUI Autocomplete](https://mui.com/ma
           />
         )}
       />
-      
+
         <Autocomplete
         multiple
         popupIcon={<ChevronDown />}
