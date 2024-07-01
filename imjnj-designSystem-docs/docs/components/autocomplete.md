@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Box from '@mui/material/Box';
-import top100Films from '../../src/components/UiComponents/data.js' 
+import top100Films from '../../src/components/UiComponents/data.js';
 import { ChevronDown } from "../../src/theme/icons-react/build/cjs/index.js";
 import InputAdornment from '@mui/material/InputAdornment';
 import IconButton from '@mui/material/IconButton';
