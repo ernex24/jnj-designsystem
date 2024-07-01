@@ -26,7 +26,7 @@ See complete components documentation from [MUI Autocomplete](https://mui.com/ma
 ```jsx
 
 import Autocomplete from '@mui/material/Autocomplete';
-import { ChevronDown  } from "@jnj_dnds/designsystem/dist/theme/icons-react/build/cjs/";
+import { ChevronDown  } from "@jnj_dnds/designsystem/dist/theme/icons-react/";
 
 ```
 

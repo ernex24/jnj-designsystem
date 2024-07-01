@@ -18,7 +18,6 @@ The header is a custom component from the CSS file, is highly customizable so yo
 ### Simple header
 
   The header in it most simple form consist in a pannel with the logo at the left and the posibility to add different actions horizontally aligned to the rigth.
-
   The Avatar component is comming from MUI, explore [Avatar component](https://v5-0-6.mui.com/components/avatars/). 
   
   <br/>
@@ -43,13 +42,15 @@ The header is a custom component from the CSS file, is highly customizable so yo
 
   <br />
 
-   ```jsx
+     ```jsx
 
-import IMLogoRed from '@jnj_dnds/designsystem/dist/theme/logos/JJ_IM_Logo_SingleLine_Red.svg';
+import { JJIMLogoSingleLineRed } from '@jnj_dnds/designsystem/dist/theme/logos'
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
+
+
 
 <Box component="header" p={'12px'} m={3} elevation={2}  sx={{ boxShadow: 4, borderRadius: '12px', bgcolor: 'white' }}>
    <Stack 
@@ -57,7 +58,7 @@ import Avatar from '@mui/material/Avatar';
      justifyContent="space-between"
      alignItems="center"
      spacing={2}>
-       <img src={IMLogoRed}height='32px'/>
+       <img src={ JJIMLogoSingleLineRed } height='32px'/>
    <Stack 
      direction="row"
      alignItems="center"
@@ -68,13 +69,21 @@ import Avatar from '@mui/material/Avatar';
    </Stack>
  </Box>
 
-
    ```  
 
 
 ### Header with secondary menu
 
   This header layout can hold a tab component, to be used as a secondary menu, you need to configure the content of the tab styles to be adjusted to the layout.
+
+
+      ```jsx
+        import { JJIMLogoSingleLineRed } from '@jnj_dnds/designsystem/dist/theme/logos'
+        import Box from '@mui/material/Box';
+        import Stack from '@mui/material/Stack';
+        import Typography from '@mui/material/Typography';
+        import Avatar from '@mui/material/Avatar';
+      ```  
   
   <br/>
 
@@ -113,7 +122,7 @@ import Avatar from '@mui/material/Avatar';
             justifyContent="space-between"
             alignItems="center"
             spacing={2}>
-              <IMLogoRed height='32px'/>
+              <img src={ JJIMLogoSingleLineRed } height='32px'/>
           <Stack
             direction="row"
             alignItems="center"

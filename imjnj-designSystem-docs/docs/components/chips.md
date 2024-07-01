@@ -23,8 +23,8 @@ Explore documentation from [Chips](https://mui.com/material-ui/react-chip).
 ```jsx
 
  import Chip from '@mui/material/Chip';
- import { XClose, Check } from "@jnj_dnds/designsystem/dist/theme/icons-react/build/cjs/";
  import Icon from '@mui/material/Icon';
+ import { XClose, Check } from "@jnj_dnds/designsystem/dist/theme/icons-react/";
 
 ```
 <br/>
@@ -67,8 +67,8 @@ Explore documentation from [Chips](https://mui.com/material-ui/react-chip).
         label="Chip Outlined Trailing Icon" 
         variant="outlined" 
         size="small" 
-        onClick={handleClick}
-        onDelete={handleDelete}
+        onClick={'handleClick'}
+        onDelete={'handleDelete'}
         deleteIcon={<Icon component={XClose} color='secondary'/>}
       />
 
@@ -121,8 +121,8 @@ Explore documentation from [Chips](https://mui.com/material-ui/react-chip).
         label="Chip Filled Trailing Icon" 
         variant="filled" 
         size="small" 
-        onClick={handleClick}
-        onDelete={handleDelete}
+        onClick={'handleClick'}
+        onDelete={'handleDelete'}
         deleteIcon={<Icon component={XClose} color='secondary'/>}
       />
 
@@ -175,8 +175,8 @@ Explore documentation from [Chips](https://mui.com/material-ui/react-chip).
       label="Chip filled-light Leading Icon" 
       variant="filled-ligth" 
       size="small" 
-      onClick={handleClick}
-      onDelete={handleDelete}
+      onClick={'handleClick'}
+      onDelete={'handleDelete'}
       deleteIcon={<Icon component={XClose} color='secondary'/>}
     />
 

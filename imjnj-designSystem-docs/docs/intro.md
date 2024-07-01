@@ -43,7 +43,7 @@ This command can be executed in Command Prompt, Powershell, Terminal, or any int
 
 ```jsx title="src/main.jsx"
 import { ThemeProvider} from '@mui/material/styles';
-import { jnjTheme } from '@jnj_dnds/designsystem/dist/theme/theme.js';
+import { jnjTheme } from '@jnj_dnds/designsystem/dist/theme/';
 import '@jnj_dnds/designsystem/dist/theme/styles.css'
 ```
 

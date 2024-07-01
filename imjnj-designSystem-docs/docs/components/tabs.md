@@ -37,7 +37,7 @@ import Box from '@mui/material/Box';
 
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+        <Tabs value={value} onChange={'handleChange'} aria-label="basic tabs example">
           <Tab label="Item One" {...a11yProps(0)} />
           <Tab label="Item Two" {...a11yProps(1)} />
           <Tab label="Item Three" {...a11yProps(2)} />
@@ -69,7 +69,7 @@ import Box from '@mui/material/Box';
         orientation="vertical"
         variant="scrollable"
         value={value}
-        onChange={handleChange}
+        onChange={'handleChange'}
         aria-label="Vertical tabs example"
         sx={{ borderRight: 1, borderColor: 'divider' }}
       >

@@ -1,25 +1,26 @@
 {
   "name": "@jnj_dnds/designsystem",
-  "version": "0.1.8",
+  "version": "0.4.0",
   "type": "module",
   "publishConfig": {
     "access": "public"
   },
   "files": [
-    "dist/theme/",
-    "dist/theme/theme.js"
+    "dist/*"
   ],
-  "main": "src/theme/",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "create-index": "node create-index.js"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.15",
+    "create-index": "^2.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -35,5 +36,13 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
-  }
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.15",
+    "@mui/x-data-grid": "^7.3.2",
+    "@mui/x-date-pickers": "^7.7.1",
+    "framer-motion": "^11.2.9"
+}
 }

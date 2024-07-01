@@ -18,7 +18,7 @@ Explore documentation from [MUI Buttons](https://mui.com/material-ui/react-butto
 <br/>
 
 ##### Import
-
+<br/>
 ```jsx
 
   import Button from '@mui/material/Button';
@@ -26,6 +26,7 @@ Explore documentation from [MUI Buttons](https://mui.com/material-ui/react-butto
 ```
 
 ### Primary buttons
+<br/>
 <br/>
 
   <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
@@ -45,6 +46,7 @@ Explore documentation from [MUI Buttons](https://mui.com/material-ui/react-butto
 
 ### Secondary buttons
 <br/>
+<br/>
 
  <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
       <Button color="secondary" variant="text">Text</Button>
@@ -63,6 +65,7 @@ Explore documentation from [MUI Buttons](https://mui.com/material-ui/react-butto
 
 ### Buttons size
 <br/>
+<br/>
 
  <Stack  direction="row" justifyContent="center" alignItems="center" spacing={4}>
       <Button size="small" color="primary" variant="contained">Contained</Button>
@@ -78,9 +81,9 @@ Explore documentation from [MUI Buttons](https://mui.com/material-ui/react-butto
       <Button size="large" color="primary" variant="contained">Contained</Button>
 
   ```
-
+<br/>
    ### Figma buttons file
-
+<br/>
 <iframe
   height="450"
   width="800"

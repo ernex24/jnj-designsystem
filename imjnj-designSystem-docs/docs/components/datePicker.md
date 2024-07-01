@@ -36,7 +36,7 @@ npm install dayjs
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import { Calendar, ChevronDown  } from "@jnj_dnds/designsystem/dist/theme/icons-react/build/cjs/";
+import { Calendar, ChevronDown  } from "@jnj_dnds/designsystem/dist/theme/icons-react/";
 
 ```
 
@@ -76,7 +76,7 @@ Select a single day based on month or year
 import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { Calendar, ChevronDown  } from "@jnj_dnds/designsystem/dist/theme/icons-react/build/cjs/";
+import { Calendar, ChevronDown  } from "@jnj_dnds/designsystem/dist/theme/icons-react/";
 ```
 
 

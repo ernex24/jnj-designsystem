@@ -24,13 +24,14 @@ These icons are already React components and can dynamically receive all propert
 ```jsx
 
 // Import the icon
-import { IconName } from "@jnj_dnds/designsystem/dist/theme/icons-react/build/cjs/";
+import { IconName } from "@jnj_dnds/designsystem/dist/theme/icons-react/";
 
 //Import the icon component from MUI to apply the theme
 import Icon from '@mui/material/Icon';
 
 // Apply the color spacing and size from MUI Design Tokens
 <Icon component={IconName} color='primary' fontSize='large'>
+
 ```
 
   <br/>

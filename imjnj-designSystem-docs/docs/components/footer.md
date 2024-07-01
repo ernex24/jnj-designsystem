@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 import Stack from '@mui/material/Stack';
@@ -52,12 +52,16 @@ The Footer is a custom component, is highly customizable so you can adapt it to 
 
   <br />
 
-   ```jsx
+     ```jsx
 
-  import IMLogoRed from '@jnj_dnds/designsystem/dist/theme/logos/JJ_IM_Logo_SingleLine_Red.svg';  
+  import { JJIMLogoSingleLineRed } from '@jnj_dnds/designsystem/dist/theme/logos'
   import Box from '@mui/material/Box';
   import Stack from '@mui/material/Stack';
   import Typography from '@mui/material/Typography';
+
+   ```  
+
+   ```jsx
 
      <Box 
       component="footer" 
@@ -75,7 +79,7 @@ The Footer is a custom component, is highly customizable so you can adapt it to 
         direction="row"
         alignItems="center"
         spacing={4}>
-           <img src={IMLogoRed}height='32px'/>
+           <img src={JJIMLogoSingleLineRed}height='32px'/>
       </Stack>
       <Stack 
         justifyContent="flex-end"
@@ -84,7 +88,6 @@ The Footer is a custom component, is highly customizable so you can adapt it to 
         spacing={3}>
           <Typography variant="caption">All rigths reserved</Typography>
       </Stack>
-    </Box>k>
     </Box>
 
    ```  

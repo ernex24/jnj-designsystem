@@ -1,0 +1,9 @@
+export { default as JJIMLogoSingleLineBlack } from './JJ_IM_Logo_SingleLine_Black.svg';
+export { default as JJIMLogoSingleLineRed } from './JJ_IM_Logo_SingleLine_Red.svg';
+export { default as JJIMLogoSingleLineWhite } from './JJ_IM_Logo_SingleLine_White.svg';
+export { default as JNJLogoSingleLineBlack } from './JNJ_Logo_SingleLine_Black.svg';
+export { default as JNJLogoSingleLineRed } from './JNJ_Logo_SingleLine_Red.svg';
+export { default as JNJLogoSingleLineWhite } from './JNJ_Logo_SingleLine_White.svg';
+export { default as JNJMTLogoSingleLineBlack } from './JNJ_MT_Logo_SingleLine_Black.svg';
+export { default as JNJMTLogoSingleLineRed } from './JNJ_MT_Logo_SingleLine_Red.svg';
+export { default as JNJMTLogoSingleLineWhite } from './JNJ_MT_Logo_SingleLine_White.svg';

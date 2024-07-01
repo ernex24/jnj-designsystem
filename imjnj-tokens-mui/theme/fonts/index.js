@@ -1,0 +1,16 @@
+export { default as JohnsonDisplayBold } from './JohnsonDisplay-Bold.woff2';
+export { default as JohnsonDisplayBoldItalic } from './JohnsonDisplay-BoldItalic.woff2';
+export { default as JohnsonDisplayLight } from './JohnsonDisplay-Light.woff2';
+export { default as JohnsonDisplayLightItalic } from './JohnsonDisplay-LightItalic.woff2';
+export { default as JohnsonDisplayMedium } from './JohnsonDisplay-Medium.woff2';
+export { default as JohnsonDisplayMediumItalic } from './JohnsonDisplay-MediumItalic.woff2';
+export { default as JohnsonDisplayRegular } from './JohnsonDisplay-Regular.woff2';
+export { default as JohnsonDisplayRegularItalic } from './JohnsonDisplay-RegularItalic.woff2';
+export { default as JohnsonTextBold } from './JohnsonText-Bold.woff2';
+export { default as JohnsonTextBoldItalic } from './JohnsonText-BoldItalic.woff2';
+export { default as JohnsonTextLight } from './JohnsonText-Light.woff2';
+export { default as JohnsonTextLightItalic } from './JohnsonText-LightItalic.woff2';
+export { default as JohnsonTextMedium } from './JohnsonText-Medium.woff2';
+export { default as JohnsonTextMediumItalic } from './JohnsonText-MediumItalic.woff2';
+export { default as JohnsonTextRegular } from './JohnsonText-Regular.woff2';
+export { default as JohnsonTextRegularItalic } from './JohnsonText-RegularItalic.woff2';

@@ -69,6 +69,10 @@ See complete components documentation from [MUI Input](https://mui.com/material-
 
     import TextField from '@mui/material/TextField';
 
+```
+
+```jsx
+
      <TextField 
         placeholder='Small' 
         label="Size" 
@@ -127,9 +131,16 @@ See complete components documentation from [MUI Input](https://mui.com/material-
     
   <br/>  <br/>
 
-    ```jsx
 
-import { InputAdornment } from '@mui/material';
+  ```jsx
+
+  import { InputAdornment } from '@mui/material';
+  import { IconName } from "@jnj_dnds/designsystem/dist/theme/icons-react/";
+
+  ```
+
+
+    ```jsx
  
     <TextField 
         placeholder='Start'
@@ -188,20 +199,13 @@ import { InputAdornment } from '@mui/material';
     
   <br/>  <br/>
 
-    ```jsx
+      ```jsx
 
 import { InputAdornment } from '@mui/material';
- 
-    <TextField 
-        placeholder='Start'
-        label="Icon"
-        variant="outlined"
-        size="large"
-        InputLabelProps={{ shrink: true }} 
-         InputProps={{
-            startAdornment: <InputAdornment position="start"><Icon/></InputAdornment>,
-          }}
-    />
+
+```
+
+    ```jsx
 
     <TextField 
         placeholder='End'
@@ -209,8 +213,9 @@ import { InputAdornment } from '@mui/material';
         variant="outlined"
         size="large"
         InputLabelProps={{ shrink: true }} 
+        helperText="Please enter your name"
          InputProps={{
-            endAdornment: <InputAdornment position="end"><Icon/></InputAdornment>,
+            endAdornment: <InputAdornment position="end">€</InputAdornment>,
           }}
     />
 
@@ -241,9 +246,17 @@ import { InputAdornment } from '@mui/material';
     
   <br/>  <br/>
 
-    ```jsx
 
-import { InputAdornment } from '@mui/material';
+
+  ```jsx
+
+    import { InputAdornment } from '@mui/material';
+    import { IconName } from "@jnj_dnds/designsystem/dist/theme/icons-react/";
+
+  ```
+
+
+  ```jsx
  
     <TextField 
         placeholder='Start'
@@ -267,6 +280,6 @@ import { InputAdornment } from '@mui/material';
           }}
     />
 
-```
+  ```
 
     

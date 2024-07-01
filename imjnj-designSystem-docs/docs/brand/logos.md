@@ -20,29 +20,50 @@ import MTLogoWhite from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_White.svg'
 
 ## Innovative Medicine
 
+
+##### Import
+
+      ```jsx
+      import { JJIMLogoSingleLineBlack } from '@jnj_dnds/designsystem/dist/theme/logos';
+      import { JJIMLogoSingleLineRed } from '.@jnj_dnds/designsystem/dist/theme/logos';
+      import { JJIMLogoSingleLineWhite } from '@jnj_dnds/designsystem/dist/theme/logos';
+      ```
+##### Use
+
+      ```jsx
+        <img src={ JJIMLogoSingleLineBlack } alt="JNJ IM Logo"/>
+        <img src={ JJIMLogoSingleLineRed } alt="JNJ IM Logo"/>
+        <img src={ JJIMLogoSingleLineWhite } alt="JNJ IM Logo"/>
+      ```
+<br/>
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={8}>
         <IMLogoRed/>
         <IMLogoBlack/>
         <IMLogoWhite className="jnj-color-background-core-black jnj-padding-8"  />
     </Stack>
-    <br />
+    <br />     <br />
+
+
+   ## J&J
 
 ##### Import
 
-      ```jsx
-        import IMLogoRed from '@jnj_dnds/designsystem/dist/theme/logos/JJ_IM_Logo_SingleLine_Red.svg';
-        import IMLogoBlack from '@jnj_dnds/designsystem/dist/theme/logos/JJ_IM_Logo_SingleLine_Black.svg';
-        import IMLogoWhite from '@jnj_dnds/designsystem/dist/theme/logos/JJ_IM_Logo_SingleLine_White.svg';
-      ```
+    ```jsx
+
+      import { JNJLogoSingleLineBlack } from '@jnj_dnds/designsystem/dist/theme/logos';
+      import { JNJLogoSingleLineRed } from '@jnj_dnds/designsystem/dist/theme/logos';
+      import { JNJLogoSingleLineWhite } from '@jnj_dnds/designsystem/dist/theme/logos';
+
+
+    ```
 ##### Use
+    ```jsx
+        <img src={ JNJLogoSingleLineBlack } alt="JNJ Logo"/>
+        <img src={ JNJLogoSingleLineRed } alt="JNJ Logo"/>
+        <img src={ JNJLogoSingleLineWhite } alt="JNJ Logo"/>
+    ```
 
-      ```jsx
-        <img src={IMLogoRed} alt="JNJ IM Logo"/>
-        <img src={IMLogoBlack} alt="JNJ IM Logo"/>
-        <img src={MLogoWhite} alt="JNJ IM Logo"/>
-      ```
-
-    ## J&J
+ 
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={8}>
         <JNJLogoRed/>
@@ -52,22 +73,22 @@ import MTLogoWhite from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_White.svg'
 
   <br />
 
-##### Import
+  <br />     <br />
+    ## Med Tech
+
+    ##### Import
 
     ```jsx
-
-      import JNJLogoRed from '@jnj_dnds/designsystem/dist/theme/logos/JNJ_Logo_SingleLine_Red.svg';
-      import JNJLogoBlack from '@jnj_dnds/designsystem/dist/theme/logos/JNJ_Logo_SingleLine_Black.svg';
-      import JNJLogoWhite from '@jnj_dnds/designsystem/dist/theme/logos/JNJ_Logo_SingleLine_White.svg';
-
+      import { JNJMTLogoSingleLineBlack } from '@jnj_dnds/designsystem/dist/theme/logos';
+      import { JNJMTLogoSingleLineRed } from '@jnj_dnds/designsystem/dist/theme/logos';
+      import { JNJMTLogoSingleLineWhite } from '@jnj_dnds/designsystem/dist/theme/logos';
     ```
 ##### Use
     ```jsx
-        <img src={JNJLogoRed} alt="JNJ Logo"/>
-        <img src={JNJLogoBlack} alt="JNJ Logo"/>
-        <img src={JNJLogoWhite} alt="JNJ Logo"/>
+        <img src={ JNJMTLogoSingleLineBlack } alt="JNJ MT Logo"/>
+        <img src={ JNJMTLogoSingleLineRed } alt="JNJ MT Logo"/>
+        <img src={ JNJMTLogoSingleLineWhite } alt="JNJ MT Logo"/>
     ```
-    ## Med Tech
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={8}>
         <MTLogoRed/>
@@ -76,19 +97,7 @@ import MTLogoWhite from '../../src/theme/logos/JNJ_MT_Logo_SingleLine_White.svg'
     </Stack>
       <br />
 
-##### Import
 
-    ```jsx
-      import MTLogoRed from '@jnj_dnds/designsystem/dist/theme/logos/JNJ_MT_Logo_SingleLine_Red.svg';
-      import MTLogoBlack from '@jnj_dnds/designsystem/dist/theme/logos/JNJ_MT_Logo_SingleLine_Black.svg';
-      import MTLogoWhite from '@jnj_dnds/designsystem/dist/theme/logos/JNJ_MT_Logo_SingleLine_White.svg';
-    ```
-##### Use
-    ```jsx
-        <img src={MTLogoRed} alt="JNJ MT Logo"/>
-        <img src={MTLogoBlack} alt="JNJ MT Logo"/>
-        <img src={MTLogoWhite} alt="JNJ MT Logo"/>
-    ```
 
   <br />
 
