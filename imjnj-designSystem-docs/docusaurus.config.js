@@ -130,7 +130,7 @@ const config = {
             ],
           },
         ],
-        copyright: `All rigths reserved © ${new Date().getFullYear()} v0.4.0`,
+        copyright: `All rigths reserved © ${new Date().getFullYear()} v0.5.0`,
       },
       prism: {
         theme: prismThemes.github,

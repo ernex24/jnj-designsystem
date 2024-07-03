@@ -5,4 +5,4 @@ export * from './images';
 export * from './logos';
 import './favicon.ico';
 import './styles.css';
-export { default as jnjTheme } from './theme.js';
+export { default as Theme } from './theme.js';
