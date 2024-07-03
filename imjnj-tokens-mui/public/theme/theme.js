@@ -12,69 +12,81 @@ const jnjTheme = createTheme({
         },
     },
     palette: {
+
         mode: 'light',
+
         primary: {
             main: '#eb1700',
         },
+
         secondary: {
             main: '#212121',
         },
+
         text: {
             disabled: '#c1bbb3',
             secondary: '#212121',
             primary: '#eb1700',
         },
+
         warning: {
             main: '#f5ac25',
             light: '#FDF0E6',
             dark: '#F37820',
         },
+
         info: {
             main: '#00a0df',
             light: '#EAF9FF',
             dark: '#1C75BC',
         },
+
         success: {
             main: '#6EBD44',
             light: '#EAF2EA',
             dark: '#359942',
         },
+
         error: {
             main: '#D32F2F',
             light: '#FBEAEA',
             dark: '#C62828',
         },
+
         divider: 'rgba(33,33,33,0.1)',
-        gray: {
-            main: '#F9F8F7',
-            gray10: '#F9F8F7',
-            gray20: '#F1EFED',
-            gray30: '#E8E6E3',
-            gray40: '#D5CFC9',
-            gray50: '#C1BBB3',
-            gray60: '#A39992',
-            gray70: '#81766F',
-            gray80: '#564C47'
-        },
-        charts: {
-            main: '#eb1700',
-            yellow50: '#FBE058',
-            orange70: '#FF6017',
-            red90: '#9E0000',
-            purple40: '#B19BEB',
-            purple50: '#8C3BBB',
-            purple80: '#541980',
-            blue40: '#69D0FF',
-            blue50: '#0F68B2',
-            blue80: '#004685',
-            green40: '#53CE76',
-            green50: '#328714',
-            green80: '#3B5A0D',
+
+        grey: {
+          100: '#F9F8F7',
+          200: '#F1EFED',
+          300: '#E8E6E3',
+          400: '#D5CFC9',
+          500: '#C1BBB3',
+          600: '#A39992',
+          700: '#81766F',
+          800: '#564C47',
         },
     },
+
+    charts: {
+      main: '#eb1700',
+      yellow50: '#FBE058',
+      orange70: '#FF6017',
+      red90: '#9E0000',
+      purple40: '#B19BEB',
+      purple50: '#8C3BBB',
+      purple80: '#541980',
+      blue40: '#69D0FF',
+      blue50: '#0F68B2',
+      blue80: '#004685',
+      green40: '#53CE76',
+      green50: '#328714',
+      green80: '#3B5A0D',
+    },
+
     shape: {
         borderRadius: 8,
     },
+    
     spacing: [0, 2, 4, 8, 16, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176],
     
     shadows: [
@@ -585,8 +597,6 @@ const jnjTheme = createTheme({
                       },
                     },
                   },
-              
-              
             ]
         },
     

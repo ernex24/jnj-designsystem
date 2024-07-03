@@ -18,13 +18,7 @@ To get started, ensure you have the following development environment set up.
 2. **[NPM](https://www.npmjs.com/)** (version 7.x or later): Bundled with Node.js, used for installing and managing packages.
 3. **[React.js](https://react.dev/)** (version 17.x or later): JavaScript library for building user interfaces create with Create React App, Vite, Next.js etc.
 4. **[MUI](https://mui.com/material-ui/getting-started/)** (version 5.x or later): Open-source React component library implementing Google's Material Design with emotion for styles management.
-
-```bash 
-
-npm install @mui/material @emotion/react @emotion/styled
-
-```
-
+<br/>
 ## Installing the Library
 
 To install the theme, run the following command:
@@ -34,13 +28,18 @@ To install the theme, run the following command:
 npm i @jnj_dnds/designsystem@latest
 
 ```
+**MUI with emotion styles will be installed as peer dependencies.**
 
 This command can be executed in Command Prompt, Powershell, Terminal, or any integrated terminal in your code editor. It will also install all necessary dependencies for the theme.
+
+#### Installing the Library in next.js
+
+To install and configure the MUI in next.js follow this documentation **[Next.js Intallation Guide](https://mui.com/material-ui/integrations/nextjs/)** 
 
 ## Configuring the library
 
 1. MUI uses a React context called ThemeProvider. You need to import ThemeProvider from MUI and the JNJ Theme from the package you installed:
-
+<br/>
 ```jsx title="src/main.jsx"
 import { ThemeProvider} from '@mui/material/styles';
 import { jnjTheme } from '@jnj_dnds/designsystem/dist/theme/';
@@ -48,7 +47,7 @@ import '@jnj_dnds/designsystem/dist/theme/styles.css'
 ```
 
 2.  Wrap your application or the components you want to style with the ThemeProvider and apply the imported theme jnjTheme:
-
+<br/>
 ```jsx title="src/main.jsx"
 
     <ThemeProvider theme={jnjTheme}>

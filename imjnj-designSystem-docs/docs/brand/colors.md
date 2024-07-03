@@ -64,24 +64,24 @@ Explore the complete documentation from [Tokens Colors MUI](https://mui.com/mate
     ### Gray colors
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
-      <ColorSwatch token="gray.gray10" hex="#F9F8F7" rgb="rgba(249, 248, 247, 1)" textColor="black" />
-      <ColorSwatch token="gray.gray20" hex="#F1EFED" rgb="rgba(241, 239, 237, 1)" textColor="black" />
-      <ColorSwatch token="gray.gray30" hex="#E8E6E3" rgb="rgba(232, 230, 227, 1)" textColor="black" />
+      <ColorSwatch token="grey.100" hex="#F9F8F7" rgb="rgba(249, 248, 247, 1)" textColor="black" />
+      <ColorSwatch token="grey.200" hex="#F1EFED" rgb="rgba(241, 239, 237, 1)" textColor="black" />
+      <ColorSwatch token="grey.300" hex="#E8E6E3" rgb="rgba(232, 230, 227, 1)" textColor="black" />
     </Stack>
 
  <br/>  
 
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
-      <ColorSwatch token="gray.gray40" hex="#D5CFC9" rgb="rgba(213, 207, 201, 1)" textColor="black" />
-       <ColorSwatch token="gray.gray50" hex="#C1BBB3" rgb="rgba(249, 248, 247, 1)" textColor="black" />
-      <ColorSwatch token="gray.gray60" hex="#A39992" rgb="rgba(241, 239, 237, 1)" textColor="black" />
+      <ColorSwatch token="grey.400" hex="#D5CFC9" rgb="rgba(213, 207, 201, 1)" textColor="black" />
+       <ColorSwatch token="grey.500" hex="#C1BBB3" rgb="rgba(249, 248, 247, 1)" textColor="black" />
+      <ColorSwatch token="grey.600" hex="#A39992" rgb="rgba(241, 239, 237, 1)" textColor="black" />
     </Stack>
 
  <br/>  
       
     <Stack  direction="row" justifyContent="space-around" alignItems="center"  spacing={4}>
-      <ColorSwatch token="gray.gray70" hex="#81766F" rgb="rgba(232, 230, 227, 1)" textColor="white" />
-      <ColorSwatch token="gray.gray80" hex="#564C47" rgb="rgba(213, 207, 201, 1)" textColor="white" />
+      <ColorSwatch token="grey.700" hex="#81766F" rgb="rgba(232, 230, 227, 1)" textColor="white" />
+      <ColorSwatch token="grey.800" hex="#564C47" rgb="rgba(213, 207, 201, 1)" textColor="white" />
     </Stack>
 
 ## Semantic colors
